@@ -65,20 +65,15 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = ROM_armand_calinescu
+			removal_cost = -1
 			allowed = {
 				original_tag = ROM
 			}
 			available = {
-				NOT = {
-					OR = {
-						has_completed_focus = ROM_codreanu_goga_cooperation
-						has_government = communism
-					}
-					
-				}
+				has_completed_focus = ROM_iron_guard_consessions
 			}			
 			traits = {
-				prince_of_terror 
+				iron_guard_supporter
 			}
 		}
 

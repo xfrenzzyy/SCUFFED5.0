@@ -1,0 +1,16 @@
+leader_traits = {
+	
+	iron_guard_supporter = {
+		random = no
+		sprite = 13
+
+		fascism_drift = 0.05
+		army_core_defence_factor = 0.05
+		mobilization_speed = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

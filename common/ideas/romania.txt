@@ -1,6 +1,219 @@
 ideas = {
 
 	country = {
+		ROM_ger_bonus = {
+			picture = generic_intel_bonus
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		ROM_fra_bonus = {
+			picture = generic_intel_bonus
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+
+			}
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		ROM_sov_bonus = {
+			picture = generic_intel_bonus
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+			}
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		ROM_ita_bonus = {
+			picture = generic_intel_bonus
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+			}
+
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		ROM_eng_bonus = {
+			picture = generic_intel_bonus
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		ROM_kings_personality_cult_idea = {
+
+			picture = ROM_his_majesty_loyal_government
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {
+				political_power_gain = 0.10
+				stability_weekly = 0.001
+			} 
+		}
+
+		ROM_iron_guard_tension = {
+		
+			picture = chi_war_of_resistance
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				fascism_drift = 0.01
+				stability_factor = -0.03
+			}
+		}
+
+		ROM_iron_guard_tension_2 = {
+		
+			picture = chi_war_of_resistance
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				fascism_drift = 0.03
+				stability_factor = -0.05
+			}
+		}
+
+		ROM_iron_guard_tension_3 = {
+		
+			picture = chi_war_of_resistance2
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				fascism_drift = 0.05
+				stability_factor = -0.07
+			}
+		}
+
+		ROM_iron_guard_tension_4 = {
+		
+			picture = chi_war_of_resistance3
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				fascism_drift = 0.1
+				stability_factor = -0.1
+			}
+		}
+
+		ROM_iron_guard_agitated = {
+		
+			picture = chi_war_of_resistance2
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				fascism_drift = 0.10
+				stability_weekly = -0.002
+			}
+		}
 
 		###############
 		###NEW IDEAS###
@@ -510,6 +723,7 @@ ideas = {
 			modifier = {
 				army_morale_factor = 0.1
 				conscription = 0.02
+				neutrality_drift = 0.05
 			}
 		}
 
@@ -580,12 +794,16 @@ ideas = {
 
 			}
 			
-			modifier = {				
-				resistance_damage_to_garrison = -0.2
-				foreign_subversive_activites = -0.2
-				army_core_attack_factor = 0.05
-				army_core_defence_factor = 0.05
-			}
+			modifier = {
+				fascism_drift = 0.01
+				political_power_gain = -0.10
+				stability_factor = -0.10
+				army_morale_factor = -0.10
+				land_doctrine_cost_factor = 0.2
+				army_org_factor = -0.1
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+			} 
 		}
 
 		ROM_constitutional_guarantees = {

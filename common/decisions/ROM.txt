@@ -152,6 +152,83 @@
 #	}
 #}
 
+ROM_category_military_issues = {
+
+	ROM_mission_iron_guard_tensions = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = ROM
+		}
+		
+		available = {
+			OR = {
+				has_completed_focus = ROM_end_the_marches
+			}
+		}
+
+		days_mission_timeout = 150
+		#days_remove = 1
+
+		activation = {
+			OR = {
+				has_idea = ROM_iron_guard_tension
+				has_idea = ROM_iron_guard_tension_2
+				has_idea = ROM_iron_guard_tension_3
+				has_idea = ROM_iron_guard_tension_4
+			}
+		}
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			if = {
+				limit = {
+					has_idea = ROM_iron_guard_tension_4
+				}
+
+				remove_ideas = ROM_iron_guard_tension_4
+
+				country_event = {
+					id = mexico.1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ROM_iron_guard_tension_3
+				}
+				swap_ideas = {
+					remove_idea = ROM_iron_guard_tension_3
+					add_idea = ROM_iron_guard_tension_4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ROM_iron_guard_tension_2
+				}
+				swap_ideas = {
+					remove_idea = ROM_iron_guard_tension_2
+					add_idea = ROM_iron_guard_tension_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ROM_iron_guard_tension
+				}
+				swap_ideas = {
+					remove_idea = ROM_iron_guard_tension
+					add_idea = ROM_iron_guard_tension_2
+				}
+			}
+		}
+	}
+}
+
 political_actions = {
 	ROM_become_romania = {
 

@@ -99,7 +99,10 @@ spriteTypes = {
 		name = "GFX_idea_generic_army_female_arab"
 		texturefile = "gfx/interface/ideas/idea_generic_army_female_arab.dds"
 	}
-
+	spriteType = {
+		name = "GFX_idea_banana_republic"
+		texturefile = "gfx/interface/ideas/generic/r56_idea_banana_republic.dds"
+	}
 	spriteType = {
 		name = "GFX_idea_banana_republic"
 		texturefile = "gfx/interface/ideas/generic/r56_idea_banana_republic.dds"
@@ -123,6 +126,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_generic_royal_science"
 		texturefile = "gfx/interface/ideas/generic/r56_idea_royal_science.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ROM_his_majesty_loyal_government"
+		texturefile = "gfx/interface/ideas/rom/r56_idea_ROM_his_majesty_loyal_government.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_generic_liberty_money"

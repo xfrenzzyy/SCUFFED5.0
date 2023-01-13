@@ -693,6 +693,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				enemy_justify_war_goal_time = 0.25
+				justify_war_goal_time = 1.00
 				#generate_wargoal_tension = 1.00
 				join_faction_tension = 1.00
 				#lend_lease_tension = 0.50

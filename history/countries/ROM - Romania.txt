@@ -131,7 +131,6 @@ if = {
 		basic_light_tank_chassis = 1
 	}
 }
-
 #Ideas
 if = {
 	limit = {
@@ -139,6 +138,8 @@ if = {
 	}
 	add_ideas = {
 		ROM_king_carol_ii_hedonist
+		ROM_iron_guard_tension
+		ROM_iron_guard
 	}
 	give_guarantee = CZE
 	give_guarantee = GRE
