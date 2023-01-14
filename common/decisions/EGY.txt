@@ -1,46 +1,107 @@
-form_nation_mod_category = {
-
-    EGY_reestablish_control_over_sudan = {
-		icon = generic_form_nation
-
-		allowed = {
-			tag = EGY
+EGY_debug = { # Purely for debugging, go figure
+	
+	EGY_activate_conference = {
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = EGY_conference_warning
+				days = -29
+			}
+			country_event = { id = egypt.2 hours = 1 } 
+			clr_country_flag = EGY_1936_anglo_egyptian_conference_over
+			clr_country_flag = EGY_1936_anglo_egyptian_conference_extended
+			ENG = {
+				clr_country_flag = EGY_1936_anglo_egyptian_conference_over
+				clr_country_flag = EGY_1936_anglo_egyptian_conference_extended
+			}
 		}
+	}
+	EGY_activate_conference_timeout = {
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = EGY_conference_duration_timer
+				days = -99
+			}
+		}
+	}
+	EGY_egyptian_low_treaty_influence_increase = {
+		complete_effect = {
+			EGY_egyptian_treaty_influence_low_increase_effect = yes 
+		}
+	}
+	EGY_egyptian_medium_treaty_influence_increase = {
+		complete_effect = {
+			EGY_egyptian_treaty_influence_medium_increase_effect = yes
+		}
+	}
+	EGY_egyptian_high_treaty_influence_increase = {
+		complete_effect = {
+			EGY_egyptian_treaty_influence_high_increase_effect = yes
+		}
+	}
 
-		available = {
-			all_state = {
-				OR = {
-					NOT = { is_core_of = SUD }
-					AND = { 
-						is_controlled_by = ROOT 
-						compliance > 40
-						NOT = {
-							state = 767
-						} 
-					}
+	EGY_british_low_treaty_influence_increase = {
+		complete_effect = {
+			ENG = {
+				EGY_british_treaty_influence_low_increase_effect = yes
+			}
+		}
+	}
+	EGY_british_medium_treaty_influence_increase = {
+		complete_effect = {
+			ENG = {
+				EGY_british_treaty_influence_medium_increase_effect = yes
+			}
+		}
+	}
+	EGY_british_high_treaty_influence_increase = {
+		complete_effect = {
+			ENG = {
+				EGY_british_treaty_influence_high_increase_effect = yes
+			}
+		}
+	}
+	EGY_increase_sudanese_separatism = {
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = EGY_sudanese_separatism_flag
 				}
+				EGY_raise_sudanese_serparatists = yes
 			}
 		}
-
-		ai_will_do = {
-			factor = 50
-		}
-
-		fire_only_once = yes
-
-		cost = 60
-		days_remove = 90
-
-		remove_effect = {
-			every_state = {
-				limit = { is_core_of = SUD }
-				add_core_of = ROOT
+	}
+	EGY_decrease_sudanese_separatism = {
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = EGY_sudanese_separatism_flag
+				}
+				EGY_lower_sudanese_serparatists = yes
 			}
-			add_ideas = generic_recent_political_unification
+		}
+	}
+	EGY_clear_sudanese_separatism = {
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = EGY_sudanese_separatism_flag
+				}
+				EGY_remove_sudanese_separatism = yes
+			}
+		}
+	}
+	EGY_start_sudanese_separatism = {
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = SUD
+				}
+				add_dynamic_modifier = { modifier = EGY_mild_sudanese_separatism }
+				set_state_flag = EGY_sudanese_separatism_flag
+			}
 		}
 	}
 }
-<<<<<<< HEAD
 
 EGY_sudanese_elections_category = {
 
@@ -4024,5 +4085,3 @@ EGY_organise_nationalist_factions = {
 
 
 
-=======
->>>>>>> parent of 0dd7864c (Merge branch 'temp')

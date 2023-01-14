@@ -1,4 +1,4 @@
-﻿capital = 315
+﻿capital = 994
 
 oob = "CUB_1936"
 
@@ -7,13 +7,10 @@ set_technology = {
 
 	# Extended Technologies
 	etax_doctrine = 1
-	camo = 1
-	transport_plane1 = 1	
-	
-	infantry_weapons = 1
-	early_fighter = 1
+	camo = 1	
 
-<<<<<<< HEAD
+	infantry_weapons = 1
+
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
@@ -28,9 +25,6 @@ if = {
 	}
 }
 if = {
-=======
-}if = {
->>>>>>> parent of 0dd7864c (Merge branch 'temp')
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 		transport = 1
