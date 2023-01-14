@@ -10,9 +10,9 @@
 # protect
 # influence
 
-fin_unit_production = {
+ARG_unit_production = {
 	allowed = { 
-		original_tag = fin
+		original_tag = ARG
 	}
 	enable = {
 		always = yes
@@ -163,10 +163,10 @@ fin_unit_production = {
 
 no_army_when_at_war = {
 	allowed = {
-		original_tag = fin
+		original_tag = ARG
 	}
 	enable = {
-		fin = {
+		ARG = {
 			has_war = yes
 		}
 	}
