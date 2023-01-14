@@ -768,35 +768,43 @@ ideas = {
 			removal_cost = -1
 
 			equipment_bonus = {
-				small_plane_airframe = {
+				fighter_equipment = {
 					build_cost_ic = -0.1 
 					instant = yes
 				}
-				small_plane_cas_airframe = {
+				fighter_bomber_equipment = {
 					build_cost_ic = -0.1 
 					instant = yes
 				}
-				small_plane_naval_bomber_airframe = {
+				cv_fighter_equipment = {
 					build_cost_ic = -0.1 
 					instant = yes
 				}
-				medium_plane_airframe = {
+				heavy_fighter_equipment = {
 					build_cost_ic = -0.1 
 					instant = yes
 				}
-				medium_plane_fighter_airframe = {
+				hfighter_bomber_equipment = {
 					build_cost_ic = -0.1 
 					instant = yes
 				}
-				medium_plane_scout_plane_airframe = {
+				tac_bomber_equipment = {
 					build_cost_ic = -0.1 
 					instant = yes
 				}
-				large_plane_airframe = {
+				med_maritime_equipment = {
 					build_cost_ic = -0.1 
 					instant = yes
 				}
-				large_plane_maritime_patrol_plane_airframe = {
+				strat_bomber_equipment = {
+					build_cost_ic = -0.1 
+					instant = yes
+				}
+				strat_maritime_equipment = {
+					build_cost_ic = -0.1 
+					instant = yes
+				}
+				flying_boat_equipment = {
 					build_cost_ic = -0.1 
 					instant = yes
 				}
@@ -1266,11 +1274,10 @@ ideas = {
 
 		RAJ_Caste_Debuff_1 = {	#Stability
 			allowed = {
-
+				
 			}
 			allowed_civil_war = {
 				tag = RAJ
-				tag = PAK
 			}
 			picture = generic_Rural_Unemployment
 			removal_cost = -1

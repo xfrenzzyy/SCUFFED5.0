@@ -62,7 +62,7 @@ characters={
 		}
 		country_leader={
 			ideology=despotism
-			expire="1965.1.1"
+			expire="1965.1.1.1"
 			id=6004
 		}
 		advisor={
@@ -203,9 +203,9 @@ characters={
 			}					
 		}
 		corps_commander = {
-			traits = { inflexible_strategist harsh_leader media_personality artillerist }
+			traits = { inflexible_strategist harsh_leader media_personality }
 			skill = 3
-			attack_skill = 2
+			attack_skill = 3
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 2
@@ -374,13 +374,9 @@ characters={
 	}
 	#SIA_luang_sinthusongkhramchai
 	SIA_phraya_wichanworajak={
-		name="Phraya Wichanworajak"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_asia_1"
-			}
-		}
 		advisor={
+			
+			
 			slot = navy_chief
 			idea_token = SIA_phraya_wichanworajak
 			allowed = {
@@ -392,6 +388,12 @@ characters={
 			cost = 100
 			ai_will_do = {
 				factor = 1.000
+			}
+		}
+		name="Phraya Wichanworajak"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_1"
 			}
 		}
 	}
@@ -777,7 +779,7 @@ characters={
 		}
 		#a bit random traits
 		corps_commander = {
-			traits = { promising trait_cautious harsh_leader }
+			traits = { promising cautious harsh_leader }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -945,8 +947,7 @@ characters={
 		name=SIA_seni_pramoj
 		portraits={
 			army={
-				large = GFX_Portrait_SIA_Seni_Pramoj
-				small= GFX_idea_minister_siam_seni_pramoj
+				small="GFX_idea_minister_siam_seni_pramoj"
 			}
 		}
 		advisor={
@@ -1011,9 +1012,7 @@ characters={
 				communist_revolutionary 
 			}
 			on_add = {
-				owner = {
-					country_event = political.1
-				}
+				country_event = political.1
 			}
 			do_effect  = {
 				not  = {

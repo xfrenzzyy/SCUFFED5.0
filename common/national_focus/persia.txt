@@ -13,7 +13,7 @@ focus_tree = {
 	focus = {
 		id = PER_continue_government_purges
 		icon = GFX_focus_eng_move_to_secure_the_dominions
-		cost = 5.00
+		cost = 10.00
 		mutually_exclusive = {
 			focus = PER_appoint_zahedi
 			focus = PER_restore_constitutionalism
@@ -34,7 +34,7 @@ focus_tree = {
 	focus = {
 		id = PER_restore_constitutionalism
 		icon = GFX_focus_generic_diplomatic_treaty
-		cost = 5.00
+		cost = 10.00
 		mutually_exclusive = {
 			focus = PER_continue_government_purges
 			focus = PER_appoint_zahedi
@@ -51,7 +51,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_ideas = PER_restore_constitutionalism
-					add_stability = 0.05
+					add_stability = 0.1
 				}
 				search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 
@@ -59,7 +59,7 @@ focus_tree = {
 	focus = {
 		id = PER_revive_the_jungle_movement
 		icon = GFX_focus_generic_join_comintern
-		cost = 5.00
+		cost = 10.00
 		mutually_exclusive = {
 			focus = PER_continue_government_purges
 			focus = PER_restore_constitutionalism
@@ -134,7 +134,7 @@ focus_tree = {
 	focus = {
 		id = PER_increase_machines_import
 		icon = GFX_focus_generic_industry_2
-		cost = 5.00
+		cost = 10.00
 		x = 4
 		y = 0
 		ai_will_do = {
@@ -187,10 +187,10 @@ focus_tree = {
 											include_locked = yes
 										}
 								}
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = industrial_complex
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -201,7 +201,7 @@ focus_tree = {
 	focus = {
 		id = PER_manufacture_planes
 		icon = GFX_goal_generic_build_airforce
-		cost = 8.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_sugar_exports
 		}
@@ -219,14 +219,14 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
-			air_experience = 50
+			air_experience = 10
 		}
 				search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -234,7 +234,7 @@ focus_tree = {
 	focus = {
 		id = PER_finish_the_trans_iranian_railway
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 3.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_foreign_exchange_controls
 			focus = PER_increase_machines_import
@@ -329,7 +329,7 @@ focus_tree = {
 	focus = {
 		id = PER_secure_weapon_deals
 		icon = GFX_goal_generic_small_arms
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_finish_the_trans_iranian_railway
 		}
@@ -347,11 +347,6 @@ focus_tree = {
 					bonus = 1
 					uses = 1
 					category = infantry_weapons
-				}
-				add_tech_bonus = {
-					bonus = 1
-					uses = 1
-					category = support_tech
 				}				
 			}
 			search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -360,7 +355,7 @@ focus_tree = {
 	focus = {
 		id = PER_electronic_development
 		icon = GFX_goal_generic_production2
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_secure_weapon_deals
 		}
@@ -428,7 +423,7 @@ focus_tree = {
 	focus = {
 		id = PER_increase_textile_production
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 7.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_increase_machines_import
 		}
@@ -475,10 +470,10 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 266 }
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 						type = arms_factory
-						level = 3
+						level = 2
 						instant_build = yes
 					}
 			}
@@ -582,8 +577,8 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_nationalize_the_means_of_production
-		icon = GFX_goal_communist_factory
-		cost = 8.00
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
 		prerequisite = {
 			focus = PER_recreate_the_persian_socialist_soviet_republic
 		}
@@ -593,29 +588,10 @@ focus_tree = {
 					factor = 60
 				}
 			completion_reward = {
-				add_ideas = PER_nationalize_the_means_of_production
-				remove_ideas = PER_anglo_iranian_oil_company
-				ENG = { 
-					remove_resource_rights = 413 
-					if = {
-						limit = {
-							ENG = {
-								NOT = {
-									OR = {
-										has_government = communism
-										is_in_faction_with = IRQ
-									}
-								}
-							}
-						}
-						add_opinion_modifier = { 
-							target = ROOT
-							modifier = large_decrease
-						}
-					}
+					add_ideas = PER_nationalize_the_means_of_production
+					remove_ideas = PER_anglo_iranian_oil_company
+					ENG = { remove_resource_rights = 413 }
 				}
-
-			}
 				search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_OIL}
 
 	}
@@ -673,7 +649,7 @@ focus_tree = {
 					factor = 50
 				}
 			completion_reward = {
-					add_stability = -0.10
+					add_stability = -0.15
 					add_ideas = PER_promote_atheism
 				}
 				search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
@@ -696,8 +672,8 @@ focus_tree = {
 					factor = 50
 				}
 			completion_reward = {
-					add_political_power = 100
-					add_stability = 0.2
+					add_political_power = 75
+					add_stability = 0.25
 				}
 				search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 
@@ -705,7 +681,7 @@ focus_tree = {
 	focus = {
 		id = PER_persian_way_to_socialism
 		icon = GFX_goal_support_fourth_int
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_islamic_socialism
 			focus = PER_promote_atheism
@@ -831,11 +807,6 @@ focus_tree = {
 		prerequisite = {
 			focus = PER_de_militarize_politics
 		}
-		available = {
-			NOT = {
-				is_puppet_of = ENG
-			}
-		}
 		x = 15
 		y = 3
 			ai_will_do = {
@@ -882,7 +853,7 @@ focus_tree = {
 	focus = {
 		id = PER_reform_the_administration
 		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 7.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_rally_around_mosaddegh
 			focus = PER_prime_minister_foroughi
@@ -974,68 +945,128 @@ focus_tree = {
 		}
 		
 		available = {
-			is_subject = no
+			is_in_faction = no
+			TUR = {
+				NOT = {
+					has_completed_focus = TUR_the_sadabat_pact
+					has_completed_focus = TUR_allow_husnu_to_return
+					has_completed_focus = TUR_support_fascist_officers
+					has_completed_focus = TUR_treaty_of_saadabad
+				}
+			}
+			IRQ = {
+				NOT = {
+					has_completed_focus = IRQ_the_sadabat_pact
+					has_completed_focus = IRQ_unsupported_monarch
+				}
+			}
 		}
 
 		bypass = {
 			OR = {
-				has_global_flag = TUR_saadabad_pact
-				any_other_country = {
-					NOT = {
-						capital_scope = {
-							is_on_continent = middle_east
+				AFG = { has_country_flag = sadabat_pact_member }
+				IRQ = { has_country_flag = sadabat_pact_member }
+				PER = { has_country_flag = sadabat_pact_member }
+				TUR = { has_country_flag = sadabat_pact_member }
+				is_in_faction_with = TUR
+				is_in_faction_with = IRQ
+				is_in_faction_with = AFG
+				has_non_aggression_pact_with = TUR
+				has_non_aggression_pact_with = IRQ
+				has_non_aggression_pact_with = AFG
+				AND = {
+					TUR = {
+						OR = {
+							exists = no
+							is_subject = yes
 						}
+						
+					}
+					AFG = {
+						OR = {
+							exists = no
+							is_subject = yes
+						}
+						
+					}
+					IRQ = {
+						OR = {
+							exists = no
+							is_subject = yes
+						}
+						
 					}
 				}
 			}
 		}
 		
 		completion_reward = {
-			every_other_country = {
+			if = {
 				limit = {
-					OR = {
-						AND = {
-							capital_scope = {
-								is_on_continent = middle_east
-							}
-							exists = yes
-							is_subject = no
-							NOT = {
-								has_war_with = ROOT
-							}
-						}
-						AND = {
-							original_tag = AFG
-							NOT = {
-								has_war_with = ROOT
-							}
-						}
-					}
-					if = {
-						limit = {
-							OR = {
-								original_tag = SAU
-								original_tag = YEM
-								original_tag = OMA
-							}
-						}
-						ROOT = {
-							has_opinion = {
-								target = PREV
-								value > 49
-							}
-						}
+					IRQ = {
+						exists = yes
+						is_subject = no
 					}
 				}
-				country_event = { id = bftb_turkey.23 }
+				IRQ = {
+					country_event = {
+						id = turkey_sadabat.1
+						hours = 3
+						random_hours = 5
+					}
+				}
 			}
-			add_war_support = 0.05
+			if = {
+				limit = {
+					TUR = {
+						exists = yes
+						is_subject = no
+					}
+				}
+				TUR = {
+					country_event = {
+						id = turkey_sadabat.1
+						hours = 3
+						random_hours = 5
+					}
+				}
+			}
+			if = {
+				limit = {
+					AFG = {
+						exists = yes
+						is_subject = no
+					}
+				}
+				AFG = {
+					country_event = {
+						id = turkey_sadabat.1
+						hours = 3
+						random_hours = 5
+					}
+				}
+			}
+			custom_effect_tooltip = if_they_accept
+			effect_tooltip = {
+				diplomatic_relation = {
+					country = AFG
+					relation = non_aggression_pact
+				}
+				diplomatic_relation = {
+					country = IRQ
+					relation = non_aggression_pact
+				}
+				diplomatic_relation = {
+					country = TUR
+					relation = non_aggression_pact
+				}
+			}
 		}
 	}
 	focus = {
 		id = PER_align_with_britain
 		icon = GFX_focus_chi_british_cooperation
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_align_the_army
 		}
@@ -1103,37 +1134,27 @@ focus_tree = {
 		prerequisite = {
 			focus = PER_align_with_britain
 		}
-		relative_position_id = PER_align_with_britain
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 56
-		}
-		available = {
-			is_in_faction_with = ENG
-			NOT = {
-				is_puppet_of = ENG
-			}			
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = PER_anglo_iranian_oil_company
-				add_idea = PER_anglo_iranian_oil_company_2
-			}
-			ENG = {
-				add_opinion_modifier = { 
-					target = ROOT
-					modifier = medium_increase
+		x = 17
+		y = 5
+			ai_will_do = {
+					factor = 56
 				}
-			}			
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_OIL}
+			available = {
+					is_in_faction_with = ENG
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = PER_anglo_iranian_oil_company
+							add_idea = PER_anglo_iranian_oil_company_2
+						}
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_OIL}
 
 	}
 	focus = {
 		id = PER_increase_education_funds
 		icon = GFX_goal_generic_scientific_exchange
-		cost = 8.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_align_the_army
 		}
@@ -1162,7 +1183,6 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_ideas = PER_increase_funds_for_the_army
-					add_timed_idea = { idea = PER_Military_Spend_Increase days = 180 }
 				}
 				search_filters = { FOCUS_FILTER_MANPOWER }
 
@@ -1170,7 +1190,7 @@ focus_tree = {
 	focus = {
 		id = PER_diplomatic_balance
 		icon = GFX_goal_generic_neutrality_focus
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_increase_funds_for_the_army
 		}
@@ -1191,7 +1211,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_reaffirm_friendship_with_turkey
-		icon = GFX_goal_generic_befriend_turkey
+		icon = GFX_goal_ENG_collaboration_with_turkey
 		cost = 5.00
 		prerequisite = {
 			focus = PER_diplomatic_balance
@@ -1218,7 +1238,7 @@ focus_tree = {
 	focus = {
 		id = PER_forced_secularization
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_continue_government_purges
 		}
@@ -1305,18 +1325,18 @@ focus_tree = {
 				}
 			completion_reward = {
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = industrial_complex
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = arms_factory
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -1327,7 +1347,7 @@ focus_tree = {
 	focus = {
 		id = PER_pro_german_diplomacy
 		icon = GFX_focus_chi_mission_to_germany
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_encourage_german_trade
 		}
@@ -1398,35 +1418,25 @@ focus_tree = {
 		}
 		x = 24
 		y = 4
-		ai_will_do = {
-			factor = 45
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					has_idea = PER_anglo_iranian_oil_company
+			ai_will_do = {
+					factor = 45
 				}
-				remove_ideas = PER_anglo_iranian_oil_company
-				ENG = { remove_resource_rights = 413 }
-				give_resource_rights = { receiver = GER state = 412 }
-			}
-			random_owned_controlled_state = {
-				prioritize = { 676 }
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = steel_mill
-					level = 3
-					instant_build = yes
+			completion_reward = {
+					if = {
+							limit = {
+									has_idea = PER_anglo_iranian_oil_company
+								}
+							remove_ideas = PER_anglo_iranian_oil_company
+							ENG = { remove_resource_rights = 413 }
+							give_resource_rights = { receiver = GER state = 412 }
+						}
+					add_resource = {
+							type = steel
+							amount = 28
+							state = 266
+						}
 				}
-			}
-			#add_resource = {
-			#	type = steel
-			#	amount = 28
-			#	state = 266
-			#}			
-		}				
-
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STEEL FOCUS_FILTER_OIL}
+				search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STEEL FOCUS_FILTER_OIL}
 
 	}
 	focus = {
@@ -1457,7 +1467,7 @@ focus_tree = {
 			focus = PER_embrace_persian_identity
 		}
 		x = 27
-		y = 2	
+		y = 2
 			ai_will_do = {
 					factor = 45
 				}
@@ -1483,7 +1493,6 @@ focus_tree = {
 					factor = 45
 				}
 			completion_reward = {
-					add_war_support = 0.05
 					add_ideas = PER_halt_religious_persecutions
 				}
 				search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
@@ -1499,27 +1508,21 @@ focus_tree = {
 		}
 		x = 29
 		y = 2
-		ai_will_do = {
-			factor = 50
-		}
-		completion_reward = {
-			add_ideas = PER_strategic_nationalizations
-			remove_ideas = PER_anglo_iranian_oil_company
-			ENG = { 
-				remove_resource_rights = 413 
-				add_opinion_modifier = { 
-					target = ROOT
-					modifier = large_decrease
-				}			
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_OIL}
+			ai_will_do = {
+					factor = 50
+				}
+			completion_reward = {
+					add_ideas = PER_strategic_nationalizations
+					remove_ideas = PER_anglo_iranian_oil_company
+					ENG = { remove_resource_rights = 413 }
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_OIL}
 
 	}
 	focus = {
 		id = PER_diplomatic_independence
 		icon = GFX_focus_generic_strike_at_democracy2
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_strategic_nationalizations
 		}
@@ -1584,7 +1587,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_retake_afghanistan
-		icon = GFX_goal_generic_attack_afghanistan
+		icon = GFX_goal_PER_retake_afghanistan
 		cost = 10.00
 		prerequisite = {
 			focus = PER_agressive_pan_iranism
@@ -1593,14 +1596,6 @@ focus_tree = {
 		y = 5
 		ai_will_do = {
 			factor = 50
-			modifier = {
-				factor = 4
-				has_government = fascism
-				date < 1939.01.01
-				AFG = {
-					is_in_faction = no
-				}
-			}
 		}
 
 		available = {
@@ -1713,7 +1708,7 @@ focus_tree = {
 	focus = {
 		id = PER_religious_militarism
 		icon = GFX_focus_generic_strike_at_democracy1
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_halt_religious_persecutions
 		}
@@ -1772,7 +1767,7 @@ focus_tree = {
 	focus = {
 		id = PER_adopt_german_doctrines
 		icon = GFX_goal_tank_map
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_continue_sending_cadets_abroad
 			focus = PER_invite_foreign_officers
@@ -1807,7 +1802,7 @@ focus_tree = {
 	focus = {
 		id = PER_rely_on_artillery_firepower
 		icon = GFX_goal_generic_army_artillery2
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_continue_sending_cadets_abroad
 			focus = PER_invite_foreign_officers
@@ -1843,7 +1838,7 @@ focus_tree = {
 	focus = {
 		id = PER_continue_using_western_doctrines
 		icon = GFX_focus_generic_commonwealth_build_infantry
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_continue_sending_cadets_abroad
 			focus = PER_invite_foreign_officers
@@ -1877,7 +1872,7 @@ focus_tree = {
 	focus = {
 		id = PER_adopt_soviet_tactics
 		icon = GFX_goal_generic_into_fire
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_invite_foreign_officers
 			focus = PER_continue_sending_cadets_abroad
@@ -1911,7 +1906,7 @@ focus_tree = {
 	focus = {
 		id = PER_adopt_guerilla_tactics
 		icon = GFX_goal_infantry_flames
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_invite_foreign_officers
 			focus = PER_continue_sending_cadets_abroad
@@ -2002,10 +1997,10 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			army_experience = 25
+			army_experience = 15
 			add_tech_bonus = {
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = infantry_weapons
 			}
 		}
@@ -2083,7 +2078,7 @@ focus_tree = {
 	focus = {
 		id = PER_motorize_the_cavalry
 		icon = GFX_goal_generic_cavalry
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_rifles_modernisation
 		}
@@ -2106,7 +2101,7 @@ focus_tree = {
 	focus = {
 		id = PER_modernise_our_artillery
 		icon = GFX_goal_generic_army_artillery
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_motorize_the_cavalry
 			focus = PER_terrain_specialization
@@ -2130,7 +2125,7 @@ focus_tree = {
 	focus = {
 		id = PER_counter_enemy_bombers
 		icon = GFX_focus_generic_air_defense
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_modernise_our_artillery
 		}
@@ -2169,7 +2164,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = cat_anti_tank
 			}
 		}
@@ -2205,7 +2200,7 @@ focus_tree = {
 	focus = {
 		id = PER_maintain_air_land_links
 		icon = GFX_goal_fortify_city_AA
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_adopt_western_style_military_bureaucracy
 		}
@@ -2217,8 +2212,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			air_experience = 25
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.5
+			add_tech_bonus = {
+				bonus = 1
 				uses = 2
 				category = battlefield_support_tree
 			}
@@ -2255,7 +2250,7 @@ focus_tree = {
 	focus = {
 		id = PER_separate_the_air_force
 		icon = GFX_goal_generic_air_doctrine
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_adopt_western_style_military_bureaucracy
 		}
@@ -2307,7 +2302,7 @@ focus_tree = {
 	focus = {
 		id = PER_ghale_morghi_air_bases
 		icon = GFX_goal_generic_airport
-		cost = 5.00
+		cost = 6.00
 		prerequisite = {
 			focus = PER_local_fighters_development
 		}
@@ -2333,7 +2328,7 @@ focus_tree = {
 	focus = {
 		id = PER_air_officers_academy
 		icon = GFX_focus_usa_escort_fighters
-		cost = 5.00
+		cost = 10.00
 		ai_will_do = {
 			factor = 15
 		}
@@ -2363,21 +2358,21 @@ focus_tree = {
 			266 = {
 				add_building_construction = {
 					type = anti_air_building
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			410 = {
 				add_building_construction = {
 					type = anti_air_building
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			419 = {
 				add_building_construction = {
 					type = anti_air_building
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2415,7 +2410,7 @@ focus_tree = {
 	focus = {
 		id = PER_maintain_navy_land_links
 		icon = GFX_goal_sea_navy
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_adopt_western_style_military_bureaucracy
 		}
@@ -2512,7 +2507,7 @@ focus_tree = {
 	focus = {
 		id = PER_separate_the_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_adopt_western_style_military_bureaucracy
 		}
@@ -2576,10 +2571,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
-						level = 3
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -2604,10 +2599,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
-						level = 3
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -2633,10 +2628,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
-						level = 3
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -2767,7 +2762,7 @@ focus_tree = {
 	focus = {
 		id = PER_lead_the_way
 		icon = GFX_goal_generic_cavalry
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_anti_imperialist_position
 		}
@@ -2802,7 +2797,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PER_reclaim_iraq
-		icon = GFX_goal_generic_attack_iraq
+		icon = GFX_goal_ENG_attack_iraq
 		cost = 10.00
 		prerequisite = {
 			focus = PER_agressive_pan_iranism
@@ -2890,7 +2885,7 @@ focus_tree = {
 	focus = {
 		id = PER_align_with_the_soviets
 		icon = GFX_focus_chi_mission_to_the_soviet_union
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_islamic_socialism
 			focus = PER_promote_atheism
@@ -3030,18 +3025,18 @@ focus_tree = {
 				}
 			completion_reward = {
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = industrial_complex
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = arms_factory
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}

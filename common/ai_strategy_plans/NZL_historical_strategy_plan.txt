@@ -5,7 +5,6 @@ NZL_historical = {
 	enable = {
 		original_tag = NZL
 		has_dlc = "Together for Victory"
-		has_global_flag = nzl_tfv_focus_tree
 		OR = {
 			AND = {
 				is_historical_focus_on = yes
@@ -23,10 +22,7 @@ NZL_historical = {
 		}
 	}
 	abort = {
-		OR = {
-			is_subject = no
-			NOT = { has_global_flag = nzl_tfv_focus_tree }
-		}
+		is_subject = no
 	}
 
 	ai_national_focuses = {
@@ -80,6 +76,10 @@ NZL_historical = {
 		infantry_tech = 15.0
 		artillery = 8.0
 		support_tech = 6.5
+	}
+
+	ideas = {
+		
 	}
 
 	traits = {

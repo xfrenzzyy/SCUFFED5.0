@@ -12,6 +12,14 @@ country_event = {
 	picture = GFX_report_event_canada_patriation
 	is_triggered_only = yes
 	
+	trigger = {
+		OR = {
+			has_idea = r56_CAN_docr_democratic
+			has_idea = r56_CAN_docr_communism
+			}
+		has_government = fascism
+	}
+	
 	option = {
 		name = r56_canada.1.a 
 		if = {
@@ -43,6 +51,14 @@ country_event = {
 	picture = GFX_report_event_canada_patriation
 	is_triggered_only = yes
 	
+	trigger = {
+		OR = {
+			has_idea = r56_CAN_docr_democratic
+			has_idea = r56_CAN_docr_fascism
+			}
+		has_government = communism
+	}
+	
 	option = {
 		name = r56_canada.1.a 
 		if = {
@@ -73,6 +89,14 @@ country_event = {
 	desc = r56_canada.1.d
 	picture = GFX_report_event_canada_treaty
 	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			has_idea = r56_CAN_docr_communism
+			has_idea = r56_CAN_docr_fascism
+			}
+		has_government = democratic
+	}
 	
 	option = {
 		name = r56_canada.1.a 
@@ -139,15 +163,14 @@ country_event = {
 				limit = {
 					OR = {
 						state = 466
-						state = 861
-						state = 860
-						state = 863
-						state = 862
 						state = 468
 					}
 				}
-				remove_dynamic_modifier = {
-					modifier = quebec_conscription_crisis
+				remove_province_modifier = {
+					static_modifiers = { quebec_conscription_crisis }
+					province = {
+						all_provinces = yes
+					}
 				}
 			}
 		}
@@ -177,18 +200,20 @@ country_event = {
 				limit = {
 					OR = {
 						state = 466
-						state = 861
-						state = 860
-						state = 863
-						state = 862
 						state = 468
 					}
 				}
-				remove_dynamic_modifier = {
-					modifier = quebec_conscription_crisis
+				remove_province_modifier = {
+					static_modifiers = { quebec_conscription_crisis }
+					province = {
+						all_provinces = yes
+					}
 				}
-				add_dynamic_modifier = {
-					modifier = quebec_conscription_crisis_compromise
+				add_province_modifier = {
+					static_modifiers = { quebec_conscription_crisis_compromise }
+					province = {
+						all_provinces = yes
+					}
 				}
 			}
 		}

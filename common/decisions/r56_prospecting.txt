@@ -63,108 +63,7 @@ economy_decisions = {
 		}	
 	}
 
-	develop_petsamo_nickel_deposits = { #722 - transferred from Norwegian-Finnish decision - Fantom
-		
-		icon = chromium
-		
-		available = {
-			722 = {
-				OR = {
-					has_resistance = no
-					AND = {
-						compliance > 30
-						resistance < 75
-					}
-				}
-			}
-			has_tech = excavation1
-			OR = {
-				AND = {
-					has_full_control_of_state = 722
-				}				
-				AND = {
-					any_country = {
-						is_puppet_of = ROOT
-						has_full_control_of_state = 722
-					}
-				}
-			}
-			num_of_civilian_factories_available_for_projects > 2			
-			NOT = {
-				has_idea = generic_resource_extraction_effort
-			}
-		}
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 722
-			} 
-		}
-		
-		visible = {
-			OR = {
-				AND = {
-					has_full_control_of_state = 722
-				}				
-				AND = {
-					any_country = {
-						is_puppet_of = ROOT
-						has_full_control_of_state = 722
-					}
-				}
-			}
-			NOT = {
-				any_other_country = {
-					has_decision = develop_petsamo_nickel_deposits
-				}
-			}			
-			772 = {
-				NOT = {
-					has_state_flag = petsamo_nickel_developed
-				}
-			}
-		}
-		
-		fire_only_once = yes
-		
-		cost = 25
-		days_remove = 60
-		
-		modifier = {
-			civilian_factory_use = 3
-		}
-		
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 0.5
-				has_war = yes
-			}
-			modifier = {
-				factor = 10
-				num_of_military_factories > 9
-			}
-			modifier = {
-				factor = 5
-				num_of_civilian_factories_available_for_projects > 9
-			}
-		}
-		remove_effect = { 
-			722 = { set_state_flag = petsamo_nickel_developed }
-			722 = {
-				add_resource = {
-					type = chromium	### Represents nickel
-					amount = 8
-				}
-				add_resource = {
-					type = tungsten	### Represents nickel
-					amount = 4
-				}
-			}
-		}
-	}
-
-	expand_the_ljubija_iron_mine = { #961 #iron mine in Bosnia
+	expand_the_ljubija_iron_mine = { #889 #iron mine in Bosnia
 		
 		icon = steel #change if copper is added
 
@@ -178,11 +77,11 @@ economy_decisions = {
 		}
 		highlight_states = {
 			highlight_state_targets = {
-				state = 961
+				state = 889
 			} 
 		}
 		available = {
-			961 = {
+			889 = {
 				OR = {
 					has_resistance = no
 					AND = {
@@ -194,12 +93,12 @@ economy_decisions = {
 			has_tech = excavation2
 			OR = {
 				AND = {
-					has_full_control_of_state = 961
+					has_full_control_of_state = 889
 				}				
 				AND = {
 					any_country = {
 						is_puppet_of = ROOT
-						has_full_control_of_state = 961
+						has_full_control_of_state = 889
 					}
 				}
 			}
@@ -212,12 +111,12 @@ economy_decisions = {
 		visible = {
 			OR = {
 				AND = {
-					has_full_control_of_state = 961
+					has_full_control_of_state = 889
 				}				
 				AND = {
 					any_country = {
 						is_puppet_of = ROOT
-						has_full_control_of_state = 961
+						has_full_control_of_state = 889
 					}
 				}
 			}
@@ -226,7 +125,7 @@ economy_decisions = {
 					has_decision = expand_the_ljubija_iron_mine
 				}
 			}			
-			961 = {
+			889 = {
 				NOT = {
 					has_state_flag = open_ljubija_mine_developed
 				}
@@ -249,7 +148,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				steel < 5
@@ -260,8 +159,8 @@ economy_decisions = {
 			}			
 		}
 		remove_effect = { 
-			961 = { set_state_flag = open_ljubija_mine_developed } 
-			961 = {
+			889 = { set_state_flag = open_ljubija_mine_developed } 
+			889 = {
 				add_resource = {
 					type = steel
 					amount = 5
@@ -355,7 +254,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				steel < 5
@@ -461,7 +360,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
@@ -567,7 +466,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				steel < 5
@@ -637,10 +536,14 @@ economy_decisions = {
 
 		visible = {
 			OR = {
-				has_full_control_of_state = 230
-				any_country = {
-					is_puppet_of = ROOT
-					has_full_control_of_state = 230
+				AND = {
+					has_full_control_of_state = 672
+				}				
+				AND = {
+					any_country = {
+						is_puppet_of = ROOT
+						has_full_control_of_state = 672
+					}
 				}
 			}
 			230 = {
@@ -660,6 +563,10 @@ economy_decisions = {
 		cost = 17
 		days_remove = 180
 
+		modifier = {
+
+		}
+
 		complete_effect = {
 			add_timed_idea = {
 				idea = generic_resource_extraction_effort
@@ -668,7 +575,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
@@ -1433,7 +1340,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
@@ -1517,7 +1424,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
@@ -1635,7 +1542,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
@@ -1724,7 +1631,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
@@ -2460,7 +2367,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
@@ -2468,7 +2375,11 @@ economy_decisions = {
 			modifier = {
 				add = 4
 				tungsten < 1
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1939.06.01
+			}			
 		}
 		remove_effect = { 
 			171 = { set_state_flag = develop_galician_tungsten } 
@@ -2542,7 +2453,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
@@ -2550,7 +2461,11 @@ economy_decisions = {
 			modifier = {
 				add = 4
 				tungsten < 1
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			666 = { set_state_flag = lappland_mine_expanded } 
@@ -2626,7 +2541,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
@@ -2634,7 +2549,11 @@ economy_decisions = {
 			modifier = {
 				add = 4
 				tungsten < 1
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			279 = { set_state_flag = north_central_chilean_tungsten_exploited } 
@@ -2709,7 +2628,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 10
@@ -2717,6 +2636,10 @@ economy_decisions = {
 			modifier = {
 				add = 4
 				tungsten < 5
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
 			}			
 		}
 		remove_effect = { 
@@ -2792,7 +2715,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 10
@@ -2800,7 +2723,11 @@ economy_decisions = {
 			modifier = {
 				add = 4
 				tungsten < 5
-			}	
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			289 = { set_state_flag = siamese_tungsten_exploited } 
@@ -2873,7 +2800,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
@@ -2881,7 +2808,11 @@ economy_decisions = {
 			modifier = {
 				add = 4
 				tungsten < 1
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			457 = { set_state_flag = ilga_tin_tungsten_mine_opened } 
@@ -2958,7 +2889,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
@@ -2966,7 +2897,11 @@ economy_decisions = {
 			modifier = {
 				add = 4
 				tungsten < 1
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			457 = { set_state_flag = eastern_desert_tungsten_mining_developed } 
@@ -3041,7 +2976,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				chromium < 5
@@ -3049,7 +2984,11 @@ economy_decisions = {
 			modifier = {
 				add = 4
 				chromium < 1
-			}	
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			457 = { set_state_flag = eastern_desert_chromium_mining_developed } 
@@ -3122,7 +3061,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
@@ -3130,6 +3069,10 @@ economy_decisions = {
 			modifier = {
 				add = 4
 				tungsten < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
 			}			
 		}
 		remove_effect = { 
@@ -3202,7 +3145,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
@@ -3210,7 +3153,11 @@ economy_decisions = {
 			modifier = {
 				add = 4
 				tungsten < 1
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			26 = { set_state_flag = leucamp_tungsten_mine_reopened } 
@@ -3282,7 +3229,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
@@ -3290,7 +3237,11 @@ economy_decisions = {
 			modifier = {
 				add = 4
 				tungsten < 1
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			30 = { set_state_flag = montbelleux_tungsten_mine_reopened } 
@@ -3362,14 +3313,18 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
 			}			
 			modifier = {
-				add = 1
+				add = 4
 				tungsten < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
 			}			
 		}
 		remove_effect = { 
@@ -3442,7 +3397,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
@@ -3450,6 +3405,10 @@ economy_decisions = {
 			modifier = {
 				add = 4
 				tungsten < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
 			}			
 		}
 		remove_effect = { 
@@ -3606,15 +3565,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
 			}			
 			modifier = {
-				add = 1
+				add = 4
 				tungsten < 1
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			462 = { set_state_flag = azgour_mine_opened } 
@@ -5670,7 +5633,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				chromium < 5
@@ -5754,7 +5717,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				chromium < 5
@@ -5838,16 +5801,14 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				chromium < 5
-				has_war = yes
 			}			
 			modifier = {
 				add = 4
 				chromium < 1
-				has_war = yes
 			}
 			modifier = {
 				add = 10
@@ -5924,16 +5885,18 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				chromium < 5
-				has_war = yes
 			}			
 			modifier = {
 				add = 4
 				chromium < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
 			}			
 		}
 		remove_effect = { 
@@ -6006,16 +5969,14 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				chromium < 5
-				has_war = yes
 			}			
 			modifier = {
 				add = 4
 				chromium < 1
-				has_war = yes
 			}
 			modifier = {
 				add = 10
@@ -6094,16 +6055,14 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				chromium < 5
-				has_war = yes
 			}			
 			modifier = {
 				add = 4
 				chromium < 1
-				has_war = yes
 			}
 			modifier = {
 				add = 10
@@ -6179,16 +6138,14 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				steel < 5
-				has_war = yes
 			}			
 			modifier = {
 				add = 4
 				steel < 1
-				has_war = yes
 			}
 			modifier = {
 				add = 10
@@ -6268,17 +6225,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				rubber < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				rubber < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			497 = { set_state_flag = amazonian_rubber_exploited } 
@@ -6351,16 +6310,18 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				aluminium < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
 			}			
 		}
 		remove_effect = { 
@@ -6432,17 +6393,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				steel < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				steel < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			621 = { set_state_flag = suiyuan_steel_developed } 
@@ -6513,17 +6476,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				aluminium < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			325 = { set_state_flag = yunnan_aluminium_developed } 
@@ -6594,16 +6559,18 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				aluminium < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
 			}			
 		}
 		remove_effect = { 
@@ -6675,16 +6642,18 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				aluminium < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
 			}			
 		}
 		remove_effect = { 
@@ -6756,17 +6725,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				steel < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				steel < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			627 = { set_state_flag = mindanao_steel_developed } 
@@ -6837,17 +6808,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				steel < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				steel < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			625 = { set_state_flag = samar_steel_developed } 
@@ -6918,16 +6891,18 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				aluminium < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
 			}			
 		}
 		remove_effect = { 
@@ -7006,8 +6981,12 @@ economy_decisions = {
 				oil < 5
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				oil < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
 			}			
 		}
 		remove_effect = { 
@@ -7086,9 +7065,13 @@ economy_decisions = {
 				oil < 5
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				oil < 1
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			450 = { set_state_flag = benghazi_oil_developed } 
@@ -7159,16 +7142,18 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				aluminium < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
 			}			
 		}
 		remove_effect = { 
@@ -7242,16 +7227,18 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				aluminium < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
 			}			
 		}
 		remove_effect = { 
@@ -7322,16 +7309,18 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				rubber < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				rubber < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
 			}			
 		}
 		remove_effect = { 
@@ -7406,17 +7395,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				rubber < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				rubber < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			543 = { set_state_flag = madagascar_rubber_developed_2 } 
@@ -7486,16 +7477,18 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				rubber < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				rubber < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
 			}			
 		}
 		remove_effect = { 
@@ -7569,17 +7562,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				tungsten < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 
 		remove_effect = {
@@ -7653,17 +7648,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				tungsten < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 
 		remove_effect = {
@@ -7738,16 +7735,18 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				tungsten < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
 			}			
 		}
 
@@ -7822,17 +7821,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				tungsten < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 
 		remove_effect = {
@@ -7906,17 +7907,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				tungsten < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 
 		remove_effect = {
@@ -8079,7 +8082,7 @@ economy_decisions = {
 			}
 		}
 	}
-	develop_oloibiri_oil_field = { #900
+	develop_oloibiri_oil_field = { #558
 		
 		icon = oil
 
@@ -8336,7 +8339,7 @@ economy_decisions = {
 			}
 		}
 	}
-	develop_malay_aluminium_deposits = { #336->951->951
+	develop_malay_aluminium_deposits = { #336->879->879
 		
 		icon = aluminium
 
@@ -8350,7 +8353,7 @@ economy_decisions = {
 		}
 
 		available = {
-			951 = {
+			879 = {
 				OR = {
 					has_resistance = no
 					AND = {
@@ -8361,8 +8364,8 @@ economy_decisions = {
 			}	
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 951
-			has_full_control_of_state = 951
+			owns_state = 879
+			has_full_control_of_state = 879
 			NOT = {
 				has_idea = generic_resource_extraction_effort
 			}			
@@ -8370,14 +8373,14 @@ economy_decisions = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 951
+				state = 879
 			} 
 		}
 
 		visible = {
-			owns_state = 951
-			has_full_control_of_state = 951
-			951 = {
+			owns_state = 879
+			has_full_control_of_state = 879
+			879 = {
 				NOT = {
 					has_state_flag = singapore_aluminium_developed
 				}
@@ -8397,22 +8400,24 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				aluminium < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
 			}			
 		}
 
 		remove_effect = {
-			951 = { set_state_flag = singapore_aluminium_developed }
-			951 = {
+			879 = { set_state_flag = singapore_aluminium_developed }
+			879 = {
 				add_resource = {
 					type = aluminium
 					amount = 12
@@ -8420,7 +8425,7 @@ economy_decisions = {
 			}
 		}
 	}
-	develop_kuantan_aluminium_deposits = { #916
+	develop_kuantan_aluminium_deposits = { #843
 		
 		icon = aluminium
 
@@ -8434,7 +8439,7 @@ economy_decisions = {
 		}
 
 		available = {
-			916 = {
+			843 = {
 				OR = {
 					has_resistance = no
 					AND = {
@@ -8445,8 +8450,8 @@ economy_decisions = {
 			}	
 			has_tech = excavation5
 			num_of_civilian_factories_available_for_projects > 3
-			owns_state = 916
-			has_full_control_of_state = 916
+			owns_state = 843
+			has_full_control_of_state = 843
 			NOT = {
 				has_idea = generic_resource_extraction_effort
 			}			
@@ -8454,13 +8459,13 @@ economy_decisions = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 916
+				state = 843
 			} 
 		}
 
 		visible = {
-			owns_state = 916
-			has_full_control_of_state = 916
+			owns_state = 843
+			has_full_control_of_state = 843
 		}
 
 		fire_only_once = yes
@@ -8476,22 +8481,24 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				aluminium < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 
 		remove_effect = {
-			916 = { set_state_flag = kuantan_aluminium_developed }
-			916 = {
+			843 = { set_state_flag = kuantan_aluminium_developed }
+			843 = {
 				add_resource = {
 					type = aluminium
 					amount = 18
@@ -8561,17 +8568,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				aluminium < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 
 		remove_effect = {
@@ -8700,16 +8709,18 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				steel < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				steel < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
 			}			
 		}
 	}
@@ -8801,17 +8812,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				steel < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				steel < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 	}
 
@@ -8902,14 +8915,18 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				steel < 5
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				steel < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
 			}			
 		}
 	}
@@ -8991,17 +9008,20 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				tungsten < 1
-				has_war = yes
-			}					
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
+						
 			modifier = {
 				tag = ENG
 				has_war = no
@@ -9097,17 +9117,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				tungsten < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 						
 			modifier = {
 				tag = ENG
@@ -9205,17 +9227,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				tungsten < 1
-				has_war = yes
 			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 						
 			modifier = {
 				tag = ENG
@@ -9312,17 +9336,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				tungsten < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 						
 			modifier = {
 				tag = ENG
@@ -9419,17 +9445,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				aluminium < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			41 = { set_state_flag = madrid_aluminium_developed } 
@@ -9501,15 +9529,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				chromium < 5
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				chromium < 1
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			777 = { set_state_flag = togolese_chromium_exploited } 
@@ -9590,7 +9622,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			298 = { set_state_flag = bomi_hills_iron_exploited } 
@@ -9672,7 +9716,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0		
+			factor = 1
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			700 = { set_state_flag = marampa_mining_expanding } 
@@ -9754,7 +9810,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0		
+			factor = 1
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			488 = { set_state_flag = orenoque_iron_exploited } 
@@ -9836,7 +9904,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			307 = { set_state_flag = cerro_san_isidro_iron_exploited } 
@@ -9920,17 +10000,19 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				tungsten < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			376 = { set_state_flag = colorado_tungsten_stimulated } 
@@ -10148,16 +10230,18 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
-				has_war = yes
 			}			
 			modifier = {
 				add = 4
 				aluminium < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
 			}			
 		}
 		remove_effect = { 
@@ -10236,12 +10320,17 @@ economy_decisions = {
 			modifier = {
 				add = 1
 				chromium < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				chromium < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+				677 = {
+					is_core_of = ROOT
+				}
 			}			
 		}
 		remove_effect = { 
@@ -10319,20 +10408,17 @@ economy_decisions = {
 			modifier = {
 				add = 1
 				steel < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				steel < 1
-				has_war = yes
 			}
 			modifier = {
-				add = 1
+				add = 10
 				date > 1942.01.01
 				554 = {
 					is_core_of = ROOT
 				}
-				has_war = yes
 			}			
 		}
 		remove_effect = { 
@@ -10507,24 +10593,20 @@ economy_decisions = {
 			modifier = {
 				add = 1
 				steel < 5
-				date > 1942.01.01
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				steel < 1
-				date > 1942.01.01
-				has_war = yes
 			}
 			modifier = {
-				add = 1
+				add = 4
 				OR = {
 					original_tag = RUT
 					original_tag = UKR
 				}
 			}			
 			modifier = {
-				add = 1
+				add = 10
 				date > 1942.01.01
 				226 = {
 					is_core_of = ROOT
@@ -10625,7 +10707,22 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 0
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}			
+			modifier = {
+				add = 10
+				date > 1942.01.01
+				512 = {
+					is_core_of = ROOT
+				}
+			}			
 		}
 		remove_effect = { 
 			512 = { set_state_flag = sierra_grande_iron_exploited } 
@@ -10721,7 +10818,22 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 0
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}			
+			modifier = {
+				add = 10
+				date > 1942.01.01
+				512 = {
+					is_core_of = ROOT
+				}
+			}			
 		}
 		remove_effect = { 
 			508 = { set_state_flag = las_alumbres_iron_exploited } 
@@ -10793,7 +10905,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				chromium < 5
@@ -10877,7 +10989,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				chromium < 5
@@ -10965,7 +11077,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				chromium < 5
@@ -11052,7 +11164,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				chromium < 5
@@ -11163,7 +11275,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				chromium < 5
@@ -11247,7 +11359,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				chromium < 5
@@ -11331,7 +11443,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				chromium < 5
@@ -11416,7 +11528,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				chromium < 5
@@ -11454,7 +11566,7 @@ economy_decisions = {
 		}
 
 		available = {
-			968 = {
+			896 = {
 				OR = {
 					has_resistance = no
 					AND = {
@@ -11465,11 +11577,11 @@ economy_decisions = {
 			}
 			OR = {
 				AND = {
-					has_full_control_of_state = 968
+					has_full_control_of_state = 896
 				}
 				any_country = {
 					is_puppet_of = ROOT
-					has_full_control_of_state = 968
+					has_full_control_of_state = 896
 				}				
 			}
 			num_of_civilian_factories_available_for_projects > 4
@@ -11480,18 +11592,18 @@ economy_decisions = {
 		}
 		highlight_states = {
 			highlight_state_targets = {
-				state = 968
+				state = 896
 			} 
 		}
 
 		visible = {
 			OR = {
 				AND = {
-					has_full_control_of_state = 968
+					has_full_control_of_state = 896
 				}
 				any_country = {
 					is_puppet_of = ROOT
-					has_full_control_of_state = 968
+					has_full_control_of_state = 896
 				}				
 			}
 			NOT = {
@@ -11499,7 +11611,7 @@ economy_decisions = {
 					has_decision = exploit_norrland_chromium
 				}
 			}
-			968 = {
+			896 = {
 				NOT = {
 					has_state_flag = norrland_chromium_exploited
 				}
@@ -11519,7 +11631,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				chromium < 5
@@ -11534,8 +11646,8 @@ economy_decisions = {
 			}			
 		}
 		remove_effect = { 
-			968 = { set_state_flag = norrland_chromium_exploited } 
-			968 = {
+			896 = { set_state_flag = norrland_chromium_exploited } 
+			896 = {
 				add_resource = {
 					type = chromium
 					amount = 3
@@ -11632,7 +11744,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				steel < 5
@@ -11741,7 +11853,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
@@ -11853,7 +11965,7 @@ economy_decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
@@ -11960,16 +12072,18 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				tungsten < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
 			}			
 		}
 		remove_effect = { 
@@ -12564,11 +12678,13 @@ economy_decisions = {
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 3
 			OR = {
-				has_full_control_of_state = 672
+				AND = {
+					has_full_control_of_state = 672
+				}
 				any_country = {
 					is_puppet_of = ROOT
 					has_full_control_of_state = 672
-				}			
+				}				
 			}
 			NOT = {
 				any_other_country = {
@@ -12582,7 +12698,9 @@ economy_decisions = {
 
 		visible = {
 			OR = {
-				has_full_control_of_state = 672			
+				AND = {
+					has_full_control_of_state = 672
+				}				
 				AND = {
 					any_country = {
 						is_puppet_of = ROOT
@@ -12590,6 +12708,8 @@ economy_decisions = {
 					}
 				}
 			}
+
+
 			672 = {
 				NOT = {
 					has_state_flag = palembang_oil_expanded
@@ -13082,7 +13202,15 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0		
+			factor = 1
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}			
 		}
 		remove_effect = { 
 			43 = { set_state_flag = rudabanya_iron_mine_expanded } 
@@ -13177,7 +13305,15 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0		
+			factor = 1
+			modifier = {
+				add = 1
+				aluminium < 5
+			}			
+			modifier = {
+				add = 4
+				aluminium < 1
+			}			
 		}
 		remove_effect = { 
 			156 = { set_state_flag = bauxite_near_ortanto_exploited } 
@@ -13272,7 +13408,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			117 = { set_state_flag = bauxite_near_spinazzola_exploited } 
@@ -13366,7 +13502,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			689 = { set_state_flag = jamaican_aluminium_exploited } 
@@ -13459,7 +13595,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			689 = { set_state_flag = jamaican_aluminium_exploited2 } 
@@ -13552,7 +13688,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			689 = { set_state_flag = jamaican_aluminium_exploited3 } 
@@ -13646,7 +13782,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			309 = { set_state_flag = suriname_bauxite_expanded } 
@@ -13739,7 +13875,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			309 = { set_state_flag = suriname_bauxite_expanded2 } 
@@ -13832,7 +13968,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			309 = { set_state_flag = suriname_bauxite_expanded3 } 
@@ -13925,7 +14061,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			309 = { set_state_flag = suriname_bauxite_expanded4 } 
@@ -14016,7 +14152,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			731 = { set_state_flag = chalcidic_bauxite_exploited } 
@@ -14107,7 +14243,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			187 = { set_state_flag = cycladic_bauxite_exploited } 
@@ -14198,7 +14334,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			47 = { set_state_flag = parnassus_bauxite_mining_expanded } 
@@ -14289,7 +14425,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			333 = { set_state_flag = sarawak_bauxite_exploited } 
@@ -14380,7 +14516,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			318 = { set_state_flag = haitian_bauxite_exploited } 
@@ -14472,7 +14608,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			319 = { set_state_flag = eastern_hispaniola_bauxite_exploited } 
@@ -14563,7 +14699,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			148 = { set_state_flag = kemi_chromium_exploited } 
@@ -14654,7 +14790,7 @@ economy_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			568 = { set_state_flag = krasnoyarsk_bauxite_exploited } 
@@ -14665,420 +14801,7 @@ economy_decisions = {
 				}
 			}
 		}	
-	}	
-	exploit_burundi_tungsten = { # 
-		
-		icon = tungsten
-
-		allowed = {
-			NOT = {
-				OR = {
-					has_dlc = "Waking the Tiger"
-    				has_dlc = "Man the Guns"
-				}
-			}			
-		}
-
-		available = {
-			769 = {
-				OR = {
-					has_resistance = no
-					AND = {
-						compliance > 30
-						resistance < 75
-					}
-				}
-			}
-			has_full_control_of_state = 769
-			num_of_civilian_factories_available_for_projects > 4
-			has_tech = excavation4
-			NOT = {
-				has_idea = generic_resource_extraction_effort
-			}			
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 769
-			} 
-		}
-
-		visible = {
-			has_full_control_of_state = 769
-			769 = {
-				NOT = {
-					has_state_flag = burundi_tungsten_exploited
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 15
-		days_remove = 80
-
-		complete_effect = {
-			add_timed_idea = {
-				idea = generic_resource_extraction_effort
-				days = 30
-			}
-		}
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 1
-				tungsten < 5
-			}			
-			modifier = {
-				add = 4
-				tungsten < 1
-			}
-			modifier = {
-				add = 10
-				date > 1942.01.01
-			}			
-		}
-		remove_effect = { 
-			769 = { set_state_flag = burundi_tungsten_exploited } 
-			769 = {
-				add_resource = {
-					type = tungsten
-					amount = 4
-				}
-			}
-		}
-	}
-	exploit_rwanda_tungsten = { # 
-		
-		icon = tungsten
-
-		allowed = {
-			NOT = {
-				OR = {
-					has_dlc = "Waking the Tiger"
-    				has_dlc = "Man the Guns"
-				}
-			}			
-		}
-
-		available = {
-			768 = {
-				OR = {
-					has_resistance = no
-					AND = {
-						compliance > 30
-						resistance < 75
-					}
-				}
-			}
-			has_full_control_of_state = 768
-			num_of_civilian_factories_available_for_projects > 4
-			has_tech = excavation4
-			NOT = {
-				has_idea = generic_resource_extraction_effort
-			}			
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 768
-			} 
-		}
-
-		visible = {
-			has_full_control_of_state = 768
-			768 = {
-				NOT = {
-					has_state_flag = rwanda_tungsten_exploited
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 15
-		days_remove = 80
-
-		complete_effect = {
-			add_timed_idea = {
-				idea = generic_resource_extraction_effort
-				days = 30
-			}
-		}
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 1
-				tungsten < 5
-			}			
-			modifier = {
-				add = 4
-				tungsten < 1
-			}
-			modifier = {
-				add = 10
-				date > 1942.01.01
-			}			
-		}
-		remove_effect = { 
-			768 = { set_state_flag = rwanda_tungsten_exploited } 
-			768 = {
-				add_resource = {
-					type = tungsten
-					amount = 4
-				}
-			}
-		}
-	}	
-	exploit_southern_ugandan_tungsten = { # 
-		
-		icon = tungsten
-
-		allowed = {
-			NOT = {
-				OR = {
-					has_dlc = "Waking the Tiger"
-    				has_dlc = "Man the Guns"
-				}
-			}			
-		}
-
-		available = {
-			548 = {
-				OR = {
-					has_resistance = no
-					AND = {
-						compliance > 30
-						resistance < 75
-					}
-				}
-			}
-			has_full_control_of_state = 548
-			num_of_civilian_factories_available_for_projects > 4
-			has_tech = excavation5
-			NOT = {
-				has_idea = generic_resource_extraction_effort
-			}			
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 548
-			} 
-		}
-
-		visible = {
-			has_full_control_of_state = 548
-			548 = {
-				NOT = {
-					has_state_flag = southern_ugandan_tungsten_exploited
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 15
-		days_remove = 80
-
-		complete_effect = {
-			add_timed_idea = {
-				idea = generic_resource_extraction_effort
-				days = 30
-			}
-		}
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 1
-				tungsten < 5
-			}			
-			modifier = {
-				add = 4
-				tungsten < 1
-			}
-			modifier = {
-				add = 10
-				date > 1942.01.01
-			}			
-		}
-		remove_effect = { 
-			548 = { set_state_flag = southern_ugandan_tungsten_exploited } 
-			548 = {
-				add_resource = {
-					type = tungsten
-					amount = 3
-				}
-			}
-		}
-	}	
-	exploit_lower_british_columbian_tungsten = { # 
-		
-		icon = tungsten
-
-		allowed = {
-			NOT = {
-				OR = {
-					has_dlc = "Waking the Tiger"
-    				has_dlc = "Man the Guns"
-				}
-			}	
-		}
-
-		available = {
-			473 = {
-				OR = {
-					has_resistance = no
-					AND = {
-						compliance > 30
-						resistance < 75
-					}
-				}
-			}
-			has_full_control_of_state = 473
-			num_of_civilian_factories_available_for_projects > 4
-			has_tech = excavation4
-			NOT = {
-				has_idea = generic_resource_extraction_effort
-			}			
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 473
-			} 
-		}
-
-		visible = {
-			has_full_control_of_state = 473
-			473 = {
-				NOT = {
-					has_state_flag = lower_british_columbian_tungsten_exploited
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 15
-		days_remove = 80
-
-		complete_effect = {
-			add_timed_idea = {
-				idea = generic_resource_extraction_effort
-				days = 30
-			}
-		}
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 1
-				tungsten < 5
-			}			
-			modifier = {
-				add = 4
-				tungsten < 1
-			}
-			modifier = {
-				add = 10
-				date > 1942.01.01
-			}			
-		}
-		remove_effect = { 
-			473 = { set_state_flag = lower_british_columbian_tungsten_exploited } 
-			473 = {
-				add_resource = {
-					type = tungsten
-					amount = 5
-				}
-			}
-		}
-	}	
-	exploit_upper_british_columbian_tungsten = { # 
-		
-		icon = tungsten
-
-		allowed = {
-			NOT = {
-				OR = {
-					has_dlc = "Waking the Tiger"
-    				has_dlc = "Man the Guns"
-				}
-			}	
-		}
-
-		available = {
-			471 = {
-				OR = {
-					has_resistance = no
-					AND = {
-						compliance > 30
-						resistance < 75
-					}
-				}
-			}
-			has_full_control_of_state = 471
-			num_of_civilian_factories_available_for_projects > 4
-			has_tech = excavation4
-			NOT = {
-				has_idea = generic_resource_extraction_effort
-			}			
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 471
-			} 
-		}
-
-		visible = {
-			has_full_control_of_state = 471
-			471 = {
-				NOT = {
-					has_state_flag = upper_british_columbian_tungsten_exploited
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 15
-		days_remove = 80
-
-		modifier = {
-			civilian_factory_use = 4
-		}
-		complete_effect = {
-			add_timed_idea = {
-				idea = generic_resource_extraction_effort
-				days = 30
-			}
-		}
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 1
-				tungsten < 5
-			}			
-			modifier = {
-				add = 4
-				tungsten < 1
-			}
-			modifier = {
-				add = 10
-				date > 1942.01.01
-			}			
-		}
-		remove_effect = { 
-			471 = { set_state_flag = upper_british_columbian_tungsten_exploited } 
-			471 = {
-				add_resource = {
-					type = tungsten
-					amount = 3
-				}
-			}
-		}
-	}							                 																						
+	}						                 																						
 }
 ######################################################################################################################
 ######################################################################################################################
@@ -15089,7 +14812,7 @@ economy_decisions = {
 ######################################################################################################################
 ######################################################################################################################
 prospect_for_resources = {
-	expand_the_ljubija_iron_mine_wtt = { #961 Iron mine in Bosina
+	expand_the_ljubija_iron_mine_wtt = { #889 Iron mine in Bosina
 		
 		icon = steel #change if copper is added
 
@@ -15098,11 +14821,11 @@ prospect_for_resources = {
 		}
 		highlight_states = {
 			highlight_state_targets = {
-				state = 961
+				state = 889
 			} 
 		}
 		available = {
-			961 = {
+			889 = {
 				OR = {
 					has_resistance = no
 					AND = {
@@ -15114,11 +14837,11 @@ prospect_for_resources = {
 			has_tech = excavation3
 			OR = {
 				AND = {
-					has_full_control_of_state = 961
+					has_full_control_of_state = 889
 				}
 				any_country = {
 					is_puppet_of = ROOT
-					has_full_control_of_state = 961
+					has_full_control_of_state = 889
 				}				
 			}
 			num_of_civilian_factories_available_for_projects > 2			
@@ -15127,11 +14850,11 @@ prospect_for_resources = {
 		visible = {
 			OR = {
 				AND = {
-					has_full_control_of_state = 961
+					has_full_control_of_state = 889
 				}
 				any_country = {
 					is_puppet_of = ROOT
-					has_full_control_of_state = 961
+					has_full_control_of_state = 889
 				}				
 			}
 			NOT = {
@@ -15139,7 +14862,7 @@ prospect_for_resources = {
 					has_decision = expand_the_ljubija_iron_mine_wtt
 				}
 			}
-			961 = {
+			889 = {
 				NOT = {
 					has_state_flag = open_ljubija_mine_developed
 				}
@@ -15160,11 +14883,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 0
+			}			
 		}
 		remove_effect = { 
-			961 = { set_state_flag = open_ljubija_mine_developed } 
-			961 = {
+			889 = { set_state_flag = open_ljubija_mine_developed } 
+			889 = {
 				add_resource = {
 					type = steel
 					amount = 5
@@ -15243,7 +14974,15 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 0
+			}			
 		}
 		remove_effect = { 
 			152 = { set_state_flag = open_erzberg_mine_developed } 
@@ -15328,7 +15067,15 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0		
+			factor = 1
+			modifier = {
+				add = 1
+				tungsten < 5
+			}			
+			modifier = {
+				add = 4
+				tungsten < 0
+			}			
 		}
 		remove_effect = { 
 			153 = { set_state_flag = open_mittersil_mine_developed } 
@@ -15411,7 +15158,15 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0		
+			factor = 1
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 0
+			}			
 		}
 		remove_effect = { 
 			230 = { set_state_flag = open_kajaran_mine_developed } 
@@ -15475,16 +15230,14 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
-				has_war = yes
 			}			
 			modifier = {
 				add = 4
 				aluminium < 1
-				has_war = yes
 			}			
 		}
 		remove_effect = { 
@@ -16184,17 +15937,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
-				has_war = yes
 			}			
 			modifier = {
 				add = 4
 				tungsten < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			518 = { set_state_flag = tasmanian_kings_island_sheelite_exploited } 
@@ -16282,16 +16037,18 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				tungsten < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
 			}			
 		}
 		remove_effect = { 
@@ -16383,15 +16140,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				aluminium < 1
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 
 		remove_effect = {
@@ -17266,16 +17027,18 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				tungsten < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1939.06.01
 			}			
 		}
 		remove_effect = { 
@@ -17360,17 +17123,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				tungsten < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			666 = { set_state_flag = lappland_mine_expanded } 
@@ -17552,11 +17317,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 10
-			}				
+			}			
+			modifier = {
+				add = 4
+				tungsten < 5
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			492 = { set_state_flag = arequipa_tungsten_exploited } 
@@ -17642,7 +17415,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				tungsten < 10
+			}			
+			modifier = {
+				add = 4
+				tungsten < 5
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			289 = { set_state_flag = siamese_tungsten_exploited } 
@@ -17720,17 +17505,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				tungsten < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			457 = { set_state_flag = ilga_tin_tungsten_mine_opened } 
@@ -17810,15 +17597,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				tungsten < 1
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			457 = { set_state_flag = eastern_desert_tungsten_mining_developed } 
@@ -17990,7 +17781,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
@@ -17998,7 +17789,11 @@ prospect_for_resources = {
 			modifier = {
 				add = 4
 				tungsten < 1
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			25 = { set_state_flag = puy_les_vignes_tungsten_mine_opened } 
@@ -18077,16 +17872,18 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				tungsten < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				tungsten < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
 			}			
 		}
 		remove_effect = { 
@@ -18166,7 +17963,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				tungsten < 5
+			}			
+			modifier = {
+				add = 4
+				tungsten < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			30 = { set_state_flag = montbelleux_tungsten_mine_reopened } 
@@ -18246,7 +18055,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				tungsten < 5
+			}			
+			modifier = {
+				add = 4
+				tungsten < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			681 = { set_state_flag = namaqualand_tungsten_mine_expanded } 
@@ -18325,7 +18146,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				tungsten < 5
+			}			
+			modifier = {
+				add = 4
+				tungsten < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			545 = { set_state_flag = south_rhodesia_tungsten_mine_expanded } 
@@ -18404,7 +18237,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0		
+			factor = 1
+			modifier = {
+				add = 1
+				tungsten < 5
+			}			
+			modifier = {
+				add = 4
+				tungsten < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			558 = { set_state_flag = nigeria_tungsten_mine_expanded } 
@@ -18483,7 +18328,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0		
+			factor = 1
+			modifier = {
+				add = 1
+				tungsten < 5
+			}			
+			modifier = {
+				add = 4
+				tungsten < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}			
 		}
 		remove_effect = { 
 			462 = { set_state_flag = azgour_mine_opened } 
@@ -20661,7 +20518,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				tungsten < 5
+			}			
+			modifier = {
+				add = 4
+				tungsten < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 
 		remove_effect = {
@@ -20743,7 +20612,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				tungsten < 5
+			}			
+			modifier = {
+				add = 4
+				tungsten < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 
 		remove_effect = {
@@ -20825,7 +20706,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				tungsten < 5
+			}			
+			modifier = {
+				add = 4
+				tungsten < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 
 		remove_effect = {
@@ -21192,7 +21085,7 @@ prospect_for_resources = {
 		}
 
 		available = {
-			900 = {
+			558 = {
 				OR = {
 					has_resistance = no
 					AND = {
@@ -21205,18 +21098,18 @@ prospect_for_resources = {
 			num_of_civilian_factories_available_for_projects > 4
 			OR = {
 				AND = {
-					has_full_control_of_state = 900
+					has_full_control_of_state = 558
 				}
 				any_country = {
 					is_puppet_of = ROOT
-					has_full_control_of_state = 900
+					has_full_control_of_state = 558
 				}				
 			}			
 		}
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 900
+				state = 558
 			} 
 		}
 
@@ -21224,11 +21117,11 @@ prospect_for_resources = {
 			has_tech = construction5
 			OR = {
 				AND = {
-					has_full_control_of_state = 900
+					has_full_control_of_state = 558
 				}
 				any_country = {
 					is_puppet_of = ROOT
-					has_full_control_of_state = 900
+					has_full_control_of_state = 558
 				}				
 			}
 			NOT = {
@@ -21236,7 +21129,7 @@ prospect_for_resources = {
 					has_decision = develop_oloibiri_oil_field_wtt
 				}
 			}
-			900 = {
+			558 = {
 				NOT = {
 					has_state_flag = oloibiri_oil_field_developed
 				}
@@ -21257,8 +21150,8 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
-			900 = { set_state_flag = oloibiri_oil_field_developed }
-			900 = {
+			558 = { set_state_flag = oloibiri_oil_field_developed }
+			558 = {
 				add_resource = {
 					type = oil
 					amount = 15
@@ -21485,7 +21378,10 @@ prospect_for_resources = {
 				}
 			}
 			num_of_civilian_factories_available_for_projects > 9
-			has_tech = excavation4			
+			has_tech = excavation4
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}			
 		}
 
 		modifier = {
@@ -21978,17 +21874,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
-				has_war = yes
 			}			
 			modifier = {
-				add = 2
+				add = 4
 				aluminium < 1
-				has_war = yes
-			}		
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 
 		remove_effect = {
@@ -22072,7 +21970,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				steel < 10
+			}			
+			modifier = {
+				add = 4
+				steel < 5
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 
 		remove_effect = {
@@ -22157,11 +22067,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				rubber < 10
-			}					
+			}			
+			modifier = {
+				add = 4
+				rubber < 5
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 
 		remove_effect = {
@@ -22249,12 +22167,19 @@ prospect_for_resources = {
 		}	
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
-				has_war = yes
-			}						
+			}			
+			modifier = {
+				add = 4
+				aluminium < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 
 		remove_effect = {
@@ -22394,7 +22319,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 	}
 
@@ -22494,7 +22419,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 	}
 
@@ -22594,7 +22519,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 	}
 
@@ -22684,7 +22609,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0.1
+			factor = 1
 			modifier = {
 				tag = ENG
 				has_war = no
@@ -22789,7 +22714,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				tag = ENG
 				has_war = no
@@ -22895,7 +22820,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0.1
+			factor = 1
 			modifier = {
 				tag = ENG
 				has_war = no
@@ -23000,7 +22925,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0.1
+			factor = 1
 			modifier = {
 				tag = ENG
 				has_war = no
@@ -23105,7 +23030,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 		remove_effect = { 
 			41 = { set_state_flag = madrid_aluminium_developed } 
@@ -23293,7 +23218,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			298 = { set_state_flag = bomi_hills_iron_exploited } 
@@ -23387,7 +23324,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0		
+			factor = 1
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			700 = { set_state_flag = marampa_mining_expanding } 
@@ -23479,7 +23428,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0		
+			factor = 1
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			488 = { set_state_flag = orenoque_iron_exploited } 
@@ -23567,7 +23528,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0		
+			factor = 1
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			307 = { set_state_flag = cerro_san_isidro_iron_exploited } 
@@ -23665,7 +23638,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				tungsten < 5
+			}			
+			modifier = {
+				add = 4
+				tungsten < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			376 = { set_state_flag = colorado_tungsten_stimulated } 
@@ -23917,16 +23902,18 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = {
 				add = 1
 				aluminium < 5
-				has_war = yes
 			}			
 			modifier = {
 				add = 4
 				aluminium < 1
-				has_war = yes
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
 			}			
 		}
 		remove_effect = { 
@@ -24106,7 +24093,22 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 0
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+				554 = {
+					is_core_of = ROOT
+				}
+			}			
 		}
 		remove_effect = { 
 			554 = { set_state_flag = damascene_iron_exploited } 
@@ -24268,6 +24270,14 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}
+			modifier = {
 				add = 4
 				OR = {
 					original_tag = RUT
@@ -24365,7 +24375,22 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 0
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}			
+			modifier = {
+				add = 10
+				date > 1942.01.01
+				512 = {
+					is_core_of = ROOT
+				}
+			}			
 		}
 		remove_effect = { 
 			512 = { set_state_flag = sierra_grande_iron_exploited } 
@@ -24449,7 +24474,22 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 0
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}			
+			modifier = {
+				add = 10
+				date > 1942.01.01
+				508 = {
+					is_core_of = ROOT
+				}
+			}			
 		}
 		remove_effect = { 
 			508 = { set_state_flag = las_alumbres_iron_exploited } 
@@ -24690,7 +24730,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0		
+			factor = 1
+			modifier = {
+				add = 1
+				tungsten < 5
+			}			
+			modifier = {
+				add = 4
+				tungsten < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			463 = { set_state_flag = alaskan_tungsten_exploited } 
@@ -24791,7 +24843,23 @@ prospect_for_resources = {
 			}
 		}
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				tungsten < 5
+			}			
+			modifier = {
+				add = 4
+				tungsten < 1
+			}
+			modifier = {
+				add = 10
+				date > 1943.01.01
+			}				
+			modifier = {
+				has_political_power < 200
+				add = -4
+			}			
 		}
 
 		complete_effect = {
@@ -24862,7 +24930,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0	
+			factor = 1
+			modifier = {
+				add = 1
+				tungsten < 5
+			}			
+			modifier = {
+				add = 4
+				tungsten < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		remove_effect = { 
 			362 = { set_state_flag = virginia_tungsten_developed } 
@@ -25186,7 +25266,10 @@ prospect_for_resources = {
 				}				
 			}
 			num_of_civilian_factories_available_for_projects > 4
-			has_tech = excavation4		
+			has_tech = excavation4
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}			
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -25269,7 +25352,10 @@ prospect_for_resources = {
 				}				
 			}
 			num_of_civilian_factories_available_for_projects > 4
-			has_tech = excavation4			
+			has_tech = excavation4
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}			
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -25501,7 +25587,7 @@ prospect_for_resources = {
 		}
 
 		available = {
-			968 = {
+			896 = {
 				OR = {
 					has_resistance = no
 					AND = {
@@ -25511,10 +25597,10 @@ prospect_for_resources = {
 				}
 			}
 			OR = {
-				has_full_control_of_state = 968
+				has_full_control_of_state = 896
 				any_country = {
 					is_puppet_of = ROOT
-					has_full_control_of_state = 968
+					has_full_control_of_state = 896
 				}				
 			}
 			num_of_civilian_factories_available_for_projects > 4
@@ -25522,18 +25608,18 @@ prospect_for_resources = {
 		}
 		highlight_states = {
 			highlight_state_targets = {
-				state = 968
+				state = 896
 			} 
 		}
 
 		visible = {
 			OR = {
 				AND = {
-					has_full_control_of_state = 968
+					has_full_control_of_state = 896
 				}
 				any_country = {
 					is_puppet_of = ROOT
-					has_full_control_of_state = 968
+					has_full_control_of_state = 896
 				}				
 			}
 			NOT = {
@@ -25541,7 +25627,7 @@ prospect_for_resources = {
 					has_decision = exploit_norrland_chromium_wtt
 				}
 			}
-			968 = {
+			896 = {
 				NOT = {
 					has_state_flag = norrland_chromium_exploited
 				}
@@ -25573,8 +25659,8 @@ prospect_for_resources = {
 			}			
 		}
 		remove_effect = { 
-			968 = { set_state_flag = norrland_chromium_exploited } 
-			968 = {
+			896 = { set_state_flag = norrland_chromium_exploited } 
+			896 = {
 				add_resource = {
 					type = chromium
 					amount = 3
@@ -25655,7 +25741,19 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}
+			modifier = {
+				add = 10
+				date > 1942.01.01
+			}			
 		}
 		complete_effect = {
 			if = {
@@ -26011,7 +26109,6 @@ prospect_for_resources = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 672
-				state = 974
 			} 
 		}
 		available = {
@@ -26024,19 +26121,11 @@ prospect_for_resources = {
 					}
 				}
 			}
-			974 = {
-				OR = {
-					has_resistance = no
-					AND = {
-						compliance > 30
-						resistance < 75
-					}
-				}
-			}
 			has_tech = excavation4
 			num_of_civilian_factories_available_for_projects > 3
 			OR = {
 				has_full_control_of_state = 672
+				
 				any_country = {
 					is_puppet_of = ROOT
 					has_full_control_of_state = 672
@@ -26052,10 +26141,14 @@ prospect_for_resources = {
 
 		visible = {
 			OR = {
-				has_full_control_of_state = 672
-				any_country = {
-					is_puppet_of = ROOT
+				AND = {
 					has_full_control_of_state = 672
+				}				
+				AND = {
+					any_country = {
+						is_puppet_of = ROOT
+						has_full_control_of_state = 672
+					}
 				}
 			}
 			NOT = {
@@ -26065,12 +26158,6 @@ prospect_for_resources = {
 			}
 
 			672 = {
-				NOT = {
-					has_state_flag = palembang_oil_expanded
-				}
-			}
-
-			974 = {
 				NOT = {
 					has_state_flag = palembang_oil_expanded
 				}
@@ -26092,13 +26179,6 @@ prospect_for_resources = {
 		remove_effect = { 
 			672 = { set_state_flag = palembang_oil_expanded } 
 			672 = {
-				add_resource = {
-					type = oil
-					amount = 8
-				}
-			}
-			974 = { set_state_flag = palembang_oil_expanded } 
-			974 = {
 				add_resource = {
 					type = oil
 					amount = 8
@@ -26402,7 +26482,15 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				steel < 5
+			}			
+			modifier = {
+				add = 4
+				steel < 1
+			}			
 		}
 		remove_effect = { 
 			43 = { set_state_flag = rudabanya_iron_mine_expanded } 
@@ -26446,7 +26534,10 @@ prospect_for_resources = {
 					has_full_control_of_state = 156
 				}				
 			}
-			num_of_civilian_factories_available_for_projects > 5								
+			num_of_civilian_factories_available_for_projects > 5	
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}							
 		}
 
 		visible = {
@@ -26483,7 +26574,15 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0			
+			factor = 1
+			modifier = {
+				add = 1
+				aluminium < 5
+			}			
+			modifier = {
+				add = 4
+				aluminium < 1
+			}			
 		}
 		remove_effect = { 
 			156 = { set_state_flag = bauxite_near_ortanto_exploited } 
@@ -26568,7 +26667,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			117 = { set_state_flag = bauxite_near_spinazzola_exploited } 
@@ -26653,7 +26752,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			689 = { set_state_flag = jamaican_aluminium_exploited } 
@@ -26738,7 +26837,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			689 = { set_state_flag = jamaican_aluminium_exploited2 } 
@@ -26822,7 +26921,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			689 = { set_state_flag = jamaican_aluminium_exploited3 } 
@@ -26903,7 +27002,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			309 = { set_state_flag = suriname_bauxite_expanded } 
@@ -26985,7 +27084,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			309 = { set_state_flag = suriname_bauxite_expanded2 } 
@@ -27065,7 +27164,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			309 = { set_state_flag = suriname_bauxite_expanded3 } 
@@ -27150,7 +27249,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			309 = { set_state_flag = suriname_bauxite_expanded4 } 
@@ -27231,7 +27330,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			731 = { set_state_flag = chalcidic_bauxite_exploited } 
@@ -27312,7 +27411,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			187 = { set_state_flag = chalcidic_bauxite_exploited } 
@@ -27393,7 +27492,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			47 = { set_state_flag = parnassus_bauxite_mining_expanded } 
@@ -27474,7 +27573,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			333 = { set_state_flag = sarawak_bauxite_exploited } 
@@ -27555,7 +27654,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			318 = { set_state_flag = haitian_bauxite_exploited } 
@@ -27636,7 +27735,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		remove_effect = { 
 			319 = { set_state_flag = eastern_hispaniola_bauxite_exploited } 
@@ -27717,7 +27816,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		remove_effect = { 
 			148 = { set_state_flag = kemi_chromium_exploited } 
@@ -27761,7 +27860,10 @@ prospect_for_resources = {
 					has_full_control_of_state = 568
 				}				
 			}
-			num_of_civilian_factories_available_for_projects > 5														
+			num_of_civilian_factories_available_for_projects > 5						
+			NOT = {
+				has_idea = generic_resource_extraction_effort
+			}									
 		}
 
 		visible = {
@@ -27798,7 +27900,7 @@ prospect_for_resources = {
 		}
 
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 		remove_effect = { 
 			568 = { set_state_flag = krasnoyarsk_bauxite_exploited } 
@@ -27809,389 +27911,5 @@ prospect_for_resources = {
 				}
 			}
 		}	
-	}
-	exploit_burundi_tungsten_wtt = { # 
-		
-		icon = tungsten
-
-		allowed = {
-			OR = {
-				has_dlc = "Waking the Tiger"
-				has_dlc = "Man the Guns"
-			}			
-		}
-
-		available = {
-			769 = {
-				OR = {
-					has_resistance = no
-					AND = {
-						compliance > 30
-						resistance < 75
-					}
-				}
-			}
-			has_full_control_of_state = 769
-			num_of_civilian_factories_available_for_projects > 4
-			has_tech = excavation4		
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 769
-			} 
-		}
-
-		visible = {
-			has_full_control_of_state = 769
-			769 = {
-				NOT = {
-					has_state_flag = burundi_tungsten_exploited
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 15
-		days_remove = 80
-		modifier = {
-			civilian_factory_use = 4
-		}
-		complete_effect = {
-
-		}
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 1
-				tungsten < 5
-			}			
-			modifier = {
-				add = 4
-				tungsten < 1
-			}
-			modifier = {
-				add = 10
-				date > 1942.01.01
-			}			
-		}
-		remove_effect = { 
-			769 = { set_state_flag = burundi_tungsten_exploited } 
-			769 = {
-				add_resource = {
-					type = tungsten
-					amount = 4
-				}
-			}
-		}
-	}
-	exploit_rwanda_tungsten_wtt = { # 
-		
-		icon = tungsten
-
-		allowed = {
-			OR = {
-				has_dlc = "Waking the Tiger"
-				has_dlc = "Man the Guns"
-			}
-		}
-
-		available = {
-			768 = {
-				OR = {
-					has_resistance = no
-					AND = {
-						compliance > 30
-						resistance < 75
-					}
-				}
-			}
-			has_full_control_of_state = 768
-			num_of_civilian_factories_available_for_projects > 4
-			has_tech = excavation4			
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 768
-			} 
-		}
-
-		visible = {
-			has_full_control_of_state = 768
-			768 = {
-				NOT = {
-					has_state_flag = rwanda_tungsten_exploited
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 15
-		days_remove = 80
-
-		modifier = {
-			civilian_factory_use = 4
-		}
-		complete_effect = {
-
-		}
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 1
-				tungsten < 5
-			}			
-			modifier = {
-				add = 4
-				tungsten < 1
-			}
-			modifier = {
-				add = 10
-				date > 1942.01.01
-			}			
-		}
-		remove_effect = { 
-			768 = { set_state_flag = rwanda_tungsten_exploited } 
-			768 = {
-				add_resource = {
-					type = tungsten
-					amount = 4
-				}
-			}
-		}
-	}	
-	exploit_southern_ugandan_tungsten_wtt = { # 
-		
-		icon = tungsten
-
-		allowed = {
-			OR = {
-				has_dlc = "Waking the Tiger"
-				has_dlc = "Man the Guns"
-			}		
-		}
-
-		available = {
-			548 = {
-				OR = {
-					has_resistance = no
-					AND = {
-						compliance > 30
-						resistance < 75
-					}
-				}
-			}
-			has_full_control_of_state = 548
-			num_of_civilian_factories_available_for_projects > 4
-			has_tech = excavation5		
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 548
-			} 
-		}
-
-		visible = {
-			has_full_control_of_state = 548
-			548 = {
-				NOT = {
-					has_state_flag = southern_ugandan_tungsten_exploited
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 15
-		days_remove = 80
-
-		modifier = {
-			civilian_factory_use = 4
-		}
-		complete_effect = {
-
-		}
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 1
-				tungsten < 5
-			}			
-			modifier = {
-				add = 4
-				tungsten < 1
-			}
-			modifier = {
-				add = 10
-				date > 1942.01.01
-			}			
-		}
-		remove_effect = { 
-			548 = { set_state_flag = southern_ugandan_tungsten_exploited } 
-			548 = {
-				add_resource = {
-					type = tungsten
-					amount = 3
-				}
-			}
-		}
-	}	
-	exploit_lower_british_columbian_tungsten_wtt = { # 
-		
-		icon = tungsten
-
-		allowed = {
-			OR = {
-				has_dlc = "Waking the Tiger"
-				has_dlc = "Man the Guns"
-			}		
-		}
-
-		available = {
-			473 = {
-				OR = {
-					has_resistance = no
-					AND = {
-						compliance > 30
-						resistance < 75
-					}
-				}
-			}
-			has_full_control_of_state = 473
-			num_of_civilian_factories_available_for_projects > 4
-			has_tech = excavation4			
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 473
-			} 
-		}
-
-		visible = {
-			has_full_control_of_state = 473
-			473 = {
-				NOT = {
-					has_state_flag = lower_british_columbian_tungsten_exploited
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 15
-		days_remove = 80
-
-		modifier = {
-			civilian_factory_use = 5
-		}
-		complete_effect = {
-
-		}
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 1
-				tungsten < 5
-			}			
-			modifier = {
-				add = 4
-				tungsten < 1
-			}
-			modifier = {
-				add = 10
-				date > 1942.01.01
-			}			
-		}
-		remove_effect = { 
-			473 = { set_state_flag = lower_british_columbian_tungsten_exploited } 
-			473 = {
-				add_resource = {
-					type = tungsten
-					amount = 5
-				}
-			}
-		}
-	}	
-	exploit_upper_british_columbian_tungsten_wtt = { # 
-		
-		icon = tungsten
-
-		allowed = {
-			OR = {
-				has_dlc = "Waking the Tiger"
-				has_dlc = "Man the Guns"
-			}		
-		}
-
-		available = {
-			471 = {
-				OR = {
-					has_resistance = no
-					AND = {
-						compliance > 30
-						resistance < 75
-					}
-				}
-			}
-			has_full_control_of_state = 471
-			num_of_civilian_factories_available_for_projects > 4
-			has_tech = excavation4		
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 471
-			} 
-		}
-
-		visible = {
-			has_full_control_of_state = 471
-			471 = {
-				NOT = {
-					has_state_flag = upper_british_columbian_tungsten_exploited
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 15
-		days_remove = 80
-
-		modifier = {
-			civilian_factory_use = 4
-		}
-		complete_effect = {
-
-		}
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 1
-				tungsten < 5
-			}			
-			modifier = {
-				add = 4
-				tungsten < 1
-			}
-			modifier = {
-				add = 10
-				date > 1942.01.01
-			}			
-		}
-		remove_effect = { 
-			471 = { set_state_flag = upper_british_columbian_tungsten_exploited } 
-			471 = {
-				add_resource = {
-					type = tungsten
-					amount = 3
-				}
-			}
-		}
-	}									         															 									
+	}								         															 									
 }

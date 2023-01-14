@@ -1,30 +1,10 @@
 ideas = {
 	#####Arabian Expansion##########
-
 country = {
-#	SAU_camelry_expertise = {
-#
-#		allowed = {
-#			always = yes
-#		}
-#
-#		allowed_civil_war = {
-#		always = yes
-#		}
-#
-#		removal_cost = -1
-#
-#		picture = tur_tuz_golu_training_facility
-#
-#		modifier = {
-#			camelry_attack_factor = 0.10
-#			camelry_speed_factor = 0.1
-#		}
-#	}	
 	SAU_restore_old_traditions = {
 
 		allowed = {
-			original_tag = SAU
+			original_tag = IRQ
 			always = no
 		}
 
@@ -280,11 +260,16 @@ country = {
 				always = no
 			}
 
+			allowed_civil_war = {
+
+			}
+
 			removal_cost = -1
 			
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
+				political_power_factor = 0.15
 				political_advisor_cost_factor = -0.25
 				trade_laws_cost_factor = -0.25
 				mobilization_laws_cost_factor = -0.25
@@ -316,7 +301,7 @@ country = {
 		}
 
 		SAU_romanticize_army1 = {
-			picture = SPA_la_division_azul
+			picture = spa_la_division_azul
 
 			allowed = {
 				original_tag = SAU
@@ -329,13 +314,13 @@ country = {
 			removal_cost = -1
 
 			modifier = {
-				conscription = 0.02
-				army_morale_factor = 0.05
+			conscription = 0.02
+			army_morale_factor = 0.05
 			}
 		}
 
 		SAU_incorporate_nomad_tactics1 = {
-			picture = CZE_planning_bonus
+			picture = idea_cze_planning_bonus
 
 			allowed = {
 				original_tag = SAU
@@ -353,7 +338,7 @@ country = {
 		}
 
 		SAU_general_army_buff1 = {
-			picture = chi_army_corruption3
+			picture = idea_chi_army_corruption3
 
 			allowed = {
 				original_tag = SAU
@@ -372,7 +357,7 @@ country = {
 		}
 
 		SAU_radio_innovations1 = {
-			picture = SOV_scientist_defect
+			picture = SOV_scientists_defect
 
 			allowed = {
 				original_tag = SAU
@@ -409,6 +394,13 @@ country = {
 
 			}
 		}
+	
+	
+
+
+
+
+
 	}
 
 	political_advisor = {

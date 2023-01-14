@@ -615,7 +615,7 @@ ideas = {
 				has_government = fascism
 			}
 			
-			picture = general_staff
+			picture = idea_general_staff
 
 			modifier = {
 				army_org_Factor = 0.1
@@ -674,7 +674,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = ast_classify_aliens
+			picture = idea_ast_classify_aliens
 			
 			modifier = {
 				political_power_gain = 0.5
@@ -796,8 +796,8 @@ ideas = {
 
 			removal_cost = -1
 
-			modifier = {
-				land_doctrine_cost_factor = -0.1
+			research_bonus = {
+				land_doctrine = 0.1
 			}				
 		}
 		
@@ -1631,30 +1631,6 @@ ideas = {
 				political_power_cost = 0.25
 				stability_factor = -0.25
 				surrender_limit = -0.50
-			}
-		}
-
-		FRA_disjointed_government_no_defeatists = {
-			
-			name = FRA_disjointed_government
-
-			allowed = {
-				original_tag = FRA
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_disjointed_gov
-			
-			modifier = {
-				political_power_cost = 0.3
-				stability_factor = -0.20
-				surrender_limit = -0.05
 			}
 		}
 
@@ -2746,52 +2722,45 @@ ideas = {
 			}
 
 			removal_cost = -1
+			
 			equipment_bonus = {
-				small_plane_airframe = {
+				tac_bomber_equipment = {
 					build_cost_ic = 0.25
 					instant = yes
 				}
-				cv_small_plane_airframe = {
+				strat_bomber_equipment = {
 					build_cost_ic = 0.25
 					instant = yes
 				}
-				small_plane_cas_airframe = {
+				nav_bomber_equipment = {
 					build_cost_ic = 0.25
 					instant = yes
 				}
-				cv_small_plane_cas_airframe = {
+				CAS_equipment = {
 					build_cost_ic = 0.25
 					instant = yes
 				}
-				small_plane_naval_bomber_airframe = {
+				fighter_equipment = {
 					build_cost_ic = 0.25
 					instant = yes
 				}
-				cv_small_plane_naval_bomber_airframe = {
+				heavy_fighter_equipment = {
 					build_cost_ic = 0.25
 					instant = yes
 				}
-				medium_plane_airframe = {
+				cv_nav_bomber_equipment = {
 					build_cost_ic = 0.25
 					instant = yes
 				}
-				medium_plane_fighter_airframe = {
+				cv_CAS_equipment = {
 					build_cost_ic = 0.25
 					instant = yes
 				}
-				medium_plane_scout_plane_airframe = {
+				cv_fighter_equipment = {
 					build_cost_ic = 0.25
 					instant = yes
 				}
-				large_plane_airframe = {
-					build_cost_ic = 0.25
-					instant = yes
-				}
-				large_plane_maritime_patrol_plane_airframe = {
-					build_cost_ic = 0.25
-					instant = yes
-				}
-			}			
+			}
 		}
 		VIC_aircraft_parts = {
 			picture = generic_bomber_production_diverted
@@ -2819,7 +2788,7 @@ ideas = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
-				large_plane_airframe = {
+				strat_bomber_equipment = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
@@ -3146,11 +3115,7 @@ ideas = {
 		FRA_colonial_recruitment = {
 			picture = por_colonial_army
 			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = AOI
-				}
-				 
+				original_tag = FRA 
 				always = no
 			}
 
@@ -3406,23 +3371,39 @@ ideas = {
 			picture = generic_air_bonus
 
 			equipment_bonus = {
-				small_plane_airframe = {
+				fighter_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				cv_small_plane_airframe = {
+				cv_fighter_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				small_plane_cas_airframe = {
+				CAS_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				cv_small_plane_cas_airframe = {
+				cv_CAS_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				small_plane_naval_bomber_airframe = {
+				cv_nav_bomber_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				fighter_bomber_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				hfighter_bomber_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				nav_bomber_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				med_maritime_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -3434,7 +3415,7 @@ ideas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				large_plane_airframe = {
+				strat_bomber_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -4566,6 +4547,371 @@ ideas = {
 		}
 	}
 	
+	# MILITARY
+	army_chief = {
+		
+		maurice_gamelin = {
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				has_completed_focus = FRA_de_gaulle_strategy
+			}
+
+			cost = 50
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		maxime_weygand = {
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				has_completed_focus = FRA_giraud_plan
+				NOT =  { has_country_flag = free_france_advisor_check }
+			}
+
+			cost = 50
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		FRA_henri_marie_auguste_bineau = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			available = {
+				NOT =  { has_country_flag = free_france_advisor_check }
+			}
+			
+			traits = { army_chief_offensive_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		FRA_pierre_alombert_goget = {
+			
+			picture = generic_army_europe_1
+
+			allowed = {
+				original_tag = FRA
+			}
+			
+			available = {
+				NOT =  { has_country_flag = free_france_advisor_check }
+			}
+			
+			traits = { army_chief_defensive_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+		
+		alphonse_georges = {
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			available = {
+				NOT =  { has_country_flag = free_france_advisor_check }
+			}
+			
+			traits = { army_chief_maneuver_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	
+	navy_chief = {
+		
+		francois_darlan = {
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			available = {
+				NOT =  { 
+					OR = {
+						has_country_flag = free_france_advisor_check
+						has_government = communism
+					}
+				}
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		marcel_gensoul = {
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			traits = { navy_chief_naval_aviation_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		jean_marie_abrial = {
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+	}
+	
+	air_chief = {
+	
+		joseph_vuillemin = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			
+			traits = { air_chief_ground_support_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		robert_odic = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			
+			traits = { air_chief_all_weather_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		philippe_fequant = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	high_command = {
+		
+		rene_prioux = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { army_cavalry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		charles_huntziger = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				NOT =  {has_country_flag = free_france_advisor_check }
+			}			
+			cost = 150
+			traits = { army_logistics_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		frederic_gaston = {
+			ledger = army
+
+			picture = generic_army_south_america_4
+			
+			allowed = {
+				original_tag = FRA
+			}			
+			cost = 150
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		philippe_leclerc = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				has_country_flag = free_france
+			}			
+			
+			cost = 150
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		alfred_heurtaux = {
+			ledger = air
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { air_air_combat_training_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		martial_valin = {
+			ledger = air
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { air_air_superiority_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		jean_francois_jannekeyn = {
+			ledger = air
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { air_tactical_bombing_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		jean_de_laborde = {
+			ledger = navy
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { navy_capital_ship_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		emile_muselier = {
+			ledger = navy
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		rene_emile_godfroy = {
+			ledger = navy
+			
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+
+			
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
 	tank_manufacturer = {
 		designer = yes
 		
@@ -4733,7 +5079,7 @@ ideas = {
 				has_dlc = "Death or Dishonor"
 				OR = {
 					original_tag = FRA
-				#	original_tag = EFR
+					original_tag = EFR
 					original_tag = OCC
 				}
 			}
@@ -5372,7 +5718,7 @@ ideas = {
 			
 			allowed = {
 					AND = {	
-					#	original_tag = EFR
+						original_tag = EFR
 					}	
 			
 			}
@@ -5444,7 +5790,7 @@ ideas = {
 			allowed = {
 				OR = {
 					original_tag = FRA
-				#	original_tag = EFR
+					original_tag = EFR
 				}
 			}
 			available = {
@@ -5453,10 +5799,14 @@ ideas = {
 						original_tag = FRA
 						NOT = {has_country_flag = free_france}
 					}	
-				#	original_tag = EFR
+					original_tag = EFR
 				}
 			}
 			cost = 250 
+			
+			research_bonus = {
+				cat_operational_integrity = 0.15
+			}
 			
 			traits = { assault_avaition }
 			ai_will_do = {
@@ -5477,7 +5827,7 @@ ideas = {
 						original_tag = FRA
 						NOT = {has_country_flag = free_france}
 					}	
-				#	original_tag = EFR
+					original_tag = EFR
 				}
 			}
 						

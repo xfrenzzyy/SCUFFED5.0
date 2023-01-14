@@ -7,9 +7,11 @@ set_technology = {
 	# Extended Technologies
 	etax_doctrine = 1
 	camo = 1
+	transport_plane1 = 1	
 	
 	infantry_weapons = 1
 }
+<<<<<<< HEAD
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_technology = {
@@ -21,6 +23,9 @@ if = {
 		}
 	}
 }
+=======
+
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 set_convoys = 5
 set_research_slots = 3
 

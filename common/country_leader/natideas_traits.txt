@@ -5,8 +5,9 @@ leader_traits = {
 	### ECONOMIC ###
 	natidea_economic_0 = {
 		random = no
+		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -15,7 +16,7 @@ leader_traits = {
 		industrial_capacity_factory = 0.05
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -25,7 +26,7 @@ leader_traits = {
 		production_speed_buildings_factor = 0.05
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -33,90 +34,151 @@ leader_traits = {
 		random = no
 		industrial_capacity_factory = 0.05
 		production_speed_buildings_factor = 0.05
+<<<<<<< HEAD
 		local_resources_factor = 0.1
+=======
+		local_resources_factor = 0.05
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_economic_4 = {
 		random = no
+<<<<<<< HEAD
 		industrial_capacity_factory = 0.1
 		production_speed_buildings_factor = 0.05
 		local_resources_factor = 0.1
 
+=======
+		industrial_capacity_factory = 0.05
+		production_speed_buildings_factor = 0.05
+		local_resources_factor = 0.05
+		production_factory_max_efficiency_factor = 0.05
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_economic_5 = {
 		random = no
+<<<<<<< HEAD
 		industrial_capacity_factory = 0.1
 		production_speed_buildings_factor = 0.1
 		local_resources_factor = 0.1
 
+=======
+		industrial_capacity_factory = 0.05
+		production_speed_buildings_factor = 0.15
+		local_resources_factor = 0.05
+		production_factory_max_efficiency_factor = 0.05
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_economic_6 = {
 		random = no
+<<<<<<< HEAD
 		industrial_capacity_factory = 0.1
 		production_speed_buildings_factor = 0.1
 		local_resources_factor = 0.2
 
+=======
+		industrial_capacity_factory = 0.05
+		production_speed_buildings_factor = 0.15
+		local_resources_factor = 0.10
+		production_factory_max_efficiency_factor = 0.05
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_economic_7 = {
 		random = no
+<<<<<<< HEAD
 		industrial_capacity_factory = 0.15
 		production_speed_buildings_factor = 0.1
 		local_resources_factor = 0.2
 
+=======
+		industrial_capacity_factory = 0.10
+		production_speed_buildings_factor = 0.15
+		local_resources_factor = 0.10
+		production_factory_max_efficiency_factor = 0.05
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_economic_8 = {
 		random = no
+<<<<<<< HEAD
 		industrial_capacity_factory = 0.15
 		production_speed_buildings_factor = 0.1
 		local_resources_factor = 0.3
 
+=======
+		industrial_capacity_factory = 0.10
+		production_speed_buildings_factor = 0.15
+		local_resources_factor = 0.15
+		production_factory_max_efficiency_factor = 0.05
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_economic_9 = {
 		random = no
+<<<<<<< HEAD
 		industrial_capacity_factory = 0.15
 		production_speed_buildings_factor = 0.1
 		local_resources_factor = 0.3
 		industry_repair_factor = 0.15
 
+=======
+		industrial_capacity_factory = 0.10
+		production_speed_buildings_factor = 0.15
+		local_resources_factor = 0.15
+		production_factory_max_efficiency_factor = 0.10
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_economic_10 = {
 		random = no
+<<<<<<< HEAD
 		industrial_capacity_factory = 0.15
 		production_speed_buildings_factor = 0.1
 		local_resources_factor = 0.3
 		industry_repair_factor = 0.15
 		consumer_goods_factor = -0.05
 
+=======
+		industrial_capacity_factory = 0.10
+		production_speed_buildings_factor = 0.15
+		local_resources_factor = 0.15
+		production_factory_max_efficiency_factor = 0.10
+		consumer_goods_factor = -0.05
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -125,7 +187,7 @@ leader_traits = {
 		random = no
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -134,118 +196,184 @@ leader_traits = {
 		line_change_production_efficiency_factor = 0.05
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_expansion_2 = {
 		random = no
+<<<<<<< HEAD
 		line_change_production_efficiency_factor = 0.05
 		global_building_slots_factor = 0.1
+=======
+		justify_war_goal_time = -0.10
+		MONTHLY_POPULATION = 0.1
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_expansion_3 = {
 		random = no
+<<<<<<< HEAD
 		line_change_production_efficiency_factor = 0.05
 		production_factory_efficiency_gain_factor = 0.05
 		global_building_slots_factor = 0.1
+=======
+		justify_war_goal_time = -0.20
+		MONTHLY_POPULATION = 0.1
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_expansion_4 = {
 		random = no
+<<<<<<< HEAD
 		line_change_production_efficiency_factor = 0.05
 		production_factory_efficiency_gain_factor = 0.05
 		global_building_slots_factor = 0.1
 		industry_air_damage_factor = -0.1
+=======
+		justify_war_goal_time = -0.20
+		MONTHLY_POPULATION = 0.1
+		compliance_gain = 0.05
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_expansion_5 = {
 		random = no
+<<<<<<< HEAD
 		line_change_production_efficiency_factor = 0.05
 		production_factory_efficiency_gain_factor = 0.05
 		global_building_slots_factor = 0.2
 		industry_air_damage_factor = -0.1
 
+=======
+		justify_war_goal_time = -0.20
+		MONTHLY_POPULATION = 0.1
+		compliance_gain = 0.05
+		subjects_autonomy_gain = -0.5
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_expansion_6 = {
 		random = no
+<<<<<<< HEAD
 		line_change_production_efficiency_factor = 0.05
 		production_factory_efficiency_gain_factor = 0.1
 		global_building_slots_factor = 0.2
 		industry_air_damage_factor = -0.1
 
+=======
+		justify_war_goal_time = -0.40
+		MONTHLY_POPULATION = 0.1
+		compliance_gain = 0.05
+		subjects_autonomy_gain = -0.5
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_expansion_7 = {
 		random = no
+<<<<<<< HEAD
 		line_change_production_efficiency_factor = 0.05
 		production_factory_efficiency_gain_factor = 0.1
 		production_factory_max_efficiency_factor = 0.05
 		global_building_slots_factor = 0.2
 		industry_air_damage_factor = -0.1
+=======
+		justify_war_goal_time = -0.40
+		MONTHLY_POPULATION = 0.1
+		compliance_gain = 0.05
+		subjects_autonomy_gain = -0.5
+		production_speed_infrastructure_factor = 0.1
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_expansion_8 = {
 		random = no
+<<<<<<< HEAD
 		line_change_production_efficiency_factor = 0.05
 		production_factory_efficiency_gain_factor = 0.1
 		production_factory_max_efficiency_factor = 0.05
 		global_building_slots_factor = 0.3
 		industry_air_damage_factor = -0.1
+=======
+		justify_war_goal_time = -0.40
+		MONTHLY_POPULATION = 0.1
+		compliance_gain = 0.05
+		subjects_autonomy_gain = -0.5
+		production_speed_infrastructure_factor = 0.1
+		planning_speed = 0.10
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_expansion_9 = {
 		random = no
+<<<<<<< HEAD
 		line_change_production_efficiency_factor = 0.05
 		production_factory_efficiency_gain_factor = 0.1
 		production_factory_max_efficiency_factor = 0.1
 		global_building_slots_factor = 0.3
 		industry_air_damage_factor = -0.1
+=======
+		justify_war_goal_time = -0.40
+		MONTHLY_POPULATION = 0.10
+		compliance_gain = 0.10
+		subjects_autonomy_gain = -0.5
+		production_speed_infrastructure_factor = 0.1
+		planning_speed = 0.10
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_expansion_10 = {
 		random = no
+<<<<<<< HEAD
 		line_change_production_efficiency_factor = 0.05
 		production_factory_efficiency_gain_factor = 0.1
 		production_factory_max_efficiency_factor = 0.1
 		global_building_slots_factor = 0.4
 		industry_air_damage_factor = -0.1
+=======
+		justify_war_goal_time = -0.40
+		MONTHLY_POPULATION = 0.10
+		compliance_gain = 0.10
+		subjects_autonomy_gain = -3
+		production_speed_infrastructure_factor = 0.1
+		planning_speed = 0.10
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -254,7 +382,7 @@ leader_traits = {
 		random = no
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -263,7 +391,7 @@ leader_traits = {
 		research_speed_factor = 0.025
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -273,7 +401,7 @@ leader_traits = {
 		production_speed_rocket_site_factor = 0.1
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -284,54 +412,76 @@ leader_traits = {
 		production_lack_of_resource_penalty_factor = -0.05
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_innovation_4 = {
 		random = no
 		research_speed_factor = 0.025
+<<<<<<< HEAD
 		production_speed_rocket_site_factor = 0.1
 		production_lack_of_resource_penalty_factor = -0.05
 		fuel_gain_factor = 0.1
 		fuel_gain_factor_from_states = 0.1
 
+=======
+		industry_repair_factor = 0.125
+		global_building_slots_factor = 0.10
+		industrial_capacity_factory = 0.05
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_innovation_5 = {
 		random = no
 		research_speed_factor = 0.05
+<<<<<<< HEAD
 		production_speed_rocket_site_factor = 0.1
 		production_speed_nuclear_reactor_factor = 0.1
 		production_lack_of_resource_penalty_factor = -0.05
 		fuel_gain_factor = 0.1
 		fuel_gain_factor_from_states = 0.1
 
+=======
+		industry_repair_factor = 0.125
+		global_building_slots_factor = 0.10
+		industrial_capacity_factory = 0.05
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_innovation_6 = {
 		random = no
 		research_speed_factor = 0.05
+<<<<<<< HEAD
 		production_speed_rocket_site_factor = 0.1
 		production_speed_nuclear_reactor_factor = 0.1
 		production_lack_of_resource_penalty_factor = -0.1
 		fuel_gain_factor = 0.1
 		fuel_gain_factor_from_states = 0.1
 
+=======
+		industry_repair_factor = 0.125
+		global_building_slots_factor = 0.20
+		industrial_capacity_factory = 0.05
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_innovation_7 = {
 		random = no
 		research_speed_factor = 0.05
+<<<<<<< HEAD
 		production_speed_rocket_site_factor = 0.1
 		production_speed_nuclear_reactor_factor = 0.1
 		production_lack_of_resource_penalty_factor = -0.1
@@ -344,14 +494,21 @@ leader_traits = {
 			}			
 		}
 
+=======
+		industry_repair_factor = 0.25
+		global_building_slots_factor = 0.20
+		industrial_capacity_factory = 0.05
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_innovation_8 = {
 		random = no
 		research_speed_factor = 0.05
+<<<<<<< HEAD
 		production_speed_rocket_site_factor = 0.1
 		production_speed_nuclear_reactor_factor = 0.1
 		production_lack_of_resource_penalty_factor = -0.1
@@ -365,14 +522,21 @@ leader_traits = {
 		}
 
 
+=======
+		industry_repair_factor = 0.25
+		global_building_slots_factor = 0.20
+		industrial_capacity_factory = 0.10
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_innovation_9 = {
 		random = no
 		research_speed_factor = 0.05
+<<<<<<< HEAD
 		production_speed_rocket_site_factor = 0.1
 		production_speed_nuclear_reactor_factor = 0.1
 		production_lack_of_resource_penalty_factor = -0.1
@@ -386,13 +550,20 @@ leader_traits = {
 			}			
 		}
 
+=======
+		industry_repair_factor = 0.25
+		global_building_slots_factor = 0.30
+		industrial_capacity_factory = 0.10
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_innovation_10 = {
 		random = no
+<<<<<<< HEAD
 		research_speed_factor = 0.1
 		production_speed_rocket_site_factor = 0.1
 		production_speed_nuclear_reactor_factor = 0.1
@@ -407,8 +578,15 @@ leader_traits = {
 			}			
 		}
 
+=======
+		research_speed_factor = 0.10
+		industry_repair_factor = 0.25
+		global_building_slots_factor = 0.30
+		industrial_capacity_factory = 0.10
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -417,7 +595,7 @@ leader_traits = {
 		random = no
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -426,84 +604,121 @@ leader_traits = {
 		political_power_gain = 0.25
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 	}
 	
 	natidea_diplomatic_2 = {
 		random = no
 		political_power_gain = 0.25
+<<<<<<< HEAD
 		political_advisor_cost_factor = -0.10
+=======
+		trade_opinion_factor = 0.25
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_diplomatic_3 = {
 		random = no
 		political_power_gain = 0.25
+<<<<<<< HEAD
 		political_advisor_cost_factor = -0.10
 		stability_weekly = 0.001
+=======
+		trade_opinion_factor = 0.25
+        stability_weekly=0.001
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_diplomatic_4 = {
 		random = no
 		political_power_gain = 0.25
+<<<<<<< HEAD
 		political_advisor_cost_factor = -0.10
 		stability_weekly = 0.001
 		agency_upgrade_time  = -0.10
+=======
+		trade_opinion_factor = 0.25
+        stability_weekly=0.001
+		min_export = -0.10
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_diplomatic_5 = {
 		random = no
 		political_power_gain = 0.5
+<<<<<<< HEAD
 		political_advisor_cost_factor = -0.10
 		stability_weekly = 0.001
 		agency_upgrade_time  = -0.10
+=======
+		trade_opinion_factor = 0.25
+        stability_weekly=0.001
+		min_export = -0.10
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_diplomatic_6 = {
 		random = no
 		political_power_gain = 0.5
+<<<<<<< HEAD
 		political_advisor_cost_factor = -0.10
 		stability_weekly = 0.001
 		operative_slot  = 1
 		agency_upgrade_time  = -0.10
+=======
+		trade_opinion_factor = 0.25
+        stability_weekly=0.001
+		operative_slot = 1
+		min_export = -0.10
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_diplomatic_7 = {
 		random = no
 		political_power_gain = 0.5
+<<<<<<< HEAD
 		political_advisor_cost_factor = -0.10
 		war_support_weekly = 0.001
 		stability_weekly = 0.001
 		agency_upgrade_time  = -0.10
 		operative_slot  = 1
+=======
+		trade_opinion_factor = 0.50
+        stability_weekly=0.001
+		operative_slot = 1
+		min_export = -0.10
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_diplomatic_8 = {
 		random = no
 		political_power_gain = 0.5
+<<<<<<< HEAD
 		political_advisor_cost_factor = 0.10
 		high_command_cost_factor = -0.1
 		army_chief_cost_factor = -0.1
@@ -514,14 +729,22 @@ leader_traits = {
 		stability_weekly = 0.001
 		agency_upgrade_time  = -0.10
 		operative_slot  = 1
+=======
+		trade_opinion_factor = 0.50
+        stability_weekly=0.001
+		operative_slot = 1
+		min_export = -0.20
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_diplomatic_9 = {
 		random = no
 		political_power_gain = 0.5
+<<<<<<< HEAD
 		political_advisor_cost_factor = 0.10
 		high_command_cost_factor = -0.1
 		army_chief_cost_factor = -0.1
@@ -532,8 +755,16 @@ leader_traits = {
 		stability_weekly = 0.001
 		agency_upgrade_time  = -0.10
 		operative_slot  = 1
+=======
+		trade_opinion_factor = 0.50
+        stability_weekly=0.001
+		operative_slot = 1
+		min_export = -0.20
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		subjects_autonomy_gain = -0.5
+		
 		ai_will_do = {
+<<<<<<< HEAD
 			factor = 1
 		}
 	}
@@ -574,12 +805,16 @@ leader_traits = {
 		subjects_autonomy_gain = -0.5
 		ai_will_do = {
 			factor = 1
+=======
+			factor = 0
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		}
 	}
 	
 	natidea_diplomatic_10 = {
 		random = no
 		political_power_gain = 1
+<<<<<<< HEAD
 		political_advisor_cost_factor = -0.10
 		high_command_cost_factor = -0.1
 		army_chief_cost_factor = -0.1
@@ -590,8 +825,16 @@ leader_traits = {
 		stability_weekly = 0.001
 		agency_upgrade_time  = -0.10
 		operative_slot  = 1
+=======
+		trade_opinion_factor = 0.50
+        stability_weekly=0.001
+		operative_slot = 1
+		min_export = -0.20
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		subjects_autonomy_gain = -0.5
+		
 		ai_will_do = {
+<<<<<<< HEAD
 			factor = 1
 		}
 	}
@@ -635,137 +878,166 @@ leader_traits = {
 		}
 	}
 
+=======
+			factor = 0
+		}
+	}
+	
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 	### QUALITY ###
 	natidea_quality_0 = {
 		random = no
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_quality_1 = {
 		random = no
-		army_org_Factor = 0.025
+		army_org_Factor = 0.05
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_quality_2 = {
 		random = no
-		army_org_Factor = 0.025
+		army_org_Factor = 0.05
 		army_defence_factor = 0.05
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_quality_3 = {
 		random = no
-		army_org_Factor = 0.025
+		army_org_Factor = 0.05
 		army_defence_factor = 0.05
-		experience_gain_army_factor = 0.075
+		experience_gain_army_factor = 0.125
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_quality_4 = {
 		random = no
-		army_org_Factor = 0.025
+		army_org_Factor = 0.05
 		army_defence_factor = 0.05
-		experience_gain_army_factor = 0.075
-		army_core_defence_factor = 0.01
+		experience_gain_army_factor = 0.125
+		army_core_defence_factor = 0.10
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_quality_5 = {
 		random = no
-		army_org_Factor = 0.025
+		army_org_Factor = 0.10
 		army_defence_factor = 0.05
-		experience_gain_army_factor = 0.075
+		experience_gain_army_factor = 0.125
 		army_core_defence_factor = 0.10
+<<<<<<< HEAD
 		army_attack_factor = 0.05
+=======
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_quality_6 = {
 		random = no
-		army_org_Factor = 0.025
+		army_org_Factor = 0.10
 		army_defence_factor = 0.05
-		experience_gain_army_factor = 0.15
+		experience_gain_army_factor = 0.125
 		army_core_defence_factor = 0.10
+<<<<<<< HEAD
 		army_attack_factor = 0.05
+=======
+		army_morale_factor = 0.1
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_quality_7 = {
 		random = no
-		army_org_Factor = 0.025
+		army_org_Factor = 0.10
 		army_defence_factor = 0.10
-		experience_gain_army_factor = 0.15
+		experience_gain_army_factor = 0.125
 		army_core_defence_factor = 0.10
+<<<<<<< HEAD
 		army_attack_factor = 0.05
+=======
+		army_morale_factor = 0.1
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_quality_8 = {
 		random = no
-		army_org_Factor = 0.05
+		army_org_Factor = 0.10
 		army_defence_factor = 0.10
-		experience_gain_army_factor = 0.15
+		experience_gain_army_factor = 0.125
 		army_core_defence_factor = 0.10
 		conscription = 0.01
+<<<<<<< HEAD
 		army_attack_factor = 0.05
+=======
+		army_morale_factor = 0.1
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
 	natidea_quality_9 = {
 		random = no
-		army_org_Factor = 0.05
+		army_org_Factor = 0.15
 		army_defence_factor = 0.10
-		experience_gain_army_factor = 0.15
+		experience_gain_army_factor = 0.125
 		army_core_defence_factor = 0.10
 		conscription = 0.01
+<<<<<<< HEAD
 		army_attack_factor = 0.05
+=======
+		army_morale_factor = 0.1
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
-		} 
+			factor = 0
+		}
 	}
 	
 	natidea_quality_10 = {
 		random = no
 		army_org_Factor = 0.15
 		army_defence_factor = 0.10
-		experience_gain_army_factor = 0.15
+		experience_gain_army_factor = 0.125
 		army_core_defence_factor = 0.10
 		army_core_attack_factor = 0.10
 		conscription = 0.01
+<<<<<<< HEAD
 		army_attack_factor = 0.05
 		cas_damage_reduction = -0.1
+=======
+		army_morale_factor = 0.1
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -774,7 +1046,7 @@ leader_traits = {
 		random = no
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -783,7 +1055,7 @@ leader_traits = {
 		training_time_factor = -0.05
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -793,7 +1065,7 @@ leader_traits = {
 		supply_consumption_factor = -0.05
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -801,10 +1073,15 @@ leader_traits = {
 		random = no
 		training_time_factor = -0.05
 		supply_consumption_factor = -0.05
+<<<<<<< HEAD
 		industrial_capacity_factory = 0.025
 
+=======
+		industrial_capacity_factory = 0.05
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -812,11 +1089,17 @@ leader_traits = {
 		random = no
 		training_time_factor = -0.05
 		supply_consumption_factor = -0.05
+<<<<<<< HEAD
 		industrial_capacity_factory = 0.025
 		conscription = 0.01
 
+=======
+		industrial_capacity_factory = 0.05
+		conscription = 0.015
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -824,11 +1107,17 @@ leader_traits = {
 		random = no
 		training_time_factor = -0.10
 		supply_consumption_factor = -0.05
+<<<<<<< HEAD
 		industrial_capacity_factory = 0.025
 		conscription = 0.01
 
+=======
+		industrial_capacity_factory = 0.05
+		conscription = 0.015
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -836,11 +1125,17 @@ leader_traits = {
 		random = no
 		training_time_factor = -0.10
 		supply_consumption_factor = -0.10
+<<<<<<< HEAD
 		industrial_capacity_factory = 0.025
 		conscription = 0.01
 
+=======
+		industrial_capacity_factory = 0.05
+		conscription = 0.015
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -848,11 +1143,17 @@ leader_traits = {
 		random = no
 		training_time_factor = -0.10
 		supply_consumption_factor = -0.10
+<<<<<<< HEAD
 		industrial_capacity_factory = 0.05
 		conscription = 0.01
 
+=======
+		industrial_capacity_factory = 0.10
+		conscription = 0.015
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -860,11 +1161,17 @@ leader_traits = {
 		random = no
 		training_time_factor = -0.10
 		supply_consumption_factor = -0.10
+<<<<<<< HEAD
 		industrial_capacity_factory = 0.05
 		conscription = 0.02
 
+=======
+		industrial_capacity_factory = 0.10
+		conscription = 0.03
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -872,10 +1179,16 @@ leader_traits = {
 		random = no
 		training_time_factor = -0.10
 		supply_consumption_factor = -0.15
+<<<<<<< HEAD
 		industrial_capacity_factory = 0.05
 		conscription = 0.02 
+=======
+		industrial_capacity_factory = 0.10
+		conscription = 0.03
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -883,12 +1196,18 @@ leader_traits = {
 		random = no
 		training_time_factor = -0.20
 		supply_consumption_factor = -0.15
+<<<<<<< HEAD
 		industrial_capacity_factory = 0.05
 		conscription = 0.02
 		recruitable_population_factor = 0.1
 
+=======
+		industrial_capacity_factory = 0.10
+		conscription = 0.03
+		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 

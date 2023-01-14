@@ -42,7 +42,7 @@ EGY_CA_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
 	
-	prefix = "ARS "
+	prefix = "ERN "
 	fallback_name = "Heavy Cruiser %d"
 
 	unique = {
@@ -108,7 +108,7 @@ EGY_SS_HISTORICAL = {
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
 	
-	prefix = "ERS "
+	prefix = "ARS "
 	fallback_name = "Submarine %d"
 	
 	unique = {

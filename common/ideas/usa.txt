@@ -2,44 +2,6 @@ ideas = {
 
 	country = {
 		#new stuff Rt56 starts here#
-		rt56_the_gaint_wakes_idea = {
-			picture = democratic_bastion
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				production_speed_arms_factory_factor = 0.25
-				production_speed_dockyard_factor = 0.25
-			}
-		}
-		rt56_office_of_econimic_warfare_idea = {
-			picture = tur_etatism
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				civilian_intel_to_others = -10
-				faction_trade_opinion_factor = 0.1
-				max_fuel_factor = 0.1
-			}
-		}
-
 		rt56_rushed_r_n_d = {
 			picture = jap_duplicate_research
 
@@ -62,7 +24,6 @@ ideas = {
 				line_change_production_efficiency_factor = -0.02
 			}
 		}
-
 		rt56_sons_of_liberty = {
 			picture = generic_intel_bonus
 			name = sons_of_liberty 
@@ -82,7 +43,6 @@ ideas = {
 				dig_in_speed_factor = 0.05
 			}
 		}
-
 		rt56_deo_vindice = {
 			picture = generic_intel_bonus
 			name = deo_vindice
@@ -102,7 +62,7 @@ ideas = {
 			}
 		}
 		rt56_USA_cash_and_carry_away = {
-			picture = generic_liberty_money
+			picture = generic_foreign_capital
 			
 			allowed = {
 				always = no
@@ -119,129 +79,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.05
 			}
 		}
-		r56_USA_defense_contractors = {
-			name = USA_defense_contractors
-			picture = HOL_motors_production
-			
-			allowed = {
-				always = no
-			}
 
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				political_power_cost = 0.1
-				production_speed_arms_factory_factor = 0.05
-				production_speed_dockyard_factor = 0.05
-				global_building_slots_factor = 0.15
-			}
-		}
-		r56_USA_aquire_war_materiel = {
-			name = USA_aquire_war_materiel
-			picture = HOL_motors_production
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				
-			}
-		}
-		r56_USA_over_there = {
-			name = USA_over_there
-			picture = generic_usa_conflict
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				army_attack_factor = 0.1
-				army_defence_factor = 0.1
-				out_of_supply_factor = -0.1
-			}
-		}
-		r56_USA_military_rnd = {
-			name = USA_military_rnd
-			picture = jap_supremacy_of_technology
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				
-			}
-			
-			research_bonus = {
-				infantry_weapons = 0.05
-				armor = 0.05
-				air_equipment = 0.05
-				naval_equipment = 0.05
-			}
-		}
-		r56_USA_gi_bill = {
-			name = USA_gi_bill
-			picture = HUN_secret_rearmament
-			
-			allowed = {
-				has_government = fascism
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				consumer_goods_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.075
-				industrial_capacity_factory = 0.075
-			}
-		}
-		r56_USA_american_christian_identity = {
-			name = USA_american_christian_identity
-			picture = tblra_church_support
-			
-			allowed = {
-				has_government = fascism
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				industrial_capacity_factory = 0.1
-				production_lack_of_resource_penalty_factor = -0.1
-			}
-		}
 		r56_usa_three_dimensional_assault_force = {
 			picture = HUN_secret_rearmament
 			
@@ -352,9 +190,10 @@ ideas = {
 				}
 			}
 		}
+
 		
 		r56_USA_mobilize_the_railways_idea = {
-			picture = generic_build_infrastructure
+			picture = man_five_year_plan_industry
 			
 			allowed = {
 				always = no
@@ -375,141 +214,6 @@ ideas = {
 			modifier = {
 				production_speed_rail_way_factor = 0.10
 				production_speed_supply_node_factor = 0.10
-			}
-		}
-		
-		r56_USA_coordinate_branch_logistics = {
-			name = USA_coordinate_branch_logistics
-			picture = generic_production_bonus
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				max_command_power = -20
-				attrition = -0.1
-				naval_attrition = -0.1
-				custom_modifier_tooltip = r56_USA_coordinate_branch_logistics_tt
-			}
-			
-			do_effect = {
-				has_war = yes
-			}
-		}
-		
-		r56_USA_90_division_gamble = {
-			name = USA_90_division_gamble
-			picture = MEX_politicised_army
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				army_morale_factor = 0.1
-				experience_gain_army_unit_factor = 0.1
-				land_reinforce_rate = 0.1
-				out_of_supply_factor = -0.1
-				#custom_modifier_tooltip = r56_USA_90_division_gamble_tt
-			}
-			
-			#do_effect = {
-			#	num_divisions < 161
-			#}
-		}
-
-		r56_USA_victory_program = {
-			name = USA_victory_program
-			picture = SOV_third_five_year_plan_military
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				conscription = 0.01
-				conversion_cost_civ_to_mil_factor = -0.1
-				production_speed_arms_factory_factor = 0.1
-				production_speed_dockyard_factor = 0.1
-				industrial_capacity_dockyard = 0.1
-			}
-		}
-		
-		
-		r56_USA_us_army_airforce = {
-			name = USA_us_army_airforce
-			picture = generic_air_bonus
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			
-
-			modifier = {
-				air_cas_efficiency = 0.1
-				air_cas_present_factor = 0.1
-				air_doctrine_cost_factor = -0.1
-			}
-		}
-		
-		r56_USA_flying_fortress = {
-			name = USA_flying_fortress
-			picture = generic_air_bonus
-			
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				air_strategic_bomber_defence_factor = 0.1
-			}
-		}
-		
-		r56_USA_naval_air_coordination = {
-			name = USA_naval_air_coordination
-			picture = generic_air_research
-			
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				navy_carrier_air_agility_factor = 0.1
-				navy_carrier_air_targetting_factor = 0.1
 			}
 		}
 
@@ -700,7 +404,7 @@ ideas = {
 			}
 		}
 		USA_neutrality_act = {
-			picture = generic_pp_unity_bonus
+			picture = generic_production_bonus
 			
 			allowed = {
 				always = no
@@ -720,7 +424,7 @@ ideas = {
 		}
 		# version if player went down limited intervention
 		USA_lend_lease_act_li = {
-			picture = generic_pp_unity_bonus
+			picture = generic_production_bonus
 			name = USA_lend_lease_act
 			allowed = {
 				always = no
@@ -742,7 +446,7 @@ ideas = {
 			}
 		}
 		USA_lend_lease_act_na = {# version if player went down neutrality act
-			picture = generic_pp_unity_bonus
+			picture = generic_production_bonus
 			name = USA_lend_lease_act
 			allowed = {
 				always = no
@@ -762,7 +466,7 @@ ideas = {
 			}
 		}
 		USA_lend_lease_act_dummy = { #dummy version to show effects
-			picture = generic_pp_unity_bonus
+			picture = generic_production_bonus
 			name = USA_lend_lease_act
 			allowed = {
 				always = no
@@ -928,8 +632,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				planning_speed = 0.1
-				out_of_supply_factor = -0.1
+				planning_speed = 0.1	
 			}
 		}
 		USA_maritime_commission = {
@@ -960,12 +663,12 @@ ideas = {
 
 			removal_cost = -1
 			
-			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
 
 			modifier = {
-				air_bombing_targetting = 0.1
-				air_strategic_bomber_bombing_factor = 0.1
-				air_doctrine_cost_factor = -0.1
+				
 			}
 		}
 
@@ -1402,10 +1105,10 @@ ideas = {
 			picture = generic_air_bonus
 			
 			equipment_bonus = {
-				large_plane_airframe = {
-					air_range = 0.3 instant = yes
+				strat_bomber_equipment = {
+					air_range = 0.5 instant = yes
 				}	
-			}			
+			}
 		}
 
 		office_of_strategic_services = {
@@ -1536,17 +1239,17 @@ ideas = {
 			removal_cost = -1
 		
 			equipment_bonus = {
-				small_plane_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
+				fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
 				}
-				cv_small_plane_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
+				heavy_fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
 				}
-				medium_plane_fighter_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
+				hfighter_bomber_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+				fighter_bomber_equipment = {
+					build_cost_ic = -0.10 instant = yes
 				}
 			}
 		}
@@ -1564,17 +1267,11 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				small_plane_cas_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
+				CAS_equipment = {
+					build_cost_ic = -0.1 instant = yes
 				}
-				cv_small_plane_cas_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				medium_plane_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
+				tac_bomber_equipment = {
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
@@ -1592,9 +1289,8 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				large_plane_airframe = {
-					build_cost_ic = -0.1
-					instant = yes
+				strat_bomber_equipment = {
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
@@ -1633,13 +1329,13 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			rule = {
+
 				can_create_factions = yes
 			}
 			modifier = {
 				drift_defence_factor = 0.2
 				surrender_limit = 0.002
 				ai_badass_factor = 0.03 # cares for 3% of normal threat
-				resistance_growth_on_our_occupied_states = 0.15
 			}
 		}
 
@@ -1911,13 +1607,10 @@ ideas = {
 			traits = { tank_manufacturer2 }
 			
 			equipment_bonus = {
-				armored_car_equipment = {
+				medium_tank_equipment = {
 					build_cost_ic = -0.1
 				}
-				medium_tank_chassis = {
-					build_cost_ic = -0.1
-				}
-				light_tank_chassis = {
+				light_tank_equipment = {
 					build_cost_ic = -0.1
 				}
 			}
@@ -1944,17 +1637,17 @@ ideas = {
 			traits = { tank_manufacturer2 }
 			
 			equipment_bonus = {
-				light_tank_destroyer_chassis = {
+				light_tank_destroyer_equipment = {
 					build_cost_ic = -0.1
 					ap_attack = 0.1
 					hard_attack = 0.25
 				}
-				medium_tank_destroyer_chassis = {
+				medium_tank_destroyer_equipment = {
 					build_cost_ic = -0.1
 					ap_attack = 0.1
 					hard_attack = 0.25
 				}
-				heavy_tank_destroyer_chassis = {
+				heavy_tank_destroyer_equipment = {
 					build_cost_ic = -0.1
 					ap_attack = 0.1
 					hard_attack = 0.25
@@ -2122,8 +1815,8 @@ ideas = {
 			
 			modifier = {
 				naval_equipment_upgrade_xp_cost = -0.1
-				refit_ic_cost = -0.1
-				refit_speed= 0.1 
+				navy_refit_ic_cost = -0.1
+				navy_refit_speed= 0.1 
 			}
 			
 			equipment_bonus = {
@@ -2437,7 +2130,6 @@ ideas = {
 			
 			research_bonus = {
 				train_tech = 0.15
-				industry = 0.05
 			}
 
 			available = {
@@ -2458,7 +2150,7 @@ ideas = {
 
 	
 	industrial_concern = {
-		
+					
 		USA_standard_oil_new_jersey = {
 			
 			picture = standard_oil_california
@@ -2530,12 +2222,12 @@ ideas = {
 					limit = {
 						original_tag = USA
 					}
-					OR = {
-						has_completed_focus = USA_wartime_industry
-						has_completed_focus = USA_us_war_economy
-					}
+					has_completed_focus = USA_wartime_industry
 				}
+				
 			}
+			
+
 			
 			research_bonus = {
 				industry = 0.15
@@ -2570,4 +2262,173 @@ ideas = {
 			}
 		}		
 	}
+	
+	
+	theorist = {
+		omar_bradley = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_superior_firepower = 0.15
+			}
+			
+			traits = { superior_firepower_expert }
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_tech = superior_firepower
+					add = 3
+				}
+			}			
+		}
+		
+		george_patton = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_mobile_warfare = 0.15
+			}
+			
+			traits = { mobile_warfare_expert }
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_tech = mobile_warfare
+					add = 10
+				}
+			}
+		}
+		
+		dewitt_clinton_ramsey = {
+			ledger = navy
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+		
+		marc_mitscher = {
+			ledger = navy
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_base_strike = 0.15
+			}
+			
+			traits = { naval_aviation_pioneer }
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_tech = base_strike
+					add = 1
+				}
+			}			
+		}
+		
+		curtis_lemay = {
+			ledger = air
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_strategic_destruction = 0.15
+			}
+			
+			traits = { victory_through_airpower }
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					has_tech = air_superiority
+					add = 1
+				}
+			}			
+		}
+		
+		harold_mcclelland = {
+			ledger = air
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		
+		robert_oppenheimer = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				nuclear = 0.15
+			}
+			
+			traits = { nuclear_scientist }
+		}
+		
+		robert_goddard = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				rocketry = 0.15
+			}
+			
+			traits = { rocket_scientist }
+		}
+	}
+	
 }

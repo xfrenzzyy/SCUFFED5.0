@@ -3,7 +3,7 @@
 	shared_focus = {
 		id = SPR_republican_victory
 		icon = GFX_focus_spr_maintain_the_republic
-		cost = 5.00
+		cost = 3.00
 		available = {
 			has_country_flag = spanish_civil_war_started_flag
 			has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
@@ -35,8 +35,15 @@
 		mutually_exclusive = {
 			focus = SPR_nationalist_victory
 		}
-		x = 34
+		x = 48
 		y = 0
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
@@ -73,9 +80,16 @@
 			add_political_power = 100
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
-		relative_position_id = SPR_republican_victory
-		x = -3
+		x = 44
 		y = 1
+
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
@@ -92,9 +106,15 @@
 			add_ideas = SPR_continue_the_secularization_policies
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
-		relative_position_id = SPR_republican_victory
-		x = -4
+		x = 43
 		y = 2
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
@@ -111,9 +131,15 @@
 			add_ideas = SPR_appease_the_workers
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		relative_position_id = SPR_republican_victory
-		x = -2
+		x = 45
 		y = 2
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
@@ -133,9 +159,15 @@
 			add_ideas = SPR_uphold_the_1931_constitution
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
-		relative_position_id = SPR_republican_victory
-		x = -3
+		x = 44
 		y = 3
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
@@ -162,9 +194,16 @@
 		prerequisite = {
 			focus = SPR_uphold_the_1931_constitution
 		}
-		relative_position_id = SPR_republican_victory
-		x = -3
+		x = 44
 		y = 4
+
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 
 	}
@@ -189,9 +228,16 @@
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
-		relative_position_id = SPR_republican_victory
-		x = -3
+		x = 44
 		y = 5
+
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
@@ -228,12 +274,22 @@
 				picture = "gfx/leaders/SPR/r56_portrait_SPR_Francisco_Largo_Caballero.dds"
 				expire = "1965.1.1"
 				ideology = marxism
+				traits = {
+					
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		relative_position_id = SPR_republican_victory
-		x = 1
+		x = 48
 		y = 1
+
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
@@ -250,9 +306,16 @@
 		prerequisite = {
 			focus = SPR_psoe_leadership
 		}
-		relative_position_id = SPR_republican_victory
-		x = 2
+		x = 47
 		y = 2
+
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
@@ -269,9 +332,15 @@
 			add_ideas = SPR_socialize_the_means_of_production
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		relative_position_id = SPR_republican_victory
-		x = 0
+		x = 49
 		y = 2
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
@@ -291,9 +360,16 @@
 			add_ideas = SPR_establish_soviet_democracy
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		relative_position_id = SPR_republican_victory
-		x = 1
+		x = 48
 		y = 3
+
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
@@ -328,9 +404,15 @@
 		mutually_exclusive = {
 			focus = SPR_join_the_comintern
 		}
-		relative_position_id = SPR_republican_victory
-		x = 2
+		x = 48
 		y = 4
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
@@ -363,9 +445,15 @@
 			focus = SPR_repair_relations_with_the_west
 			focus = SPR_align_with_the_new_france
 		}
-		relative_position_id = SPR_republican_victory
-		x = 0
+		x = 46
 		y = 5
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
@@ -393,9 +481,16 @@
 			add_ideas = SPR_PCE_leadership
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		relative_position_id = SPR_republican_victory
-		x = 5
+		x = 52
 		y = 1
+
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
@@ -412,9 +507,15 @@
 		prerequisite = {
 			focus = SPR_PCE_leadership
 		}
-		relative_position_id = SPR_republican_victory
-		x = 4
+		x = 51
 		y = 2
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
@@ -431,9 +532,15 @@
 			add_ideas = SPR_begin_collectivization
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		relative_position_id = SPR_republican_victory
-		x = 6
+		x = 53
 		y = 2
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
@@ -453,9 +560,15 @@
 			add_ideas = SPR_establish_the_oraa
 		}
 		search_filters = {  }
-		relative_position_id = SPR_republican_victory
-		x = 5
+		x = 52
 		y = 3
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
@@ -523,14 +636,20 @@
 				}
 			}			
 		}
-		relative_position_id = SPR_republican_victory
-		x = 4
+		x = 52
 		y = 4
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
 		id = SPR_intervention_in_portugal
-		icon = GFX_goal_generic_attack_portugal
+		icon = GFX_goal_spr_unite_the_iberian_peninsula
 		cost = 10.00
 		ai_will_do = {
 			factor = 25
@@ -562,9 +681,15 @@
 			focus = SPR_align_with_the_new_france
 			focus = SPR_join_the_comintern
 		}
-		relative_position_id = SPR_republican_victory
-		x = 3
+		x = 50
 		y = 5
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 	shared_focus = {
@@ -590,9 +715,15 @@
 		prerequisite = {
 			focus = SPR_join_the_comintern
 		}
-		relative_position_id = SPR_republican_victory
-		x = 5
+		x = 52
 		y = 5
+		offset = {
+			trigger = {
+				has_country_flag = sided_with_the_republicans_spanish_civil_war_flag
+			}
+			x = -17
+			y = 0
+		}
 
 	}
 

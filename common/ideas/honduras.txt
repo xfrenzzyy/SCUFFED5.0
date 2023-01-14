@@ -36,7 +36,7 @@ ideas = {
 				conscription_factor = 0.1
 				planning_speed = -0.10
 				non_core_manpower = 0.1
-				weekly_manpower = 100
+				weekly_manpower = 10
 				neutrality_drift = 0.01
 			}
 
@@ -75,11 +75,10 @@ ideas = {
 				justify_war_goal_time = -0.30
 				generate_wargoal_tension = -0.30
 				guarantee_tension = -0.3
-				conscription_factor = 0.3
 			}
 		}
 
-		r56_HON_empower_domestic_competition = {
+		r56_HON_empower_domestic_comppetition = {
 			
 			picture = generic_disjointed_gov
 			
@@ -141,7 +140,6 @@ ideas = {
 				stability_weekly = -0.01
 				war_support_weekly = 0.01
 				democratic_drift = 0.01
-				conscription_factor = 0.01
 			}
 		}
 
@@ -321,8 +319,6 @@ ideas = {
 				consumer_goods_factor = -0.1
 				production_factory_max_efficiency_factor = 0.1		
 				industrial_capacity_factory	 = 0.1
-				conscription_factor = 0.05
-				non_core_manpower = 0.05
 			}
 		}
 	
@@ -367,7 +363,7 @@ ideas = {
 				removal_cost = -1
 				
 				modifier = {
-					consumer_goods_factor = 0.1
+					consumer_goods_factor = 0.15
 					production_speed_buildings_factor = -0.1
 					industrial_capacity_dockyard = -0.1
 				}
@@ -437,7 +433,7 @@ ideas = {
 			}
 		}
 		
-		HON_peoples_war_idea = {
+		HON_peoples_war = {
 
 			allowed = {
 				always = no
@@ -494,8 +490,6 @@ ideas = {
 				consumer_goods_factor = -0.1
 				production_speed_buildings_factor = 0.10
 				production_factory_max_efficiency_factor = 0.1
-				conscription_factor = 0.05
-				non_core_manpower = 0.05
 			}
 		}
 		
@@ -511,8 +505,10 @@ ideas = {
 			removal_cost = -1
 
 			picture = socialist_science_focus
+			research_bonus = { land_doctrine = 0.05 }
 			modifier = {
-				army_org_Factor = 0.05
+			
+			army_org_Factor = 0.05
 			}
 		}
 		
@@ -662,8 +658,6 @@ ideas = {
 			
 			modifier = {
 				local_resources_factor = 0.10
-				conscription_factor = 0.05
-				non_core_manpower = 0.05
 			}
 		}
 		
@@ -711,7 +705,7 @@ ideas = {
 
 		HON_fah = {
 			
-			picture = HON_fah
+			picture = GFX_idea_HON_fah
 		
 			allowed = {
 				original_tag = HON
@@ -767,7 +761,7 @@ ideas = {
 	
 	HON_rmc = {
 	
-			picture = HON_rmc
+			picture = GFX_idea_HON_rmc
 			
 			allowed = {
 				original_tag = HON

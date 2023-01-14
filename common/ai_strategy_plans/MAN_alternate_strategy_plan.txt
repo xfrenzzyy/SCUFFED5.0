@@ -1,6 +1,6 @@
 MAN_default_plan = {
 	name = "Manchukuo default plan"
-	desc = "Behaviour for Manchukuo until they decide on one of the branches"
+	desc = "Behavior for Manchukuo until they decide on one of the branches"
 
 	allowed = {
 		original_tag = MAN
@@ -40,6 +40,10 @@ MAN_default_plan = {
 		industry = 10.0
 	}
 
+	ideas = {
+
+	}
+
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
@@ -53,7 +57,7 @@ MAN_default_plan = {
 
 MAN_alternate_plan_assertive = {
 	name = "Manchukuo plan for Assertiveness"
-	desc = "Behaviour for Manchukuo when they decide to go assertive"
+	desc = "Behavior for Manchukuo when they decide to go assertive"
 
 	allowed = {
 		original_tag = MAN
@@ -99,6 +103,9 @@ MAN_alternate_plan_assertive = {
 		id = GER
 		value = 100
 	}
+	ideas = {
+
+	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
@@ -113,7 +120,7 @@ MAN_alternate_plan_assertive = {
 
 MAN_alternate_plan_independent = {
 	name = "Manchukuo plan for Independence"
-	desc = "Behaviour for Manchukuo when they have achieved independence after going assertive"
+	desc = "Behavior for Manchukuo when they have achieved independence after going assertive"
 
 	allowed = {
 		original_tag = MAN
@@ -144,6 +151,10 @@ MAN_alternate_plan_independent = {
 	research = {
 		infantry_weapons = 15.0
 		artillery = 15.0
+	}
+
+	ideas = {
+
 	}
 	ai_strategy = {
 		type = antagonize 

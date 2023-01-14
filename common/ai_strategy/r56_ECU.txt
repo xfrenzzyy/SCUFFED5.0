@@ -34,9 +34,6 @@ ECU_please_stop_spaming = {
 				COL = {
 					is_ai = no
 				}
-				PRU = {
-					is_ai = no
-				}
 				HON = {
 					is_ai = no
 				}
@@ -55,8 +52,6 @@ ECU_please_stop_spaming = {
 			}
 		}
 	}
-
-	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = force_build_armies

@@ -20,6 +20,11 @@ LAT_mobilization_plans = {
             }			
 		}
 
+		visible = {
+
+
+	    }
+
 		fire_only_once = yes
 
 		modifier = {
@@ -56,6 +61,10 @@ LAT_mobilization_plans = {
             }
 		}
 
+		visible = {
+
+	    }
+
 		fire_only_once = yes
 
 		modifier = {	
@@ -91,6 +100,10 @@ LAT_mobilization_plans = {
             }
 		}
 
+		visible = {
+
+	    }
+
 		fire_only_once = yes
 
 		modifier = {
@@ -114,6 +127,10 @@ LAT_contact_attaches = {
 	LAT_discuss_with_attache = {
 
 		icon = generic_political_discourse
+
+		visible = {
+			
+		}
 		custom_cost_text = LAT_contact_attaches_cost
 		custom_cost_trigger = {
 			command_power > 9
@@ -247,6 +264,10 @@ LAT_contact_attaches = {
 	LAT_inquire_about_armament = {
 
 		icon = ger_military_buildup
+
+		visible = {
+			
+		}
 		custom_cost_text = LAT_inquire_about_armament_cost
 		custom_cost_trigger = {
 			command_power > 24
@@ -367,6 +388,10 @@ LAT_contact_attaches = {
 	LAT_advisory_adj_army_attache = {
 
 		icon = attache
+
+		visible = {
+			
+		}
 		custom_cost_text = LAT_advisory_attache_cost
 		custom_cost_trigger = {
 			command_power > 39
@@ -472,6 +497,10 @@ LAT_contact_attaches = {
 	LAT_advisory_adj_navy_attache = {
 
 		icon = attache
+
+		visible = {
+			
+		}
 		custom_cost_text = LAT_advisory_attache_cost
 		custom_cost_trigger = {
 			command_power > 39
@@ -936,6 +965,10 @@ LAT_kegums_power_plant_construction = {
 	LAT_organize_public_subscription = {
 
 		icon = generic_construction
+
+		visible = {
+			
+		}
 		available = {
 			has_idea = LAT_kegums_power_plant_construction_idea
 		}
@@ -960,6 +993,10 @@ LAT_kegums_power_plant_construction = {
 	LAT_reallocate_investments = {
 
 		icon = generic_construction
+
+		visible = {
+			
+		}
 		available = {
 			has_idea = LAT_kegums_power_plant_construction_idea
 		}

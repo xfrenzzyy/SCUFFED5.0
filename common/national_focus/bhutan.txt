@@ -18,6 +18,10 @@ default = no
 		y = 0
 		cost = 10
 
+		available = {
+		
+		}
+
 		ai_will_do = {
 			factor = 5
 		}		
@@ -111,6 +115,10 @@ default = no
 		x = 0
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 3
 		}		
@@ -166,6 +174,10 @@ default = no
 		x = 0
 		y = 2
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 3
 		}		
@@ -222,6 +234,10 @@ default = no
 		x = 0
 		y = 2
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 3
 		}		
@@ -246,6 +262,10 @@ default = no
 		x = -2
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 3
 		}		
@@ -325,6 +345,10 @@ default = no
 		x = -1
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 3
 		}		
@@ -361,6 +385,10 @@ default = no
 		x = 0
 		y = 2
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 3
 		}		
@@ -408,6 +436,10 @@ default = no
 		x = 0
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 3
 		}		
@@ -430,6 +462,10 @@ default = no
 		x = 1
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 3
 		}		
@@ -446,6 +482,10 @@ default = no
 		x = 0
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 2
 		}		
@@ -467,6 +507,10 @@ default = no
 		x = 8
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 5
 		}		
@@ -487,6 +531,10 @@ default = no
 		x = 0
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 15
 		}		
@@ -503,6 +551,10 @@ default = no
 		x = 1
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 1
 		}		
@@ -524,6 +576,10 @@ default = no
 		x = -1
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 3
 		}		
@@ -721,6 +777,10 @@ default = no
 		x = 2
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 3
 		}		
@@ -746,6 +806,10 @@ default = no
 		x = 1
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 5
 		}		
@@ -804,6 +868,10 @@ default = no
 		x = 0
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 5
 		}		
@@ -821,6 +889,10 @@ default = no
 		x = 4
 		y = 1
 		cost = 8
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 3
 		}		
@@ -841,6 +913,10 @@ default = no
 		x = 0
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 4
 		}		
@@ -887,6 +963,10 @@ default = no
 		x = 0
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 3
 		}		
@@ -904,6 +984,10 @@ default = no
 		x = 2
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 5
 		}		
@@ -949,6 +1033,10 @@ default = no
 		x = 2
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		ai_will_do = {
 			factor = 50
 		}		
@@ -1564,6 +1652,10 @@ default = no
 		x = -12
 		y = 1
 		cost = 20
+
+		available = {
+		
+		}
 		completion_reward = {
 			add_ideas = idea_BHU_maintain_the_monarchy
 			add_political_power = 100
@@ -1579,6 +1671,10 @@ default = no
 		x = -1
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		
 		ai_will_do = {
 			factor = 10
@@ -1599,6 +1695,10 @@ default = no
 		y = 1
 		cost = 10
 
+		available = {
+		
+		}
+
 		ai_will_do = {
 			factor = 5
 		}		
@@ -1617,6 +1717,10 @@ default = no
 		x = 0
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		
 		ai_will_do = {
 			factor = 3
@@ -1635,6 +1739,10 @@ default = no
 		x = 0
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		
 		ai_will_do = {
 			factor = 3
@@ -1655,6 +1763,10 @@ default = no
 		x = -4
 		y = 1
 		cost = 5
+
+		available = {
+		
+		}
 		
 		ai_will_do = {
 			factor = 20
@@ -1703,6 +1815,10 @@ default = no
 		x = -3
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		
 		ai_will_do = {
 			factor = 20
@@ -1723,6 +1839,10 @@ default = no
 		x = -2
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		
 		ai_will_do = {
 			factor = 5
@@ -1741,6 +1861,10 @@ default = no
 		x = 0
 		y = 2
 		cost = 10
+
+		available = {
+		
+		}
 
 		ai_will_do = {
 			factor = 5
@@ -1815,6 +1939,10 @@ default = no
 		x = 0
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		bypass = {
 			has_government = democratic
 		}
@@ -1840,6 +1968,10 @@ default = no
 		x = 1
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		
 		ai_will_do = {
 			factor = 5
@@ -1863,6 +1995,10 @@ default = no
 		x = 0
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		
 		ai_will_do = {
 			factor = 20
@@ -1918,6 +2054,10 @@ default = no
 		x = 0
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		
 		ai_will_do = {
 			factor = 10
@@ -2060,6 +2200,10 @@ default = no
 		x = 0
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		
 		ai_will_do = {
 			factor = 7
@@ -2109,6 +2253,10 @@ default = no
 		x = 3
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		
 		ai_will_do = {
 			factor = 20
@@ -2131,6 +2279,10 @@ default = no
 		x = 0
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 
 		ai_will_do = {
 			factor = 10
@@ -2179,7 +2331,11 @@ default = no
 		relative_position_id = BHU_spread_aggressive_attitude		
 		x = 1
 		y = 1
-		cost = 10			
+		cost = 10
+
+		available = {
+		
+		}			
 		
 		bypass = {
 			custom_trigger_tooltip = {
@@ -2241,6 +2397,10 @@ default = no
 		x = 1
 		y = 1
 		cost = 10
+
+		available = {
+		
+		}
 		
 		ai_will_do = {
 			factor = 5
@@ -2305,12 +2465,7 @@ default = no
 			TIB = {
 				r56_script_target_is_sane = yes
 				is_puppet = no
-			}	
-			OR = {
-				has_government = fascism
-				has_government = communism
-			}
-			has_army_manpower = { size > 39999 }
+			}		
 		}
 		
 		ai_will_do = {

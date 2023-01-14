@@ -33,7 +33,7 @@ country_event = {
 					ideology = fascism
 					size = civil_war_size_var
 					keep_unit_leaders = { 700 701 702 703 704 705 706 707 708 709 710 711 712 }
-					states = { 931 }
+					states = { 858 }
 				}
 			}
 			if = {
@@ -48,7 +48,7 @@ country_event = {
 					ideology = neutrality
 					size = civil_war_size_var
 					keep_unit_leaders = { 700 701 702 703 704 705 706 707 708 709 710 711 712 }
-					states = { 931 }
+					states = { 858 }
 				}
 			}
 			random_other_country = {
@@ -179,15 +179,14 @@ country_event = {
 					}
 				}
 			}
-			add_country_leader_role = {
-				character = MEX_salvador_abascal
-				promote_leader = yes
-				country_leader = {
-					ideology = falangism
-					expire = "1965.1.1"
-					traits = {
-						fascist_militia_leader
-					}
+			create_country_leader = {
+				name = "Salvador Abascal"
+				desc = "POLITICS_SALVADOR_ABASCAL_DESC"
+				picture = "GFX_Portrait_MEX_Salvador_Abascal"
+				expire = "1965.1.1"
+				ideology = falangism
+				traits = {
+					fascist_militia_leader
 				}
 			}			
 		}
@@ -233,12 +232,16 @@ country_event = {
 	option = {
 		name = mexico.2.b
 		
-		send_embargo = FROM
-		custom_effect_tooltip = embargo_relation_tt
+		add_opinion_modifier = {
+			target = FROM
+			modifier = embargo
+		}
 		
 		FROM = {
-			send_embargo = ROOT
-			custom_effect_tooltip = embargo_relation_tt
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
 			country_event = {
 				days = 1
 				id = mexico.3
@@ -269,12 +272,17 @@ country_event = {
 			type = puppet_wargoal_focus
 			target = FROM
 		}
-		send_embargo = FROM
-		custom_effect_tooltip = embargo_relation_tt
+		
+		add_opinion_modifier = {
+			target = FROM
+			modifier = embargo
+		}
 		
 		FROM = {
-			send_embargo = ROOT
-			custom_effect_tooltip = embargo_relation_tt
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
 			country_event = {
 				days = 1
 				id = mexico.3
@@ -425,10 +433,10 @@ country_event = {
 			limit = {
 				original_tag = GER
 			}
-			add_to_tech_sharing_group = MEX_solidify_the_davis_deal_tech_group
+			add_to_tech_sharing_group = MEX_GER_tech_group
 			
 			FROM = {
-				add_to_tech_sharing_group = MEX_solidify_the_davis_deal_tech_group
+				add_to_tech_sharing_group = MEX_GER_tech_group
 			}
 		}
 		
@@ -1824,9 +1832,11 @@ country_event = {
 		
 		trigger = {
 			NOT = {
-				has_global_flag = flag_mexico_cedillo_has_revolted
-				has_country_leader = {
-					character = MEX_saturnino_cedillo
+				OR = {
+					has_global_flag = flag_mexico_cedillo_has_revolted
+					has_country_leader = {
+						character = MEX_saturnino_cedillo
+					}
 				}	
 			}
 			has_completed_focus = MEX_focus_support_general_cedillo
@@ -1892,7 +1902,6 @@ country_event = {
 					cristero_general
 				}
 			}
-			promote_leader = yes
 		}
 	}
 
@@ -2316,7 +2325,7 @@ news_event = {
 	title = mexico.26.title
 	desc = mexico.26.desc
 	
-	picture = GFX_news_event_MEX_declaration_of_war
+	picture = GFX_news_event_020
 	
 	major = yes
 	
@@ -2349,12 +2358,14 @@ news_event = {
 		
 		trigger = {
 			NOT = {
-				original_tag = MEX
-				is_in_faction_with = MEX
-				has_war_with = MEX
-				original_tag = GER
-				is_in_faction_with = GER
-				has_war_with = GER
+				OR = {
+					original_tag = MEX
+					is_in_faction_with = MEX
+					has_war_with = MEX
+					original_tag = GER
+					is_in_faction_with = GER
+					has_war_with = GER
+				}
 			}
 		}
 	}
@@ -2641,9 +2652,11 @@ news_event = {
 		
 		trigger = {
 			NOT = {
-				original_tag = MEX
-				is_in_faction_with = MEX
-				has_war_with = MEX
+				OR = {
+					original_tag = MEX
+					is_in_faction_with = MEX
+					has_war_with = MEX
+				}
 			}
 		}
 	}
@@ -2772,6 +2785,7 @@ country_event = {
 
 				add_corps_commander_role = {
 					character = MEX_adolfo_de_la_huerta
+					traits = { }
 					skill = 3
 					attack_skill = 3
 					defense_skill = 3
@@ -2783,6 +2797,9 @@ country_event = {
 					country_leader = {
 						expire = "1965.1.1"
 						ideology = conservatism
+						traits = {
+							#
+						}
 					}
 					promote_leader = yes				
 				}
@@ -2937,9 +2954,11 @@ news_event = {
 		
 		trigger = {
 			NOT = {
-				original_tag = MEX
-				is_in_faction_with = MEX
-				has_war_with = MEX
+				OR = {
+					original_tag = MEX
+					is_in_faction_with = MEX
+					has_war_with = MEX
+				}
 			}
 		}
 	}
@@ -3791,12 +3810,16 @@ country_event = {
 
 		add_political_power = 100
 		
-		send_embargo = MEX
-		custom_effect_tooltip = embargo_relation_tt
+		add_opinion_modifier = {
+			target = MEX
+			modifier = embargo
+		}
 		
 		MEX = {
-			send_embargo = ROOT
-			custom_effect_tooltip = embargo_relation_tt
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
 		}
 		
 		set_global_flag = flag_america_plans_to_punish_mexico_for_canal_attack
@@ -3828,12 +3851,16 @@ country_event = {
 			target = MEX
 		}
 		
-		send_embargo = MEX
-		custom_effect_tooltip = embargo_relation_tt
+		add_opinion_modifier = {
+			target = MEX
+			modifier = embargo
+		}
 		
 		MEX = {
-			send_embargo = ROOT
-			custom_effect_tooltip = embargo_relation_tt
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
 		}
 		
 		set_global_flag = flag_america_ignores_mexican_attack_on_canal
@@ -3890,12 +3917,16 @@ country_event = {
 				
 		army_experience = 25
 		
-		send_embargo = MEX
-		custom_effect_tooltip = embargo_relation_tt
+		add_opinion_modifier = {
+			target = MEX
+			modifier = embargo
+		}
 		
 		MEX = {
-			send_embargo = ROOT
-			custom_effect_tooltip = embargo_relation_tt
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
 		}
 		
 		set_global_flag = flag_america_plans_to_punish_mexico_for_canal_attack
@@ -3925,12 +3956,16 @@ country_event = {
 			target = MEX
 		}
 		
-		send_embargo = MEX
-		custom_effect_tooltip = embargo_relation_tt
+		add_opinion_modifier = {
+			target = MEX
+			modifier = embargo
+		}
 		
 		MEX = {
-			send_embargo = ROOT
-			custom_effect_tooltip = embargo_relation_tt
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
 		}
 		
 		set_global_flag = flag_america_ignores_mexican_attack_on_canal
@@ -4001,10 +4036,12 @@ news_event = {
 		
 		trigger = {
 			NOT = {
-				original_tag = MEX
-				is_in_faction_with = MEX
-				original_tag = USA
-				is_in_faction_with = USA
+				OR = {
+					original_tag = MEX
+					is_in_faction_with = MEX
+					original_tag = USA
+					is_in_faction_with = USA
+				}
 			}
 		}
 	}
@@ -4060,10 +4097,12 @@ news_event = {
 		
 		trigger = {
 			NOT = {
-				original_tag = MEX
-				is_in_faction_with = MEX
-				original_tag = USA
-				is_in_faction_with = USA
+				OR = {
+					original_tag = MEX
+					is_in_faction_with = MEX
+					original_tag = USA
+					is_in_faction_with = USA
+				}
 			}
 		}
 	}
@@ -4076,7 +4115,7 @@ news_event = {
 	title = mexico.46.title
 	desc = mexico.46.desc
 	
-	picture = GFX_news_event_MEX_declaration_of_war
+	picture = GFX_news_event_053
 	
 	major = yes
 	
@@ -4104,9 +4143,11 @@ news_event = {
 		
 		trigger = {
 			NOT = {
-				original_tag = MEX
-				is_in_faction_with = MEX
-				has_war_with = MEX
+				OR = {
+					original_tag = MEX
+					is_in_faction_with = MEX
+					has_war_with = MEX
+				}
 			}
 		}
 	}
@@ -4119,7 +4160,7 @@ news_event = {
 	title = mexico.47.title
 	desc = mexico.47.desc
 	
-	picture = GFX_news_event_north_american_diplomats_communism
+	picture = GFX_news_event_gathering_protest
 	
 	major = yes
 	
@@ -4147,9 +4188,11 @@ news_event = {
 		
 		trigger = {
 			NOT = {
-				original_tag = MEX
-				is_in_faction_with = MEX
-				has_war_with = MEX
+				OR = {
+					original_tag = MEX
+					is_in_faction_with = MEX
+					has_war_with = MEX
+				}
 			}
 		}
 	}
@@ -4600,11 +4643,13 @@ news_event = {
 		
 		trigger = {
 			NOT = {
-				original_tag = MEX
-				is_in_faction_with = MEX
-				has_war_with = MEX
-				original_tag = SOV
-				is_in_faction_with = SOV
+				OR = {
+					original_tag = MEX
+					is_in_faction_with = MEX
+					has_war_with = MEX
+					original_tag = SOV
+					is_in_faction_with = SOV
+				}
 			}
 		}
 	}

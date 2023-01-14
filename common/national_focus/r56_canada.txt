@@ -296,7 +296,7 @@ focus_tree = {
 
 		available = {
 			OR = {
-				threat = 0.50
+				has_war = yes
 				has_government = fascism
 				has_government = communism
 			}
@@ -1138,7 +1138,7 @@ focus_tree = {
 
 		available = {
 			OR = {
-				threat = 0.50
+				has_war = yes
 				has_government = fascism
 				has_idea = r56_CAN_war_policy_idea
 			}
@@ -3224,7 +3224,7 @@ focus_tree = {
 		}
 		
 		available = {
-			threat = 0.50 
+			has_war_with = GER
 		}
 		
 
@@ -3970,11 +3970,6 @@ focus_tree = {
 			add_state_claim = 386
 			add_state_claim = 385
 			add_state_claim = 357
-			add_state_claim = 989
-			add_state_claim = 990
-			add_state_claim	= 991
-			add_state_claim	= 992
-			add_state_claim = 993
 			custom_effect_tooltip = r56_CAN_claims_on_america_tt
 		}
 	}	
@@ -4333,7 +4328,6 @@ focus_tree = {
 					}
 				}
 			}
-			unlock_decision_tooltip = { decision = cite_a_marine_unit show_effect_tooltip = yes } 
 		}
 	}
 		
@@ -5132,15 +5126,14 @@ focus_tree = {
 					limit = {
 						OR = {
 							state = 466
-							state = 861
-							state = 860
-							state = 863
-							state = 862
 							state = 468
 						}
 					}
-					remove_dynamic_modifier = {
-						modifier = quebec_conscription_crisis
+					remove_province_modifier = {
+						static_modifiers = { quebec_conscription_crisis }
+						province = {
+							all_provinces = yes
+						}
 					}
 				}
 			}

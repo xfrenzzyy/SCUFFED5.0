@@ -16,7 +16,7 @@ albania_war_goal = {
 		original_tag = ITA
 	}
 	enable = {
-		has_completed_focus = ITA_albanian_occupation
+		has_completed_focus = ITA_ultimatum_to_albania
 		country_exists = ALB
 	}
 	abort = {
@@ -43,7 +43,10 @@ greece_war_goal = {
 		original_tag = ITA
 	}
 	enable = {
-		has_completed_focus = ITA_war_with_greece
+		OR = {
+			has_completed_focus = ITA_invade_greece
+			has_completed_focus = ITA_operazione_achaicus
+		}
 		country_exists = GRE
 	}
 	abort = {
@@ -70,7 +73,7 @@ anti_uk_war_goals = {
 		original_tag = ITA
 	}
 	enable = {
-		has_completed_focus = ITA_pact_of_steel
+		has_completed_focus = ITA_cooperation_with_germany
 		country_exists = ENG
 	}
 	abort = {
@@ -91,7 +94,7 @@ yugoslavia_war_goal = {
 		original_tag = ITA
 	}
 	enable = {
-		has_completed_focus = ITA_balkan_ambition
+		has_completed_focus = ITA_claims_on_yugoslavia
 		country_exists = YUG
 	}
 	abort = {
@@ -103,7 +106,7 @@ yugoslavia_war_goal = {
 	ai_strategy = {
 		type = antagonize
 		id = "YUG"			
-		value = 100	#was 200 earlier
+		value = 200
 	}		
 }
 
@@ -113,7 +116,7 @@ germany_ally = {
 	}
 	enable = {
 		tag = ITA
-		has_completed_focus = ITA_pact_of_steel
+		has_completed_focus = ITA_cooperation_with_germany
 		country_exists = GER
 		GER = {
 			has_government = ITA
@@ -135,12 +138,12 @@ germany_ally = {
 	ai_strategy = {
 		type = befriend
 		id = "GER"			
-		value = 50
+		value = 100
 	}
 	ai_strategy = {
 		type = alliance
 		id = "GER"			
-		value = 50
+		value = 100
 	}	
 }
 
@@ -150,8 +153,7 @@ romania_ally = {
 	}
 	enable = {
 		tag = ITA
-		#has_completed_focus = ITA_our_latin_brothers
-		has_completed_focus = ITA_potential_allies_in_the_balkans	#maybe a bit silly that having Yugoslavian ambitions somehow alienates Romania, but there is no alliance focus for them specifically (yet)
+		has_completed_focus = ITA_our_latin_brothers
 		country_exists = ROM
 	}
 	abort = {
@@ -184,8 +186,7 @@ bulgaria_ally = {
 		original_tag = ITA
 	}
 	enable = {
-		#has_completed_focus = ITA_invite_bulgaria
-		has_completed_focus = ITA_potential_allies_in_the_balkans	#maybe a bit silly that having Yugoslavian ambitions somehow alienates Bulgaria, but there is no alliance focus for them specifically (yet)
+		has_completed_focus = ITA_invite_bulgaria
 		country_exists = BUL
 	}
 	abort = {
@@ -209,11 +210,8 @@ yugoslavia_ally = {
 		original_tag = ITA
 	}
 	enable = {
-		OR = {
-			has_completed_focus = ITA_potential_allies_in_the_balkans	#we dont have ambitions apparently, so might as well be friends
-			YUG = {	#since Italy don't have this and Yugo is submissive like this, wht bot become friends? -Fantom
-				has_completed_focus = YUG_slovenia_for_support
-			}
+		YUG = {	#since Italy don't have this and Yugo is submissive like this, wht bot become friends? -Fantom
+			has_completed_focus = YUG_slovenia_for_support
 		}
 		country_exists = YUG
 	}
@@ -286,7 +284,7 @@ portugal_ally = {
 		original_tag = ITA
 	}
 	enable = {
-		has_completed_focus = ITA_befriend_portugal
+		has_completed_focus = ITA_complete_the_latin_alliance
 		country_exists = POR
 	}
 	abort = {
@@ -518,7 +516,7 @@ ITA_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_capital_bb
-		value = 80 #MODDED
+		value = 25
 	}
 
 	ai_strategy = {
@@ -530,19 +528,19 @@ ITA_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_submarine
-		value = 30
+		value = 50
 	}
 
 	ai_strategy = {
 		type = role_ratio
-		id = naval_screen 
-		value = 100 #MODDED
+		id = naval_screen
+		value = 150
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_cruiser_light
-		value = 40 #MODDED
+		value = 50
 	}
 
 	ai_strategy = {
@@ -553,14 +551,14 @@ ITA_naval_role_ratios_historical = {
 
 	ai_strategy = {
 		type = role_ratio
-		id = naval_mine_sweeper 
-		value = 5 #MODDED
+		id = naval_mine_sweeper
+		value = 20
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_mine_layer
-		value = 5 #MODDED
+		value = 10
 	}
 }
 

@@ -78,7 +78,10 @@ r56_CHL_concessions_1 = {
 				days = 30
 			}
 		}
-		
+
+		activation = {
+			tag = CHL 
+		}
 		visible = {
 			tag = CHL 
 		}
@@ -132,6 +135,10 @@ r56_CHL_concessions_1 = {
 					}
 				}
 			}
+		}
+			
+		activation = {
+			tag = CHL 
 		}
 
 		visible = {

@@ -24,17 +24,14 @@ BHU_army_establishment = {
 		
 		visible = {
 			has_completed_focus = BHU_first_inspection
-		}	
-
-		complete_effect = {	#tiny reward for a little warmonger/warrior
-			add_war_support = 0.02
-		}	
-
+		}
 		remove_effect = {
 			set_country_flag = bhutan_improved_military_standards
 			army_experience = 30
 			unlock_decision_tooltip = BHU_mountain_warfare_courses
 			unlock_decision_tooltip = BHU_the_winter_soldiers			
+		}		
+		complete_effect = {
 		}	
 	}
 	BHU_mountain_warfare_courses = {
@@ -70,7 +67,9 @@ BHU_army_establishment = {
 			}
 
 			army_experience = 5
-		}
+		}		
+		complete_effect = {
+		}	
 	}
 	BHU_the_winter_soldiers = {
 
@@ -104,7 +103,9 @@ BHU_army_establishment = {
 				}				
 			}
 			army_experience = 5
-		}
+		}		
+		complete_effect = {
+		}	
 	}	
 }
 BHU_bhutan_diplomacy = {
@@ -158,7 +159,10 @@ BHU_bhutan_diplomacy = {
 				}
 				add_political_power = 110 #just to be sure that it's always removable
 			}
-		}
+		}		
+		complete_effect = {
+			 
+		}	
 	}
 	BHU_improve_relations = {
 
@@ -233,7 +237,9 @@ BHU_bhutan_diplomacy = {
 				target = FROM
 				modifier = large_increase
 			}
-		}
+		}		
+		complete_effect = {
+		}	
 	}
 	BHU_establish_an_army_under_foreign_supervision = {
 
@@ -311,6 +317,8 @@ BHU_bhutan_diplomacy = {
 		
 		days_remove = 100
 		
+		visible = {
+		}
 		remove_effect = {
 			if = {
 				limit = {

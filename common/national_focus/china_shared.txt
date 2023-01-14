@@ -416,7 +416,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_purchase_tanks
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 1
@@ -439,6 +439,8 @@ shared_focus = {
 			uses = 1
 			category = armor
 		}
+		custom_effect_tooltip = available_designer
+		show_ideas_tooltip = german_chinese_tank_designer
 	}
 }
 
@@ -1030,7 +1032,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CHI_the_soviet_volunteer_group
-	icon = GFX_focus_SOV_builder_of_the_red_army
+	icon = GFX_goal_demand_sudetenland
 	prerequisite = { focus = CHI_invite_soviet_advisers }
 	x = 0
 	y = 1
@@ -1166,7 +1168,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CHI_elite_mountaineers
-	icon = GFX_goal_generic_mountain_warfare
+	icon = GFX_goal_generic_allies_build_infantry
 	prerequisite = { focus = CHI_invite_soviet_advisers focus = CHI_small_arms_expertise }
 	x = 0
 	y = 1
@@ -1381,7 +1383,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CHI_french_military_mission
-	icon = GFX_goal_FRA_army_reform
+	icon = GFX_goal_generic_defence
 	prerequisite = { focus = CHI_guarantee_the_hanoi_route }
 	x = 0
 	y = 3
@@ -1567,7 +1569,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_modern_logistics
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 1
@@ -1610,10 +1612,6 @@ shared_focus = {
 			num_of_factories < 50
 			factor = 0
 		}
-	}
-
-	available = {
-		is_subject = no
 	}
 
 
@@ -1749,7 +1747,6 @@ shared_focus = {
 	}
 
 	available = {
-		is_subject = no
 		NOT = { is_in_faction_with = TIB }
 	}
 
@@ -1790,7 +1787,6 @@ shared_focus = {
 	}
 
 	available = {
-		is_subject = no
 	}
 
 	bypass = {
@@ -1838,7 +1834,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_one_china_policy
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 1
@@ -1860,7 +1856,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CHI_demand_mongolia
-	icon = GFX_goal_MON_mongolia_flag
+	icon = GFX_goal_generic_air_doctrine
 	prerequisite = { focus = CHI_renounce_the_mcmahon_line }
 	x = 0
 	y = 3
@@ -1880,7 +1876,6 @@ shared_focus = {
 	}
 
 	available = {
-		is_subject = no
 		not = {
 			is_in_faction_with = MON
 		}
@@ -1924,7 +1919,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CHI_anti_imperialism
-	icon = GFX_goal_generic_flames_of_rebellion
+	icon = GFX_goal_generic_military_deal
 	prerequisite = { focus = CHI_renegotiate_the_unequal_treaties }
 	mutually_exclusive = { focus = CHI_imperial_legacy }
 	x = 0
@@ -1956,7 +1951,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CHI_guidance_and_support
-	icon = GFX_goal_indochina_stronger_hand
+	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = CHI_anti_imperialism }
 	x = 1
 	y = 1
@@ -2010,7 +2005,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CHI_commit_to_korean_independence
-	icon = GFX_goal_KOR_the_korean_question
+	icon = GFX_goal_generic_national_unity
 	prerequisite = { focus = CHI_guidance_and_support }
 	x = 1
 	y = 2
@@ -2022,17 +2017,10 @@ shared_focus = {
 		factor = 1
 	}
 
-	available = {
-		is_subject = no
-	}
-
 
 	bypass = {
 		OR = {
-			AND = {
-				country_exists = KOR
-				country_exists = NKR
-			}
+		country_exists = KOR
 			527 = {
 				CONTROLLER = {
 					NOT = { tag = ROOT }
@@ -2099,7 +2087,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CHI_indian_cooperation
-	icon = GFX_goal_RAJ_dreams_of_ahand_hindustan
+	icon = GFX_goal_generic_improve_relations
 	prerequisite = { focus = CHI_anti_imperialism }
 	mutually_exclusive = { focus = CHI_renounce_the_mcmahon_line }
 	x = -1
@@ -2142,7 +2130,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CHI_influence_mongolia
-	icon = GFX_goal_MON_defence
+	icon = GFX_goal_generic_neutrality_focus
 	prerequisite = { focus = CHI_indian_cooperation }
 	x = 0
 	y = 1
@@ -2184,7 +2172,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CHI_imperial_legacy
-	icon = GFX_goal_MAN_restore_the_empire
+	icon = GFX_focus_generic_support_the_left_right
 	prerequisite = { focus = CHI_renegotiate_the_unequal_treaties }
 	mutually_exclusive = { focus = CHI_anti_imperialism }
 	x = 3
@@ -2211,7 +2199,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CHI_overlordship_over_indochina
-	icon = GFX_goal_strike_indochina
+	icon = GFX_goal_generic_position_armies
 	prerequisite = { focus = CHI_imperial_legacy }
 	x = 0
 	y = 1
@@ -2221,10 +2209,6 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-	}
-
-	available = {
-		is_subject = no
 	}
 
 
@@ -2284,11 +2268,8 @@ shared_focus = {
 	}
 
 	available = {
-		is_subject = no
-		NOT = {
-			is_subject_of = JAP 
-			has_war_with = JAP
-		}
+		NOT = { has_war_with = JAP }
+		NOT = { is_subject_of = JAP }
 	}
 
 	bypass = {
@@ -2665,56 +2646,25 @@ shared_focus = {
 		hidden_effect = {
 			if = {
 				limit = {
-					NOT = {
-						has_dlc = "By Blood Alone"
+					not = {
+						has_tech = early_fighter
 					}
 				}
-				if = {
-					limit = {
-						not = {
-							has_tech = early_fighter
-						}
-					}
-					set_technology = { early_fighter = 1 }
-				}
-				if = {
-					limit = {
-						has_completed_focus = CHI_british_cooperation
-						not = { has_war_with = ENG }
-					}
-					add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = ENG }
-				}
-				if = {
-					limit = {
-						has_completed_focus = CHI_mission_to_the_us
-						not = { has_war_with = USA }
-					}
-					add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = USA }
-				}
+				set_technology = { early_fighter = 1 }
 			}
-			else = {
-				if = {
-					limit = {
-						not = {
-							has_tech = iw_small_airframe
-						}
-					}
-					set_technology = { iw_small_airframe = 1 }
+			if = {
+				limit = {
+					has_completed_focus = CHI_british_cooperation
+					not = { has_war_with = ENG }
 				}
-				if = {
-					limit = {
-						has_completed_focus = CHI_british_cooperation
-						not = { has_war_with = ENG }
-					}
-					add_equipment_to_stockpile = { type = small_plane_airframe_0 amount = 50 producer = ENG variant_name = "Gloster Gladiator"}
+				add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = ENG }
+			}
+			if = {
+				limit = {
+					has_completed_focus = CHI_mission_to_the_us
+					not = { has_war_with = USA }
 				}
-				if = {
-					limit = {
-						has_completed_focus = CHI_mission_to_the_us
-						not = { has_war_with = USA }
-					}
-					add_equipment_to_stockpile = { type = small_plane_airframe_1 amount = 50 producer = USA variant_name = "P-36A"}
-				}
+				add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = USA }
 			}
 		}
 	}
@@ -2909,7 +2859,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CHI_chinese_expeditionary_force
-	icon = GFX_goal_USA_coa_army
+	icon = GFX_goal_generic_alliance
 	prerequisite = { focus = CHI_the_hump }
 	x = 0
 	y = 1
@@ -3079,7 +3029,7 @@ shared_focus = {
 
 	completion_reward = {
 		custom_effect_tooltip = available_theorist
-		show_ideas_tooltip = CHI_claire_lee_chennault_theorist
+		show_ideas_tooltip = CHI_claire_lee_chennault_air_theorist
 		custom_effect_tooltip = available_chief_of_airforce
 		show_ideas_tooltip = CHI_claire_lee_chennault_air_chief
 	}
@@ -3161,10 +3111,6 @@ shared_focus = {
 			category = recon_tech
 			category = para_tech
 		}
-		hidden_effect = {
-			set_country_flag = cite_an_airborne_unit_flag
-		}
-		unlock_decision_tooltip = { decision = cite_an_airborne_unit show_effect_tooltip = yes }			
 	}
 }
 

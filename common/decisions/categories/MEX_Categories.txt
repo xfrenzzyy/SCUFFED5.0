@@ -1,11 +1,10 @@
-MEX_foreign_affairs = {
-	icon = generic_crisis
+MEX_context = {
 	allowed = {
 		original_tag = MEX
 	}
 
 	visible = {
-		has_completed_focus = MEX_lay_down_the_cooperative_basis
+		NOT = { has_global_flag = mex_mtg_focus_tree }
 	}
 }
 MEX_PEMEX_Situation = {
@@ -15,7 +14,7 @@ MEX_PEMEX_Situation = {
 	}
 
 	visible = {
-		has_completed_focus = MEX_nationalize_oil_fields
+		NOT = { has_global_flag = mex_mtg_focus_tree }
 	}
 }
 MEX_DGIPS = {
@@ -28,10 +27,23 @@ MEX_DGIPS = {
 		NOT = { has_global_flag = mex_mtg_focus_tree }
 	}
 }
-MEX_meddling_in_foreign_affairs = {
+MEX_GEO = {
 	icon = infiltration
 	allowed = {
 		original_tag = MEX
+	}
+
+	visible = {
+		NOT = { has_global_flag = mex_mtg_focus_tree }
+	}
+}
+MEX_Fact = {
+	icon = infiltration
+	allowed = {
+		OR = {
+			is_in_faction_with = MEX
+			has_country_flag = monroe_doctrine
+		}
 	}
 
 	visible = {

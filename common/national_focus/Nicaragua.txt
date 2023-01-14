@@ -118,8 +118,8 @@ focus = {
 							}
 						}
 						news_event = { 
-							days = 1
-							id = r56.news_event.1100
+							days = 3
+							id = nic_news.1
 						}
 					}
 				}
@@ -348,7 +348,7 @@ focus = {
 
 focus = {
 	id = NIC_the_somoza_family_fortune
-	icon = GFX_goal_generic_coffee_plantations
+	icon = GFX_goal_generic_Coffee_Plantations
 	x = 0
 	y = 4
 	relative_position_id = NIC_president_Somoza_Garcia
@@ -1093,7 +1093,7 @@ focus = {
 
 focus = {
 	id = NIC_push_south
-	icon = GFX_goal_generic_attack_costa_rica
+	icon = GFX_goal_nic_strike_south
 	prerequisite = { focus = NIC_local_intelligence_cooperation }
 	prerequisite = { focus = NIC_steel_trade }
 	x = 5

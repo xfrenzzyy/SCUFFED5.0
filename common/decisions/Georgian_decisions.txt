@@ -159,13 +159,7 @@ fate_of_georgia_category = {
 				AND = {
 					OR = {
 						original_tag = ROOT
-						AND = { #can only form puppet inside faction territory if player, while controller isnt a player
-							is_in_faction_with = ROOT
-							is_ai = yes
-							ROOT = {
-								is_ai = no
-							}
-						}
+						is_in_faction_with = ROOT
 					}
 					has_full_control_of_state = 231
 					NOT = {

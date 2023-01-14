@@ -27,8 +27,10 @@ transfer_technology = {
 					has_tech = air_superiority
 				}
 				NOT = {
-					has_tech = formation_flying
-					has_tech = force_rotation
+					OR = {
+						has_tech = formation_flying
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -42,8 +44,10 @@ transfer_technology = {
 					has_tech = infrastructure_destruction
 				}
 				NOT = {
-					has_tech = formation_flying
-					has_tech = force_rotation
+					OR = {
+						has_tech = formation_flying
+						has_tech = force_rotation
+					}
 				}				
 			}
 			set_technology = {
@@ -57,8 +61,10 @@ transfer_technology = {
 					has_tech = home_defence
 				}
 				NOT = {
-					has_tech = formation_flying
-					has_tech = force_rotation
+					OR = {
+						has_tech = formation_flying
+						has_tech = force_rotation
+					}
 				}				
 			}
 			set_technology = {
@@ -72,8 +78,10 @@ transfer_technology = {
 					has_tech = naval_strike_tactics
 				}
 				NOT = {
-					has_tech = formation_flying
-					has_tech = force_rotation
+					OR = {
+						has_tech = formation_flying
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -87,8 +95,10 @@ transfer_technology = {
 					has_tech = fighter_sweeps
 				}
 				NOT = {
-					has_tech = formation_flying
-					has_tech = force_rotation
+					OR = {
+						has_tech = formation_flying
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -102,8 +112,10 @@ transfer_technology = {
 					has_tech = dogfighting_experience
 				}
 				NOT = {
-					has_tech = formation_flying
-					has_tech = force_rotation
+					OR = {
+						has_tech = formation_flying
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -117,8 +129,10 @@ transfer_technology = {
 					has_tech = multialtitude_flying
 				}
 				NOT = {
-					has_tech = formation_flying
-					has_tech = force_rotation
+					OR = {
+						has_tech = formation_flying
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -132,8 +146,10 @@ transfer_technology = {
 					has_tech = logistical_bombing
 				}
 				NOT = {
-					has_tech = formation_flying
-					has_tech = force_rotation
+					OR = {
+						has_tech = formation_flying
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -147,8 +163,10 @@ transfer_technology = {
 					has_tech = night_bombing
 				}
 				NOT = {
-					has_tech = formation_flying
-					has_tech = force_rotation
+					OR = {
+						has_tech = formation_flying
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -162,8 +180,10 @@ transfer_technology = {
 					has_tech = day_bombing
 				}
 				NOT = {
-					has_tech = formation_flying
-					has_tech = force_rotation
+					OR = {
+						has_tech = formation_flying
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -177,8 +197,10 @@ transfer_technology = {
 					has_tech = massed_bomber_formations
 				}
 				NOT = {
-					has_tech = formation_flying
-					has_tech = force_rotation
+					OR = {
+						has_tech = formation_flying
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -192,8 +214,10 @@ transfer_technology = {
 					has_tech = air_offense
 				}
 				NOT = {
-					has_tech = formation_flying
-					has_tech = force_rotation
+					OR = {
+						has_tech = formation_flying
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -207,8 +231,10 @@ transfer_technology = {
 					has_tech = flying_fortress
 				}
 				NOT = {
-					has_tech = formation_flying
-					has_tech = force_rotation
+					OR = {
+						has_tech = formation_flying
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -222,8 +248,10 @@ transfer_technology = {
 					has_tech = offensive_formations
 				}
 				NOT = {
-					has_tech = formation_flying
-					has_tech = force_rotation
+					OR = {
+						has_tech = formation_flying
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -237,8 +265,10 @@ transfer_technology = {
 					has_tech = mass_destruction
 				}
 				NOT = {
-					has_tech = formation_flying
-					has_tech = force_rotation
+					OR = {
+						has_tech = formation_flying
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -252,8 +282,10 @@ transfer_technology = {
 					has_tech = formation_flying
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = force_rotation
+					OR = {
+						has_tech = air_superiority
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -267,8 +299,10 @@ transfer_technology = {
 					has_tech = dive_bombing
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = force_rotation
+					OR = {
+						has_tech = air_superiority
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -282,8 +316,10 @@ transfer_technology = {
 					has_tech = direct_ground_support
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = force_rotation
+					OR = {
+						has_tech = air_superiority
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -297,8 +333,10 @@ transfer_technology = {
 					has_tech = formation_fighting
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = force_rotation
+					OR = {
+						has_tech = air_superiority
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -312,8 +350,10 @@ transfer_technology = {
 					has_tech = fighter_ace_initiative
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = force_rotation
+					OR = {
+						has_tech = air_superiority
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -327,8 +367,10 @@ transfer_technology = {
 					has_tech = hunt_and_destroy
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = force_rotation
+					OR = {
+						has_tech = air_superiority
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -342,8 +384,10 @@ transfer_technology = {
 					has_tech = combat_unit_destruction
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = force_rotation
+					OR = {
+						has_tech = air_superiority
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -357,8 +401,10 @@ transfer_technology = {
 					has_tech = battlefield_support
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = force_rotation
+					OR = {
+						has_tech = air_superiority
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -372,8 +418,10 @@ transfer_technology = {
 					has_tech = keypoint_bombing
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = force_rotation
+					OR = {
+						has_tech = air_superiority
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -387,8 +435,10 @@ transfer_technology = {
 					has_tech = ground_support_integration
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = force_rotation
+					OR = {
+						has_tech = air_superiority
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -402,8 +452,10 @@ transfer_technology = {
 					has_tech = naval_strike_torpedo_tactics
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = force_rotation
+					OR = {
+						has_tech = air_superiority
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -417,8 +469,10 @@ transfer_technology = {
 					has_tech = strategic_destruction
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = force_rotation
+					OR = {
+						has_tech = air_superiority
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -432,8 +486,10 @@ transfer_technology = {
 					has_tech = forward_interception
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = force_rotation
+					OR = {
+						has_tech = air_superiority
+						has_tech = force_rotation
+					}
 				}
 			}
 			set_technology = {
@@ -447,8 +503,10 @@ transfer_technology = {
 					has_tech = force_rotation
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = formation_flying
+					OR = {
+						has_tech = air_superiority
+						has_tech = formation_flying
+					}
 				}
 			}
 			set_technology = {
@@ -462,8 +520,10 @@ transfer_technology = {
 					has_tech = fighter_baiting
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = formation_flying
+					OR = {
+						has_tech = air_superiority
+						has_tech = formation_flying
+					}
 				}
 			}
 			set_technology = {
@@ -477,8 +537,10 @@ transfer_technology = {
 					has_tech = low_echelon_support
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = formation_flying
+					OR = {
+						has_tech = air_superiority
+						has_tech = formation_flying
+					}
 				}
 			}
 			set_technology = {
@@ -492,8 +554,10 @@ transfer_technology = {
 					has_tech = dispersed_fighting
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = formation_flying
+					OR = {
+						has_tech = air_superiority
+						has_tech = formation_flying
+					}
 				}
 			}
 			set_technology = {
@@ -507,8 +571,10 @@ transfer_technology = {
 					has_tech = operational_destruction
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = formation_flying
+					OR = {
+						has_tech = air_superiority
+						has_tech = formation_flying
+					}
 				}
 			}
 			set_technology = {
@@ -522,8 +588,10 @@ transfer_technology = {
 					has_tech = fighter_veteran_initiative
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = formation_flying
+					OR = {
+						has_tech = air_superiority
+						has_tech = formation_flying
+					}
 				}
 			}
 			set_technology = {
@@ -537,8 +605,10 @@ transfer_technology = {
 					has_tech = naval_strike_torpedo_tactics_oi
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = formation_flying
+					OR = {
+						has_tech = air_superiority
+						has_tech = formation_flying
+					}
 				}
 			}
 			set_technology = {
@@ -552,8 +622,10 @@ transfer_technology = {
 					has_tech = cas_veteran_initiative
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = formation_flying
+					OR = {
+						has_tech = air_superiority
+						has_tech = formation_flying
+					}
 				}
 			}
 			set_technology = {
@@ -567,8 +639,10 @@ transfer_technology = {
 					has_tech = carousel_bombing
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = formation_flying
+					OR = {
+						has_tech = air_superiority
+						has_tech = formation_flying
+					}
 				}
 			}
 			set_technology = {
@@ -582,8 +656,10 @@ transfer_technology = {
 					has_tech = infiltration_bombing
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = formation_flying
+					OR = {
+						has_tech = air_superiority
+						has_tech = formation_flying
+					}
 				}
 			}
 			set_technology = {
@@ -597,8 +673,10 @@ transfer_technology = {
 					has_tech = air_skirmish
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = formation_flying
+					OR = {
+						has_tech = air_superiority
+						has_tech = formation_flying
+					}
 				}
 			}
 			set_technology = {
@@ -612,8 +690,10 @@ transfer_technology = {
 					has_tech = high_level_bombing
 				}
 				NOT = {
-					has_tech = air_superiority
-					has_tech = formation_flying
+					OR = {
+						has_tech = air_superiority
+						has_tech = formation_flying
+					}
 				}
 			}
 			set_technology = {
@@ -2752,9 +2832,11 @@ transfer_technology = {
 					has_tech = mobile_warfare
 				}
 				NOT = {
-					has_tech = superior_firepower
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -2768,9 +2850,11 @@ transfer_technology = {
 					has_tech = delay
 				}
 				NOT = {
-					has_tech = superior_firepower
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -2784,9 +2868,11 @@ transfer_technology = {
 					has_tech = elastic_defence
 				}
 				NOT = {
-					has_tech = superior_firepower
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -2800,9 +2886,11 @@ transfer_technology = {
 					has_tech = mobile_infantry
 				}
 				NOT = {
-					has_tech = superior_firepower
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -2816,9 +2904,11 @@ transfer_technology = {
 					has_tech = mass_motorization
 				}
 				NOT = {
-					has_tech = superior_firepower
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -2832,9 +2922,11 @@ transfer_technology = {
 					has_tech = mechanised_offensive
 				}
 				NOT = {
-					has_tech = superior_firepower
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -2848,9 +2940,11 @@ transfer_technology = {
 					has_tech = armored_spearhead
 				}
 				NOT = {
-					has_tech = superior_firepower
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -2864,9 +2958,11 @@ transfer_technology = {
 					has_tech = schwerpunk
 				}
 				NOT = {
-					has_tech = superior_firepower
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -2880,9 +2976,11 @@ transfer_technology = {
 					has_tech = blitzkrieg
 				}
 				NOT = {
-					has_tech = superior_firepower
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -2907,9 +3005,11 @@ transfer_technology = {
 					has_tech = firebrigades
 				}
 				NOT = {
-					has_tech = superior_firepower
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -2923,9 +3023,11 @@ transfer_technology = {
 					has_tech = backhand_blow
 				}
 				NOT = {
-					has_tech = superior_firepower
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -2939,9 +3041,11 @@ transfer_technology = {
 					has_tech = modern_blitzkrieg
 				}
 				NOT = {
-					has_tech = superior_firepower
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -2952,48 +3056,54 @@ transfer_technology = {
 		if = {
 			limit = {
 				PREV = {
-					has_tech = mission_type_tactics
+					has_tech = volkssturm
 				}
 				NOT = {
-					has_tech = superior_firepower
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
-				mission_type_tactics = 1
+				volkssturm = 1
 			}
 		}
 
 		if = {
 			limit = {
 				PREV = {
-					has_tech = force_concentration
+					has_tech = nd_conscription
 				}
 				NOT = {
-					has_tech = superior_firepower
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
-				force_concentration = 1
+				nd_conscription = 1
 			}
 		}
 
 		if = {
 			limit = {
 				PREV = {
-					has_tech = tactical_command
+					has_tech = werwolf_guerillas
 				}
 				NOT = {
-					has_tech = superior_firepower
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
-				tactical_command = 1
+				werwolf_guerillas = 1
 			}
 		}
 
@@ -3003,9 +3113,11 @@ transfer_technology = {
 					has_tech = superior_firepower
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3019,9 +3131,11 @@ transfer_technology = {
 					has_tech = sup_delay
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3035,9 +3149,11 @@ transfer_technology = {
 					has_tech = mobile_defence
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3051,9 +3167,11 @@ transfer_technology = {
 					has_tech = intergrated_support
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3067,9 +3185,11 @@ transfer_technology = {
 					has_tech = regimental_combat_teams
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3083,9 +3203,11 @@ transfer_technology = {
 					has_tech = dispersed_support
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3099,9 +3221,11 @@ transfer_technology = {
 					has_tech = overwhelming_firepower
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3115,9 +3239,11 @@ transfer_technology = {
 					has_tech = sup_mechanized_offensive
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3131,9 +3257,11 @@ transfer_technology = {
 					has_tech = concentrated_fire_plans
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3147,9 +3275,11 @@ transfer_technology = {
 					has_tech = combined_arms
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3163,9 +3293,11 @@ transfer_technology = {
 					has_tech = tactical_control
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3179,9 +3311,11 @@ transfer_technology = {
 					has_tech = air_land_battle
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3195,9 +3329,11 @@ transfer_technology = {
 					has_tech = centralized_fire_control
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3211,9 +3347,11 @@ transfer_technology = {
 					has_tech = forward_observers
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3227,9 +3365,11 @@ transfer_technology = {
 					has_tech = advanced_firebases
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3243,14 +3383,11 @@ transfer_technology = {
 					has_tech = shock_and_awe
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					has_tech = mass_assault
-				}
-				NOT = {
-					has_tech = mobile_warfare
-					has_tech = trench_warfare
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = trench_warfare
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3264,9 +3401,11 @@ transfer_technology = {
 					has_tech = trench_warfare
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3280,9 +3419,11 @@ transfer_technology = {
 					has_tech = grand_battle_plan
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3296,9 +3437,11 @@ transfer_technology = {
 					has_tech = prepared_defense
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3312,9 +3455,11 @@ transfer_technology = {
 					has_tech = grand_assault
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3328,9 +3473,11 @@ transfer_technology = {
 					has_tech = grand_mechanized_offensive
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3344,9 +3491,11 @@ transfer_technology = {
 					has_tech = assault_concentration
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3360,9 +3509,11 @@ transfer_technology = {
 					has_tech = branch_interoperation
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3376,9 +3527,11 @@ transfer_technology = {
 					has_tech = assault_breakthrough
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3392,9 +3545,11 @@ transfer_technology = {
 					has_tech = central_planning
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3408,9 +3563,11 @@ transfer_technology = {
 					has_tech = c3i_theory
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3424,9 +3581,11 @@ transfer_technology = {
 					has_tech = infantry_offensive
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3440,9 +3599,11 @@ transfer_technology = {
 					has_tech = armored_operations
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3456,9 +3617,11 @@ transfer_technology = {
 					has_tech = infiltration_assault
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3472,9 +3635,11 @@ transfer_technology = {
 					has_tech = night_assault_tactics
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3488,9 +3653,11 @@ transfer_technology = {
 					has_tech = attritional_containment
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3504,14 +3671,11 @@ transfer_technology = {
 					has_tech = infiltration_in_depth
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = mass_assault
-				}
-				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = mass_assault
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = mass_assault
+					}
 				}
 			}
 			set_technology = {
@@ -3525,9 +3689,11 @@ transfer_technology = {
 					has_tech = mass_assault
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = trench_warfare
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+					}
 				}
 			}
 			set_technology = {
@@ -3541,9 +3707,11 @@ transfer_technology = {
 					has_tech = pocket_defence
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = trench_warfare
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+					}
 				}
 			}
 			set_technology = {
@@ -3557,9 +3725,11 @@ transfer_technology = {
 					has_tech = defence_in_depth
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = trench_warfare
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+					}
 				}
 			}
 			set_technology = {
@@ -3573,9 +3743,11 @@ transfer_technology = {
 					has_tech = large_front_operations
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = trench_warfare
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+					}
 				}
 			}
 			set_technology = {
@@ -3589,9 +3761,11 @@ transfer_technology = {
 					has_tech = deep_operations
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = trench_warfare
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+					}
 				}
 			}
 			set_technology = {
@@ -3605,9 +3779,11 @@ transfer_technology = {
 					has_tech = operational_concentration
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = trench_warfare
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+					}
 				}
 			}
 			set_technology = {
@@ -3621,9 +3797,11 @@ transfer_technology = {
 					has_tech = vast_offensives
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = trench_warfare
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+					}
 				}
 			}
 			set_technology = {
@@ -3637,9 +3815,11 @@ transfer_technology = {
 					has_tech = breakthrough_priority
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = trench_warfare
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+					}
 				}
 			}
 			set_technology = {
@@ -3653,9 +3833,11 @@ transfer_technology = {
 					has_tech = mechanized_wave
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = trench_warfare
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+					}
 				}
 			}
 			set_technology = {
@@ -3669,9 +3851,11 @@ transfer_technology = {
 					has_tech = continuous_offensive
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = trench_warfare
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+					}
 				}
 			}
 			set_technology = {
@@ -3685,9 +3869,11 @@ transfer_technology = {
 					has_tech = peoples_army
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = trench_warfare
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+					}
 				}
 			}
 			set_technology = {
@@ -3701,9 +3887,11 @@ transfer_technology = {
 					has_tech = human_infantry_offensive
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = trench_warfare
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+					}
 				}
 			}
 			set_technology = {
@@ -3717,9 +3905,11 @@ transfer_technology = {
 					has_tech = large_front_offensive
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = trench_warfare
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+					}
 				}
 			}
 			set_technology = {
@@ -3733,9 +3923,11 @@ transfer_technology = {
 					has_tech = human_wave_offensive
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = trench_warfare
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+					}
 				}
 			}
 			set_technology = {
@@ -3749,9 +3941,11 @@ transfer_technology = {
 					has_tech = guerilla_warfare
 				}
 				NOT = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = trench_warfare
+					OR = {
+						has_tech = mobile_warfare
+						has_tech = superior_firepower
+						has_tech = trench_warfare
+					}
 				}
 			}
 			set_technology = {
@@ -4106,8 +4300,10 @@ transfer_technology = {
 					has_tech = fleet_in_being
 				}
 				NOT = {
-					has_tech = trade_interdiction
-					has_tech = base_strike
+					OR = {
+						has_tech = trade_interdiction
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4121,8 +4317,10 @@ transfer_technology = {
 					has_tech = battlefleet_concentration
 				}
 				NOT = {
-					has_tech = trade_interdiction
-					has_tech = base_strike
+					OR = {
+						has_tech = trade_interdiction
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4136,8 +4334,10 @@ transfer_technology = {
 					has_tech = subsidiary_carrier_role
 				}
 				NOT = {
-					has_tech = trade_interdiction
-					has_tech = base_strike
+					OR = {
+						has_tech = trade_interdiction
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4151,8 +4351,10 @@ transfer_technology = {
 					has_tech = hunter_killer_groups
 				}
 				NOT = {
-					has_tech = trade_interdiction
-					has_tech = base_strike
+					OR = {
+						has_tech = trade_interdiction
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4166,8 +4368,10 @@ transfer_technology = {
 					has_tech = floating_fortress
 				}
 				NOT = {
-					has_tech = trade_interdiction
-					has_tech = base_strike
+					OR = {
+						has_tech = trade_interdiction
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4181,8 +4385,10 @@ transfer_technology = {
 					has_tech = floating_airfield
 				}
 				NOT = {
-					has_tech = trade_interdiction
-					has_tech = base_strike
+					OR = {
+						has_tech = trade_interdiction
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4196,8 +4402,10 @@ transfer_technology = {
 					has_tech = grand_battlefleet
 				}
 				NOT = {
-					has_tech = trade_interdiction
-					has_tech = base_strike
+					OR = {
+						has_tech = trade_interdiction
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4211,8 +4419,10 @@ transfer_technology = {
 					has_tech = convoy_sailing
 				}
 				NOT = {
-					has_tech = trade_interdiction
-					has_tech = base_strike
+					OR = {
+						has_tech = trade_interdiction
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4226,8 +4436,10 @@ transfer_technology = {
 					has_tech = convoy_escorts
 				}
 				NOT = {
-					has_tech = trade_interdiction
-					has_tech = base_strike
+					OR = {
+						has_tech = trade_interdiction
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4241,8 +4453,10 @@ transfer_technology = {
 					has_tech = escort_carriers
 				}
 				NOT = {
-					has_tech = trade_interdiction
-					has_tech = base_strike
+					OR = {
+						has_tech = trade_interdiction
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4256,8 +4470,10 @@ transfer_technology = {
 					has_tech = integrated_convoy_defence
 				}
 				NOT = {
-					has_tech = trade_interdiction
-					has_tech = base_strike
+					OR = {
+						has_tech = trade_interdiction
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4271,8 +4487,10 @@ transfer_technology = {
 					has_tech = submarine_operations
 				}
 				NOT = {
-					has_tech = trade_interdiction
-					has_tech = base_strike
+					OR = {
+						has_tech = trade_interdiction
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4286,8 +4504,10 @@ transfer_technology = {
 					has_tech = undersea_blockade
 				}
 				NOT = {
-					has_tech = trade_interdiction
-					has_tech = base_strike
+					OR = {
+						has_tech = trade_interdiction
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4301,8 +4521,10 @@ transfer_technology = {
 					has_tech = convoy_interdiction
 				}
 				NOT = {
-					has_tech = trade_interdiction
-					has_tech = base_strike
+					OR = {
+						has_tech = trade_interdiction
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4316,8 +4538,10 @@ transfer_technology = {
 					has_tech = submarine_offensive
 				}
 				NOT = {
-					has_tech = trade_interdiction
-					has_tech = base_strike
+					OR = {
+						has_tech = trade_interdiction
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4331,8 +4555,10 @@ transfer_technology = {
 					has_tech = trade_interdiction
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = base_strike
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4346,8 +4572,10 @@ transfer_technology = {
 					has_tech = convoy_interdiction_ti
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = base_strike
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4361,8 +4589,10 @@ transfer_technology = {
 					has_tech = unrestricted_submarine_warfare
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = base_strike
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4376,8 +4606,10 @@ transfer_technology = {
 					has_tech = wolfpacks
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = base_strike
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4391,8 +4623,10 @@ transfer_technology = {
 					has_tech = advanced_submarine_warfare
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = base_strike
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4406,8 +4640,10 @@ transfer_technology = {
 					has_tech = combined_operations_raiding
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = base_strike
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4421,8 +4657,10 @@ transfer_technology = {
 					has_tech = raider_patrols
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = base_strike
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4436,8 +4674,10 @@ transfer_technology = {
 					has_tech = capital_ship_raiders
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = base_strike
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4451,8 +4691,10 @@ transfer_technology = {
 					has_tech = battlefleet_concentration_ti
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = base_strike
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4466,8 +4708,10 @@ transfer_technology = {
 					has_tech = floating_fortress_ti
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = base_strike
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4481,8 +4725,10 @@ transfer_technology = {
 					has_tech = floating_airfield_ti
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = base_strike
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4496,8 +4742,10 @@ transfer_technology = {
 					has_tech = carrier_operations
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = base_strike
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4511,8 +4759,10 @@ transfer_technology = {
 					has_tech = convoy_sailing_ti
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = base_strike
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4526,8 +4776,10 @@ transfer_technology = {
 					has_tech = subsidiary_carrier_role_ti
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = base_strike
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4541,8 +4793,10 @@ transfer_technology = {
 					has_tech = naval_air_operations
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = base_strike
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = base_strike
+					}
 				}
 			}
 			set_technology = {
@@ -4556,8 +4810,10 @@ transfer_technology = {
 					has_tech = base_strike
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = trade_interdiction
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = trade_interdiction
+					}
 				}
 			}
 			set_technology = {
@@ -4571,8 +4827,10 @@ transfer_technology = {
 					has_tech = carrier_primacy
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = trade_interdiction
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = trade_interdiction
+					}
 				}
 			}
 			set_technology = {
@@ -4586,8 +4844,10 @@ transfer_technology = {
 					has_tech = carrier_task_forces
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = trade_interdiction
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = trade_interdiction
+					}
 				}
 			}
 			set_technology = {
@@ -4601,8 +4861,10 @@ transfer_technology = {
 					has_tech = floating_airfield_bs
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = trade_interdiction
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = trade_interdiction
+					}
 				}
 			}
 			set_technology = {
@@ -4616,8 +4878,10 @@ transfer_technology = {
 					has_tech = massed_strikes
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = trade_interdiction
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = trade_interdiction
+					}
 				}
 			}
 			set_technology = {
@@ -4631,8 +4895,10 @@ transfer_technology = {
 					has_tech = floating_fortress_bs
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = trade_interdiction
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = trade_interdiction
+					}
 				}
 			}
 			set_technology = {
@@ -4646,8 +4912,10 @@ transfer_technology = {
 					has_tech = carrier_battlegroups
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = trade_interdiction
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = trade_interdiction
+					}
 				}
 			}
 			set_technology = {
@@ -4661,8 +4929,10 @@ transfer_technology = {
 					has_tech = submarine_operations_bs
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = trade_interdiction
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = trade_interdiction
+					}
 				}
 			}
 			set_technology = {
@@ -4676,8 +4946,10 @@ transfer_technology = {
 					has_tech = undersea_blockade_bs
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = trade_interdiction
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = trade_interdiction
+					}
 				}
 			}
 			set_technology = {
@@ -4691,8 +4963,10 @@ transfer_technology = {
 					has_tech = convoy_interdiction_bs
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = trade_interdiction
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = trade_interdiction
+					}
 				}
 			}
 			set_technology = {
@@ -4706,8 +4980,10 @@ transfer_technology = {
 					has_tech = submarine_offensive_bs
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = trade_interdiction
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = trade_interdiction
+					}
 				}
 			}
 			set_technology = {
@@ -4721,8 +4997,10 @@ transfer_technology = {
 					has_tech = convoy_escorts_bs
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = trade_interdiction
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = trade_interdiction
+					}
 				}
 			}
 			set_technology = {
@@ -4736,8 +5014,10 @@ transfer_technology = {
 					has_tech = escort_patrols
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = trade_interdiction
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = trade_interdiction
+					}
 				}
 			}
 			set_technology = {
@@ -4751,8 +5031,10 @@ transfer_technology = {
 					has_tech = convoy_sailing_bs
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = trade_interdiction
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = trade_interdiction
+					}
 				}
 			}
 			set_technology = {
@@ -4766,8 +5048,10 @@ transfer_technology = {
 					has_tech = integrated_convoy_defence_bs
 				}
 				NOT = {
-					has_tech = fleet_in_being
-					has_tech = trade_interdiction
+					OR = {
+						has_tech = fleet_in_being
+						has_tech = trade_interdiction
+					}
 				}
 			}
 			set_technology = {

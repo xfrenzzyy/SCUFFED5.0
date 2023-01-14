@@ -69,6 +69,14 @@ CHI_alternate_neutrality_plan = {
 		KMT_trade_port_neutral
 	}
 
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
 	traits = {
 		silent_workhorse = 50
 	}
@@ -133,9 +141,16 @@ CHI_democratic_plan = {
 		KMT_trade_port_demo
 	}
 
+	research = {
+
+	}
+
+	ideas = {
+		CHI_carsun_chang = 50
+	}
+
 	traits = {
 		silent_workhorse = 50
-		democratic_reformer = 50
 	}
 
 	focus_factors = {
@@ -208,9 +223,16 @@ CHI_fascist_pro_german_plan = {
 		KMT_pincer_soviet
 	}
 
+	research = {
+
+	}
+
+	ideas = {
+		CHI_deng_wenyi = 50
+	}
+
 	traits = {
 		silent_workhorse = 50
-		fascist_demagogue = 80
 	}
 
 	focus_factors = {
@@ -282,9 +304,16 @@ CHI_pro_japan_plan = {
 		KMT_demand_soviet_puppets
 	}
 
+	research = {
+
+	}
+
+	ideas = {
+		CHI_deng_wenyi = 50
+	}
+
 	traits = {
 		silent_workhorse = 50
-		fascist_demagogue = 80
 	}
 
 	focus_factors = {

@@ -1,6 +1,5 @@
 ﻿division_template = {
-	name = "Xi Zeng Jun"
-	division_names_group = PRC_INF_01	
+	name = "Xi Zeng Jun"				
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }	

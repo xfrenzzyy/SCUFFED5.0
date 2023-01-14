@@ -64,6 +64,8 @@ political_actions = {
 		modifier = {
 			political_power_gain = -1
 		}
+		complete_effect = {
+		}
 		remove_effect = {
 			FROM = { add_core_of = PAK }
 		}
@@ -76,9 +78,6 @@ political_actions = {
 		icon = generic_nationalism
 		available = {
 			
-		}
-		allowed = {
-			original_tag = PAK
 		}
 		state_target = yes
 		visible = {
@@ -142,6 +141,10 @@ bangladesh_liberation = {
 			NOT = {
 				has_completed_focus = PAK_A_Federal_Pakistan
 			}
+		}
+		
+		allowed = {
+			
 		}
 		
 		cancel_if_not_visible = yes
@@ -445,9 +448,7 @@ communist_revolution = {
 		}	
 
 		highlight_states = {
- 			highlight_state_targets = { 
-				state = 443
-			} 
+			state = 443
 		}
 		
 		complete_effect = {
@@ -588,9 +589,7 @@ fascist_coup = {
 		}	
 
 		highlight_states = {
- 			highlight_state_targets = { 
-				state = 443
-			} 
+			state = 443
 		}
 		
 		complete_effect = {

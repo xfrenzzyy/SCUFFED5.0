@@ -106,54 +106,90 @@ ideas = {
 			removal_cost = -1
 
 			equipment_bonus = {
-				small_plane_airframe = {
-					build_cost_ic = -0.03
+				fighter_equipment = {
 					instant = yes
+					build_cost_ic = -0.03
+				}			
+				cv_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.03
 				}
-				cv_small_plane_airframe = {
-					build_cost_ic = -0.03
+				jet_fighter_equipment = {
 					instant = yes
+					build_cost_ic = -0.03
 				}
-				small_plane_cas_airframe = {
-					build_cost_ic = -0.03
+				cv_CAS_equipment = {
 					instant = yes
+					build_cost_ic = -0.03
 				}
-				cv_small_plane_cas_airframe = {
-					build_cost_ic = -0.03
+				CAS_equipment = {
 					instant = yes
+					build_cost_ic = -0.03
 				}
-				small_plane_naval_bomber_airframe = {
-					build_cost_ic = -0.03
+				nav_bomber_equipment = {
 					instant = yes
+					build_cost_ic = -0.03
 				}
-				cv_small_plane_naval_bomber_airframe = {
-					build_cost_ic = -0.03
+			#	cv_nav_bomber_equipment = { NOT USED BY THE MOD
+			#		instant = yes
+			#		build_cost_ic = -0.03
+			#	}
+				rocket_interceptor_equipment = {
 					instant = yes
+					build_cost_ic = -0.03
 				}
-				medium_plane_airframe = {
-					build_cost_ic = -0.03
+				tac_bomber_equipment = {
 					instant = yes
+					build_cost_ic = -0.03
 				}
-				medium_plane_fighter_airframe = {
-					build_cost_ic = -0.03
+				jet_tac_bomber_equipment = {
 					instant = yes
+					build_cost_ic = -0.03
 				}
-				medium_plane_scout_plane_airframe = {
-					build_cost_ic = -0.03
+				jet_strat_bomber_equipment = {
 					instant = yes
+					build_cost_ic = -0.03
 				}
-				large_plane_airframe = {
-					build_cost_ic = -0.03
+				heavy_fighter_equipment = {
 					instant = yes
+					build_cost_ic = -0.03
 				}
-				large_plane_maritime_patrol_plane_airframe = {
-					build_cost_ic = -0.03
+				strat_bomber_equipment = {
 					instant = yes
+					build_cost_ic = -0.03
 				}
 				transport_plane_equipment = {
 					instant = yes
 					build_cost_ic = -0.03
-				}							
+				}
+				guided_missile_equipment = {
+					instant = yes
+					build_cost_ic = -0.03
+				}
+				fighter_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.03
+				}					
+				hfighter_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.03
+				}
+				flying_boat_equipment = {
+					instant = yes
+					build_cost_ic = -0.03
+				}
+				med_maritime_equipment = {		
+					instant = yes
+					build_cost_ic = -0.03
+				}	
+				strat_maritime_equipment = {		
+					instant = yes
+					build_cost_ic = -0.03
+				}	
+				scout_plane_equipment = {
+					instant = yes
+					build_cost_ic = -0.03	
+				}												
 			}
 			modifier = {
 				aircraft_manufacturer_cost_factor = -0.25
@@ -178,25 +214,4 @@ ideas = {
 			}
 		}
 	}
-	materiel_manufacturer = {
-		
-		designer = yes
-		
-		UKR_shostka_powder_plant = {
-			picture = generic_infantry_equipment_manufacturer_2
-			allowed = {
-				original_tag = UKR
-			}
-			
-			research_bonus = {
-				infantry_weapons = 0.15
-			}
-			
-			traits = { infantry_equipment_manufacturer }
-			
-			ai_will_do = {
-				factor = 1
-			}			
-		}
-	}		
 }

@@ -11,8 +11,7 @@ characters={
 		}
 		country_leader={
 			ideology=conservatism
-			traits = { lawyer }
-			expire="1965.1.1"
+			expire="1965.1.1.1"
 			id=-1
 		}
 	}
@@ -88,9 +87,7 @@ characters={
 				communist_revolutionary 
 			}
 			on_add = {
-				owner = {
-					country_event = political.1
-				}
+				country_event = political.1
 			}
 			do_effect  = {
 				not  = {
@@ -132,9 +129,7 @@ characters={
 			}
 			traits = { fascist_demagogue editor }
 			on_add = {
-				owner = {
-					country_event = political.7
-				}
+				country_event = political.7
 			}
 			do_effect  = {
 				not  = {
@@ -284,11 +279,8 @@ characters={
 		}
 		country_leader={
 			ideology=marxism
-			expire="1965.1.1"
+			expire="1965.1.1.1"
 			id=-1
-			traits = {
-				feverous_marxist
-			}
 		}
 	}
 	LUX_pierre_dupong={
@@ -317,10 +309,13 @@ characters={
 				large="gfx/leaders/LUX/r56_portrait_LUX_Pierre_Dupong.dds"
 				small="GFX_idea_LUX_pierre_dupong"
 			}
+			army={
+				
+			}
 		}
 		#country_leader={
 		#	ideology=liberalism
-		#	expire="1965.1.1"
+		#	expire="1965.1.1.1"
 		#	id=-1
 		#}
 	}
@@ -371,7 +366,7 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="Emile Speller"
+		name="LUX_emile_speller"
 		portraits={
 			army={
 				small="GFX_idea_LUX_emile_speller"

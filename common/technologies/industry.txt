@@ -268,7 +268,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 6 }
+			position = { x = 2 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -772,7 +772,7 @@ technologies = {
 
 		enable_building = {
 			building = fuel_silo
-			level = 5
+			level = 3
 		}
 				
 		path = {
@@ -1572,7 +1572,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.5
+			factor = 1
 
 			modifier = {
 				factor = 5.0
@@ -1676,10 +1676,10 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.5
+			factor = 1
 			
 			modifier = {
-				factor = 5.5
+				factor = 5.0
 				OR = {
 					oil > 0
 					aluminium > 0
@@ -1691,7 +1691,7 @@ technologies = {
 			}
 			
 			modifier = {
-				factor = 2.0
+				factor = 1.5
 				 OR = {
 					oil > 8
 					aluminium > 8
@@ -1702,7 +1702,7 @@ technologies = {
 				}
 			}
 			modifier = {
-				factor = 3.5
+				factor = 3
 				original_tag = USA
 			}				
 		}
@@ -1768,10 +1768,10 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.5
+			factor = 1
 			
 			modifier = {
-				factor = 5.5
+				factor = 5.0
 				OR = {
 					oil > 0
 					aluminium > 0
@@ -1783,7 +1783,7 @@ technologies = {
 			}
 			
 			modifier = {
-				factor = 2.0
+				factor = 1.5
 				OR = {
 					oil > 8
 					aluminium > 8
@@ -1794,7 +1794,7 @@ technologies = {
 				}
 			}
 			modifier = {
-				factor = 3.5
+				factor = 3
 				original_tag = USA
 			}				
 		}
@@ -1864,7 +1864,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 2
 			modifier = {
 
 				factor = 5.0
@@ -1890,7 +1890,7 @@ technologies = {
 				}
 			}
 			modifier = {
-				factor = 3.5
+				factor = 3
 				original_tag = USA
 			}				
 		}
@@ -1950,7 +1950,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			
 			modifier = {
 				factor = 5.0
@@ -2035,7 +2035,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.1
+			factor = 1
 			
 			modifier = {
 				factor = 5.0
@@ -2120,7 +2120,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.1
+			factor = 1
 			
 			modifier = {
 				factor = 5.0
@@ -2200,7 +2200,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.1
+			factor = 1
 			
 			modifier = {
 				factor = 5.0
@@ -2909,7 +2909,7 @@ steel_production_1 = {
 	}
 	
 	ai_will_do = {
-		factor = 0
+		factor = 2
 		modifier = {
 			factor = 0.5
 			steel > 10
@@ -2959,14 +2959,18 @@ steel_production_2 = {
 	}
 	
 	ai_will_do = {
-		factor = 0
+		factor = 1
 		modifier = {
 			factor = 0
 			steel_mill < 1
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			steel_mill > 1
+		}	
+		modifier = {
+			factor = 20
+			steel_mill > 5
 		}			
 	}
 	
@@ -2992,7 +2996,7 @@ steel_production_3 = {
 		research_cost_coeff = 1
 	}
 	
-	research_cost = 2
+	research_cost = 1.5
 	start_year = 1948
 	
 	folder = {
@@ -3007,15 +3011,19 @@ steel_production_3 = {
 	}
 	
 	ai_will_do = {
-		factor = 0
+		factor = 1
 		modifier = {
 			factor = 0
 			steel_mill < 1
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			steel_mill > 1
-		}				
+		}	
+		modifier = {
+			factor = 20
+			steel_mill > 5
+		}			
 	}
 	
 	ai_research_weights = {
@@ -3035,7 +3043,7 @@ steel_production_4 = {
 		}
 	}
 	
-	research_cost = 2.5
+	research_cost = 1.5
 	start_year = 1954
 	
 	folder = {
@@ -3050,14 +3058,18 @@ steel_production_4 = {
 	}
 	
 	ai_will_do = {
-		factor = 0
+		factor = 1
 		modifier = {
 			factor = 0
 			steel_mill < 1
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			steel_mill > 1
+		}	
+		modifier = {
+			factor = 20
+			steel_mill > 5
 		}			
 	}
 	

@@ -574,25 +574,6 @@ news_event = {
 					limit = {
 						tag = SPC
 					}
-					# If POUM wins and Right Oppo Soviets aided them
-					if = {
-						limit = {
-							has_template = "International Marxist Brigades"
-						}
-						delete_unit_template_and_units = {
-							division_template = "International Marxist Brigades"
-							disband = yes
-						}
-					}
-					if = {
-						limit = {
-							has_template = "Soviet Special Brigades"
-						}
-						delete_unit_template_and_units = {
-							division_template = "Soviet Special Brigades"
-							disband = yes
-						}
-					}
 					every_state = {
 						limit = {
 							has_state_flag = SPR_core_of_spain_flag
@@ -741,20 +722,6 @@ news_event = {
 					country_event = { id = lar_spain.82 hours = 6 }
 				}
 			}
-			#If POUM supported by SOV and won and SOV has not won/bypasssed their civil war yet -> POUM will help SOV in their CW
-			if = {
-				limit = {
-					has_global_flag = SOV_covert_support_for_poum_flag
-					has_global_flag = SPR_poum_won
-					SOV = {
-						OR = { #Do not trigger if Soviet civil war has finished or was bypassed
-							NOT = {	has_completed_focus = SOV_coup_detat }
-							has_global_flag = SOV_soviet_civil_war
-						}
-					}
-				}
-				SOV = { country_event = { id = NSB_soviet_spanish_civil_war.6 days = 8 random_days = 4 } }
-			}
 		}
 	}
 	
@@ -777,7 +744,7 @@ news_event = {
 				AND = {
 					tag = MEX
 					has_country_leader = {
- 						name = "Lev Trotsky"
+ 						name = "Leon Trotsky"
  					}
 				}
 			}
@@ -787,7 +754,7 @@ news_event = {
 					is_in_faction_with = MEX
 					MEX = {
 						has_country_leader = {
- 							name = "Lev Trotsky"
+ 							name = "Leon Trotsky"
  						}
 					}
 				}
@@ -808,7 +775,7 @@ news_event = {
 				AND = {
 					tag = MEX
 					has_country_leader = {
- 						name = "Lev Trotsky"
+ 						name = "Leon Trotsky"
  					}
 				}
 			}
@@ -818,7 +785,7 @@ news_event = {
 					is_in_faction_with = MEX
 					MEX = {
 						has_country_leader = {
- 							name = "Lev Trotsky"
+ 							name = "Leon Trotsky"
  						}
 					}
 				}
@@ -850,13 +817,13 @@ news_event = {
 				AND = {
 					tag = MEX
 					has_country_leader = {
- 						name = "Lev Trotsky"
+ 						name = "Leon Trotsky"
  					}
 				}
 				AND = {
 					is_in_faction_with = MEX
 					has_country_leader = {
- 						name = "Lev Trotsky"
+ 						name = "Leon Trotsky"
  					}
 				}
 			}
@@ -2283,7 +2250,7 @@ news_event = {
 	id = lar_news.21
 	title = lar_news.21.t
 	desc = lar_news.21.desc
-	picture = GFX_news_event_north_american_diplomats_communism
+	picture = GFX_news_event_sign_treaty2
 	
 	major = yes
 	
@@ -2304,13 +2271,13 @@ news_event = {
 				AND = {
 					tag = MEX
 					has_country_leader = {
- 						name = "Lev Trotsky"
+ 						name = "Leon Trotsky"
  					}
 				}
 				AND = {
 					is_in_faction_with = MEX
 					has_country_leader = {
- 						name = "Lev Trotsky"
+ 						name = "Leon Trotsky"
  					}
 				}
 			}
@@ -2325,7 +2292,7 @@ news_event = {
 				AND = {
 					tag = MEX
 					has_country_leader = {
- 						name = "Lev Trotsky"
+ 						name = "Leon Trotsky"
  					}
 				}
 			}
@@ -2335,7 +2302,7 @@ news_event = {
 					is_in_faction_with = MEX
 					MEX = {
 						has_country_leader = {
- 							name = "Lev Trotsky"
+ 							name = "Leon Trotsky"
  						}
 					}
 				}
@@ -2351,7 +2318,7 @@ news_event = {
 				AND = {
 					tag = MEX
 					has_country_leader = {
- 						name = "Lev Trotsky"
+ 						name = "Leon Trotsky"
  					}
 				}
 				original_tag = SPR

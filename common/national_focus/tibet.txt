@@ -66,10 +66,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
+		available = {
+		
+		}
 		completion_reward = {
 			unlock_decision_tooltip = TIB_apply_neames_guidelines
 			army_experience = 10
-			add_command_power = 20	#just so that they can hire at least some advisor with that low war support
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -383,6 +385,9 @@ focus_tree = {
 			factor = 100
 		}
 
+		available = {
+		
+		}
 		completion_reward = {
 			add_stability = 0.05
 		}
@@ -401,10 +406,12 @@ focus_tree = {
 			factor = 10
 		}
 
+		available = {
+		
+		}
+		
 		completion_reward = {
 			add_political_power = 150
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = TIB_chikyak_khenpo_lobsang_geleg	
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -419,8 +426,11 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 5
+		}		
+		
+		available = {
+		
 		}
-
 		completion_reward = {
 			add_ideas = TIB_dob_dobs_vigilance_idea
 		}
@@ -459,6 +469,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 3
+		}		
+		
+		available = {
+		
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -537,12 +551,15 @@ focus_tree = {
 				}				
 			}
 		}
-		
+
+		available = {
+			
+		}
 		completion_reward = {
 			create_country_leader = {
 				name = "Ngawang Sungrab Thutob"
 				desc = "POLITICS_NGAWANG_SUNGRAB_THUTOB_DESC"
-				picture = "r56_portrait_TIB_Ngawang_Sungrab_Thutob.dds"
+				picture = "r56_portrait_TIB_Changra_Sapron.dds"	#no portrait of this man
 				expire = "1965.1.1"
 				ideology = despotism
 				traits = {
@@ -621,7 +638,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 150
-			TIB_monasteries_level_down = yes
+			swap_ideas = {
+				remove_idea = TIB_monasteries_happy add_idea = TIB_monasteries_neutral
+			}	
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}	
@@ -640,8 +659,11 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}		
+		
+		available = {
+		
 		}
-
 		completion_reward = {
 			add_political_power = 30
 			add_popularity = {
@@ -670,6 +692,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 10
+		}		
+		
+		available = {
+		
 		}
 		completion_reward = {
 			add_ideas = TIB_military_faction
@@ -719,6 +745,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 5
+		}		
+		
+		available = {
+		
 		}
 		completion_reward = {
 			TIB_monasteries_level_down = yes
@@ -769,9 +799,8 @@ focus_tree = {
 		}		
 		
 		available = {
-			is_subject = no
 			event_target:WTT_current_china_leader = {
-				is_subject = no
+				is_puppet = no
 				NOT = {has_government = communism}
 			}
 		}
@@ -851,6 +880,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 7
+		}		
+		
+		available = {
+		
 		}
 		completion_reward = {
 			add_war_support = 0.1
@@ -1046,6 +1079,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 20
+		}		
+		
+		available = {
+		
 		}
 		completion_reward = {
 			TIB_monasteries_level_up = yes
@@ -1066,7 +1103,6 @@ focus_tree = {
 		}
 		
 		available = {
-			is_subject = no
 			NOT = {
 				owns_state = 604
 			}
@@ -1074,10 +1110,10 @@ focus_tree = {
 		completion_reward = {
 			604 = { add_claim_by = TIB }
 			random_country = {
-				limit = { controls_state = 604 }
+				limit = { owns_state = 604 }
 				TIB = {
 					create_wargoal = {
-						type = take_claimed_state
+						type = take_core_state
 						target = PREV
 						expire = 0
 						generator = { 604 }
@@ -1112,7 +1148,7 @@ focus_tree = {
 				popularity = 0.15
 			}
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = TIB_bapa_phuntsog_wangyal
+				show_ideas_tooltip = TIB_phuntsok_wangyal
 		}
 	}
 	focus = {
@@ -1172,7 +1208,8 @@ focus_tree = {
 	focus = {
 		id = TIB_invite_chinese_commissars
 		prerequisite = { focus = TIB_get_rid_of_the_spiritual_opiates focus = TIB_red_monasteries}
-		relative_position_id = TIB_get_rid_of_the_spiritual_opiates
+		relative_position_id = TIB_get_rid_of_the_spiritual_opiates	
+		mutually_exclusive = { focus = TIB_invite_soviet_advisors}
 		icon = GFX_focus_chi_cooperation_with_the_communists
 		
 		x = 0
@@ -1206,7 +1243,8 @@ focus_tree = {
 	focus = {
 		id = TIB_invite_soviet_advisors
 		prerequisite = { focus = TIB_get_rid_of_the_spiritual_opiates focus = TIB_red_monasteries}
-		relative_position_id = TIB_get_rid_of_the_spiritual_opiates
+		relative_position_id = TIB_get_rid_of_the_spiritual_opiates	
+		mutually_exclusive = { focus = TIB_invite_chinese_commissars}
 		icon = GFX_goal_soviet_military_advisors
 		
 		x = 2
@@ -1247,14 +1285,6 @@ focus_tree = {
 		y = 1
 		cost = 10
 
-		mutually_exclusive = {
-			focus = TIB_great_socialist_tibet
-		}
-		
-		available = {
-			is_subject = no
-		}
-
 		bypass = {
 			PRC = { exists = no }
 		}
@@ -1277,8 +1307,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 
-		mutually_exclusive = {
-			focus = TIB_accept_the_unity_of_china
+		available = {
+		
 		}
 		ai_will_do = {
 			factor = 15

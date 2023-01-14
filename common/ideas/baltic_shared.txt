@@ -751,6 +751,9 @@ ideas = {
 		}
 	}
 
+	army_chief = {
+	}
+
 	materiel_manufacturer = {
 
 		designer = yes
@@ -765,7 +768,7 @@ ideas = {
 				OR = {
 					#original_TAG = LAT	#has own ford version
 					original_TAG = LIT
-					#original_TAG = EST	-no matter what tree, the respective focus is not there, so disabled
+					original_TAG = EST
 				}
 				has_dlc = "No Step Back"
 			}
@@ -773,9 +776,9 @@ ideas = {
 			visible={
 				if = {
 					limit = {
-						original_tag = LIT
+						original_TAG = LIT
 					}
-					has_focus_tree = lithuania_tree	#vanilla tree
+					has_global_flag = LIT_vanilla_focus_tree
 				}
 			}
 
@@ -812,9 +815,9 @@ ideas = {
 
 			allowed = {
 				OR = {
-					#original_TAG = LAT	-no matter what tree, the respective focus is not there, so disabled
+					original_TAG = LAT
 					original_TAG = LIT
-					#original_TAG = EST	-no matter what tree, the respective focus is not there, so disabled
+					original_TAG = EST
 				}
 				has_dlc = "No Step Back"
 			}
@@ -822,9 +825,9 @@ ideas = {
 			visible={
 				if = {
 					limit = {
-						original_tag = LIT
+						original_TAG = LIT
 					}
-					has_focus_tree = lithuania_tree	#vanilla tree
+					has_global_flag = LIT_vanilla_focus_tree
 				}
 			}
 
@@ -859,9 +862,9 @@ ideas = {
 
 			allowed = {
 				OR = {
-					#original_TAG = LAT	-no matter what tree, the respective focus is not there, so disabled
+					original_TAG = LAT
 					original_TAG = LIT
-					#original_TAG = EST	-no matter what tree, the respective focus is not there, so disabled
+					original_TAG = EST
 				}
 				has_dlc = "No Step Back"
 			}
@@ -869,9 +872,9 @@ ideas = {
 			visible={
 				if = {
 					limit = {
-						original_tag = LIT
+						original_TAG = LIT
 					}
-					has_focus_tree = lithuania_tree	#vanilla tree
+					has_global_flag = LIT_vanilla_focus_tree
 				}
 			}
 
@@ -886,7 +889,7 @@ ideas = {
 			traits = { artillery_manufacturer }
 
 			equipment_bonus = {
-				artillery_equipment = {
+				artillery_manufacturer = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -904,9 +907,9 @@ ideas = {
 
 			allowed = {
 				OR = {
-					#original_TAG = LAT	-no matter what tree, the respective focus is not there, so disabled
+					original_TAG = LAT
 					original_TAG = LIT
-					#original_TAG = EST	-no matter what tree, the respective focus is not there, so disabled
+					original_TAG = EST
 				}
 				has_dlc = "No Step Back"
 			}
@@ -914,9 +917,9 @@ ideas = {
 			visible={
 				if = {
 					limit = {
-						original_tag = LIT
+						original_TAG = LIT
 					}
-					has_focus_tree = lithuania_tree
+					has_global_flag = LIT_vanilla_focus_tree
 				}
 			}
 			available = {

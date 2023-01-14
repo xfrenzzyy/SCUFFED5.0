@@ -13,18 +13,12 @@ armor_ENG = {
 
 		modifier = {
 			factor = 7
-			OR = {
-				has_tech = basic_medium_tank
-				has_tech = basic_medium_tank_chassis
-			}
+			has_tech = basic_medium_tank
 		}
 		
 		modifier = {
 			factor = 2
-			OR = {
-				has_tech = main_battle_tank
-				has_tech = main_battle_tank_chassis
-			}
+			has_tech = main_battle_tank
 		}
 	}
 	
@@ -105,10 +99,17 @@ armor_ENG = {
 		allowed_types = {
 			light_armor
 			motorized
-			engineer
 			mot_recon
+			armored_car_recon
 			light_tank_recon
 			artillery
+			light_sp_anti_air_brigade
+			light_sp_artillery_brigade
+			light_tank_destroyer_brigade
+			mot_anti_air_brigade
+			mot_artillery_brigade
+			mot_rocket_artillery_brigade
+			motorized_rocket_brigade				
 		}
 		
 		replace_at_match = 0.4
@@ -187,7 +188,7 @@ armor_ENG = {
 		}
 		
 		allowed_types = {
-			modern_armor
+				modern_armor
 			heavy_armor
 			
 
@@ -200,6 +201,7 @@ armor_ENG = {
 
 			engineer
 			mot_recon
+			armored_car_recon
 			light_tank_recon
 			signal_company
 			maintenance_company
@@ -225,10 +227,7 @@ armor_ENG = {
 
 			modifier = {
 				factor = 1
-				OR = {
-					has_tech = basic_medium_tank
-					has_tech = basic_medium_tank_chassis
-				}
+				has_tech = basic_medium_tank
 			}
 		}
 		
@@ -303,6 +302,7 @@ armor_ENG = {
 
 			engineer
 			mot_recon
+			armored_car_recon
 			light_tank_recon
 			signal_company
 			maintenance_company
@@ -387,7 +387,7 @@ armor_ENG = {
 			
 			support = {
 				engineer = 1
-				mot_recon = 1
+				armored_car_recon = 1
 				maintenance_company = 1
 				logistics_company = 1
 			}
@@ -409,6 +409,7 @@ armor_ENG = {
 
 			engineer
 			mot_recon
+			armored_car_recon
 			light_tank_recon
 			signal_company
 			maintenance_company
@@ -547,7 +548,7 @@ infantry_ENG = {
 			}
 		}
 		
-		target_width = 27.0
+		target_width = 40.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -596,13 +597,14 @@ infantry_ENG = {
 			support = {
 				engineer = 1
 				recon = 1
+				field_hospital = 1
 				anti_tank = 1
-				artillery = 1
+				logistics_company = 1
 			}
 			
 			regiments = {
-				infantry = 9
-				artillery_brigade = 3
+				infantry = 14
+				artillery_brigade = 4
 			}
 		}
 		
@@ -660,7 +662,7 @@ mountaineers_ENG = {
 			}
 		}
 	
-		target_width = 19.9
+		target_width = 40.0
 		width_weight = 3
 		column_swap_factor = 0.2
 		
@@ -714,8 +716,8 @@ mountaineers_ENG = {
 			}
 			
 			regiments = {
-				mountaineers = 8
-				artillery_brigade = 2
+				mountaineers = 14
+				artillery_brigade = 4
 			}
 		}
 		
@@ -762,6 +764,102 @@ marines_ENG = {
 				factor = 1
 			}
 		}
+		target_width = 36.0
+		width_weight = 1.0
+		column_swap_factor = 0.1
+		
+		stat_weights = {
+			0.00 #-- default_morale
+			0.00 #-- defense
+			1.00 #-- breakthrough
+			0.05 #-- hardness
+			3.00 #-- soft_attack
+			0.01 #-- hard_attack
+			0.00 #-- recon
+			2.20 #-- entrenchment
+			0.00 #-- initiative
+			0.00 #-- casualty_trickleback
+			-0.1 #-- supply_consumption_factor
+			-0.1 #-- supply_consumption
+			0.00 #-- suppression
+			0.00 #-- suppression_factor
+			0.00 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
+			#-- Air Values
+			0.00 #-- air_attack
+			#-- Common Values
+			0.60 #-- max_organisation
+			0.40 #-- max_strength 
+			0.00 #-- maximum_speed
+			0.05 #-- armor_value
+			0.00 #-- ap_attack
+			0.00 #-- reliability
+			0.00 #-- reliability_factor
+			-0.2 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
+			-0.1 #-- build_cost_ic
+		}
+
+		target_template = {
+			weight = 0.9
+			match_value = 2000.0
+			
+			support = {
+				recon = 1
+				logistics_company = 1
+			}
+			
+			regiments = {
+				marine = 18
+			}
+		}
+
+		
+		allowed_types = {
+			marine
+			engineer
+			logistics_company
+			artillery
+			anti_air
+		}
+	}
+
+	marine_armored_ENG = {
+
+		upgrade_prio = {
+			factor = 2
+
+			modifier = {
+				factor = 0
+				NOT = {
+					has_tech = amphibious_tank
+					has_tech = amphibious_mechanized_infantry
+				}
+			}
+			modifier = {
+				OR = {
+					is_major = no
+					NOT = {
+						any_state = {
+							is_controlled_by = ROOT
+							is_coastal = yes
+						}
+					}
+				}
+				
+				NOT = {
+					original_tag = CAN
+				}
+				factor = 0
+			}
+		}
+	
 		target_width = 20.0
 		width_weight = 1.0
 		column_swap_factor = 0.1
@@ -811,16 +909,23 @@ marines_ENG = {
 			support = {
 				recon = 1
 				logistics_company = 1
+				engineer = 1
+				artillery = 1
+				anti_air = 1
 			}
 			
 			regiments = {
-				marine = 9
+				amphibious_armor = 4
+				amphibious_mechanized = 6
 			}
 		}
 
 		
 		allowed_types = {
 			marine
+			amphibious_mechanized
+			amphibious_armor
+			recon
 			engineer
 			logistics_company
 		}
@@ -967,7 +1072,7 @@ garrison_ENG = {
 		
 		reinforce_prio = 0
 		
-		target_width = 10.0
+		target_width = 5.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -1014,16 +1119,16 @@ garrison_ENG = {
 			match_value = 3000.0
 			
 			support = {
-				engineer = 1
+				military_police = 1
 			}
 			
 			regiments = {
-				garrison = 5
+				infantry = 4
 			}
 		}
 		
 		allowed_types = {
-			garrison		
+			infantry		
 			engineer
 			field_hospital
 			anti_tank

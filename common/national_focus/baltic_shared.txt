@@ -69,6 +69,8 @@ shared_focus = {
 	}
 
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -117,7 +119,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 	completion_reward = {
@@ -281,7 +289,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -352,7 +366,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -433,7 +453,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	completion_reward = {
 		if = {
@@ -571,7 +597,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	completion_reward = {
 		if = {
@@ -663,7 +695,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -744,7 +782,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -780,7 +824,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	completion_reward = {
 		if = {
@@ -874,7 +924,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 	completion_reward = {
@@ -1036,7 +1092,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -1091,7 +1153,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -1123,7 +1191,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -1160,7 +1234,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -1254,7 +1334,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -1349,7 +1435,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -1442,7 +1534,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -1488,7 +1589,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	completion_reward = {
 		if = {
@@ -1539,7 +1646,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -1624,7 +1740,13 @@ shared_focus = {
 		industrial_complex > 15
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_RESEARCH }
 	completion_reward = {
@@ -1656,6 +1778,8 @@ shared_focus = {
 	}
 
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_RESEARCH }
 	completion_reward = {
@@ -1687,7 +1811,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -1710,7 +1843,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -1798,7 +1940,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -1849,7 +2000,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	completion_reward = {
@@ -1927,7 +2087,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_RESEARCH }
 	completion_reward = {
@@ -1967,7 +2136,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -2052,7 +2230,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -2099,7 +2283,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -2186,7 +2379,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
@@ -2305,7 +2507,17 @@ shared_focus = {
 		}
 	}
 
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
@@ -2369,7 +2581,13 @@ shared_focus = {
 		} #Can't get help from the Soviets if they don't exist
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
@@ -2382,7 +2600,7 @@ shared_focus = {
 
 shared_focus = {
 	id = BALTIC_soviet_equipment
-	icon = GFX_postive_heroism
+	icon = gfx_postive_heroism
 	prerequisite = { focus = BALTIC_seek_support_of_soviets }
 	x = -2
 	y = 1
@@ -2398,7 +2616,13 @@ shared_focus = {
 		NOT = { has_completed_focus = BALTIC_overthrow_the_government }
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	completion_reward = {
@@ -2424,7 +2648,13 @@ shared_focus = {
 		NOT = { has_completed_focus = BALTIC_overthrow_the_government }
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	completion_reward = {
@@ -2456,7 +2686,13 @@ shared_focus = {
 		NOT = { has_completed_focus = BALTIC_overthrow_the_government }
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	completion_reward = {
@@ -2548,7 +2784,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
@@ -2611,7 +2856,13 @@ shared_focus = {
 		NOT = { has_completed_focus = BALTIC_overthrow_the_government }
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
@@ -2638,7 +2889,13 @@ shared_focus = {
 		NOT = { has_completed_focus = BALTIC_overthrow_the_government }
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
 	completion_reward = {
@@ -2687,7 +2944,13 @@ shared_focus = {
 		NOT = { has_completed_focus = BALTIC_overthrow_the_government }
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	completion_reward = {
@@ -2711,7 +2974,7 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 1
-		modifier = { # Make sure the AI doesn't declare the war suicidal
+		modifier = { # Make sure the AI doesn't declare the war suicidally
 			factor = 0
 			NOT = {
 				OR = {
@@ -2738,6 +3001,8 @@ shared_focus = {
 	}
 
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
@@ -2909,6 +3174,8 @@ shared_focus = {
 					infantry = { x = 2 y = 2 }
 					infantry = { x = 3 y = 2 }
 				}
+				support = {
+				}
 			}
 			random_owned_controlled_state = {
 				hidden_effect = {
@@ -2984,16 +3251,57 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
 		add_ideas = { baltic_siezed_means_of_production_idea }
-		if = {	#Making sure that only Lithuania can see it in case they have that part of the tree
+		custom_effect_tooltip = gain_factories_based_on_investments_tt
+		random_owned_controlled_state = {
 			limit = {
-				original_tag = LIT
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
 			}
-			custom_effect_tooltip = gain_factories_based_on_investments_tt
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		###Allied Trade Focuses###
+		if = {
+			limit = {
+				has_completed_focus = BALTIC_renew_allied_trade
+			}
+			remove_ideas = { BALTIC_allied_investments_idea }
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -3022,301 +3330,55 @@ shared_focus = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
-				}
-			}
-			###Allied Trade Focuses###
-			if = {
-				limit = {
-					has_completed_focus = BALTIC_renew_allied_trade
-				}
-				remove_ideas = { BALTIC_allied_investments_idea }
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = BALTIC_ford_motors
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = arms_factory
-											size > 1
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = BALTIC_crossley_motors
-				}
-				add_offsite_building = { type = industrial_complex level = -1 }
-				add_offsite_building = { type = arms_factory level = -2 }
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 2
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = arms_factory
-											size > 2
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = arms_factory
-						level = 3
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = BALTIC_baltic_fleet
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = dockyard
-											size > 1
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			###Axis Investment Ideas###
-			
-			if = {
-				limit = {
-					has_completed_focus = BALTIC_axis_investments
-				}
-				remove_ideas = {
-					BALTIC_axis_investments_idea
-					BALTIC_axis_investments_idea_1
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = BALTIC_german_tank_licences
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = arms_factory
-											size > 1
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = BALTIC_german_baltic_industry
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						OR = {
-							is_in_home_area = yes
-							NOT = {
-								owner = {
-									any_owned_state = {
-										free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-										is_in_home_area = yes
-									}
-								}
-							}
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
 				}
 			}
 		}
-		else = {
+		if = {
+			limit = {
+				has_completed_focus = BALTIC_ford_motors
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = BALTIC_crossley_motors
+			}
+			add_offsite_building = { type = industrial_complex level = -1 }
+			add_offsite_building = { type = arms_factory level = -2 }
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
-						size > 0
+						size > 1
 						include_locked = yes
 					}
 					OR = {
@@ -3326,7 +3388,7 @@ shared_focus = {
 								any_owned_state = {
 									free_building_slots = {
 										building = industrial_complex
-										size > 0
+										size > 1
 										include_locked = yes
 									}
 									is_in_home_area = yes
@@ -3335,12 +3397,89 @@ shared_focus = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = BALTIC_baltic_fleet
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = dockyard
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		###Axis Investment Ideas###
+		
+		if = {
+			limit = {
+				has_completed_focus = BALTIC_axis_investments
+			}
+			remove_ideas = {
+				BALTIC_axis_investments_idea
+				BALTIC_axis_investments_idea_1
 			}
 			random_owned_controlled_state = {
 				limit = {
@@ -3373,6 +3512,76 @@ shared_focus = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				has_completed_focus = BALTIC_german_tank_licences
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = BALTIC_german_baltic_industry
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 }
 
@@ -3390,7 +3599,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
@@ -3461,6 +3679,8 @@ shared_focus = {
 	}
 
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	completion_reward = {
@@ -3491,7 +3711,13 @@ shared_focus = {
 		fascism < 0.3
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
 	completion_reward = {
@@ -3541,7 +3767,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_STABILITY }
 	completion_reward = {
@@ -3569,7 +3804,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	completion_reward = {
@@ -3591,7 +3835,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	completion_reward = {
@@ -3660,7 +3913,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	completion_reward = {
@@ -3708,6 +3970,8 @@ shared_focus = {
 	}
 
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 	completion_reward = {
@@ -3772,7 +4036,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	completion_reward = {
@@ -3831,7 +4101,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	completion_reward = {
@@ -3918,7 +4194,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	completion_reward = {
@@ -4039,7 +4324,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 	completion_reward = {
@@ -4062,7 +4356,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_ideas = { BALTIC_anti_german_plans }
@@ -4083,7 +4386,17 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	completion_reward = {
@@ -4139,7 +4452,16 @@ shared_focus = {
 		factor = 1
 	}
 
+	available = {
+	}
+
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	completion_reward = {
 		add_ideas = { BALTIC_carrying_the_western_revolution }
@@ -4168,7 +4490,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	completion_reward = {
@@ -4221,7 +4549,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	completion_reward = {
@@ -4275,7 +4609,13 @@ shared_focus = {
 		}
 	}
 
+	bypass = {
+
+	}
+
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	completion_reward = {
@@ -4333,6 +4673,8 @@ shared_focus = {
 	}
 
 	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	completion_reward = {

@@ -77,7 +77,6 @@ operations = {
 					tag = VEN
 					tag = BRA
 					tag = ECU
-					tag = PRU
 					tag = BOL
 					tag = PAR
 					tag = CHL
@@ -87,7 +86,7 @@ operations = {
 			}
 		}
 		
-		targets = { MEX GUA ELS HON CUB HAI DOM NIC COS PAN COL VEN BRA ECU PRU BOL PAR CHL ARG URG }
+		targets = { MEX GUA ELS HON CUB HAI DOM NIC COS PAN COL VEN BRA ECU BOL PAR CHL ARG URG }
 		
 		ai_will_do = {
 			factor = 50

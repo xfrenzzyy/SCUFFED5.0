@@ -8,26 +8,10 @@ characters={
 		}
 		country_leader={
 			ideology=socialism
-			traits = { naw_welfare_proponent }
-			expire="1965.1.1"
+			expire="1965.1.1.1"
 			id=-1
 		}
 	}
-	SWE_gosta_bagge={
-		name="Gösta Bagge"
-		portraits={
-			civilian={
-				large="gfx/leaders/SWE/r56_portrait_SWE_Gosta_Bagge.dds"
-				
-			}
-		}
-		country_leader={
-			ideology=conservatism
-			traits = { SWE_conservatist }
-			expire="1965.1.1"
-			id=-1
-		}
-	}	
 	SWE_sven_olov_lindholm={
 		name=SWE_sven_olov_lindholm
 		portraits={
@@ -38,7 +22,7 @@ characters={
 		
 		country_leader={
 			ideology=nazism
-			expire="1965.1.1"
+			expire="1965.1.1.1"
 			id=-1
 			traits = {
 				anti_communist
@@ -52,65 +36,17 @@ characters={
 			civilian={
 				large="gfx/leaders/SWE/r56_portrait_SWE_Sven_Linderot.dds"
 			}
-			army={
-				small="GFX_idea_SWE_sven_linderot"
-			}
 		}
 		country_leader={
 			ideology=marxism
-			expire="1965.1.1"
+			expire="1965.1.1.1"
 			id=-1
 			traits = {
 				r56_trait_anti_fascist
-				stalinist_revolutionary		
+				POL_Heavy_Industry_Emphasis		
 			}			
 		}
 	}
-	SWE_nils_flyg={
-		name="Nils Flyg"
-		portraits={
-			civilian={
-				large="gfx/leaders/SWE/r56_portrait_SWE_Nils_Flyg.dds"
-			}
-		}
-		country_leader={
-			ideology=leninism
-			expire="1965.1.1"
-			id=-1
-			traits = {
-				likes_germany
-				anti_stalinist_propagandist
-			}			
-		}
-	}
-	SWE_gustaf_adolf_v={
-		name=SWE_gustaf_adolf_v
-		portraits={
-			civilian={
-				large="gfx/leaders/SWE/r56_portrait_SWE_Gustaf_V.dds"
-			}
-		}
-		country_leader={
-			ideology=absolute_monarchism
-			traits = { SWE_sveriges_kung }
-			expire="1950.10.29.8"
-			id=-1
-		}
-	}
-	SWE_gustaf_adolf_vi={
-		name=SWE_gustaf_adolf_vi
-		portraits={
-			civilian={
-				large="gfx/leaders/SWE/r56_portrait_SWE_Gustaf_Adolf.dds"
-			}
-		}
-		country_leader={
-			ideology=absolute_monarchism
-			traits = { SWE_swedish_imperialist }
-			expire="1965.1.1"
-			id=-1
-		}
-	}			
 	SWE_axel_pehrssonbramstorp={
 		name=SWE_axel_pehrssonbramstorp
 		portraits={
@@ -120,7 +56,7 @@ characters={
 		}
 		country_leader={
 			ideology=centrism
-			expire="1965.1.1"
+			expire="1965.1.1.1"
 			id=-1
 			traits = {
 				r56_trait_opposed_to_communism
@@ -150,7 +86,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/SWE/r56_portrait_SWE_Viking_Tamm.dds"
-				small="GFX_portrait_ETH_viking_tamm_small"
+				small="gfx/interface/ideas/idea_europe_generic_land_1.dds"
 			}
 		}
 		corps_commander={
@@ -164,7 +100,7 @@ characters={
 		}
 	}	
 	SWE_folke_bernadotte={
-		name= "Folke Bernadotte"
+		name=SWE_folke_bernadotte
 		portraits={
 			army={
 				large="gfx/leaders/SWE/r56_portrait_SWE_Folke_Bernadotte.dds"
@@ -219,7 +155,7 @@ characters={
 	}
 
 	SWE_ernst_linder={
-		name="Ernst Linder"
+		name=SWE_ernst_linder
 		portraits={
 			army={
 				large="gfx/leaders/SWE/r56_portrait_SWE_Ernst_Linder.dds"
@@ -341,7 +277,7 @@ characters={
 				}
 				traits = { naval_theorist }
 		}
-		name="Gunnar Bjurner"
+		name=SWE_gunnar_bjurner
 		portraits={
 			army={
 				small="GFX_idea_SWE_gunnar_bjurner"
@@ -374,7 +310,7 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="Lennart Peyron"
+		name=SWE_lennart_peyron
 		portraits={
 			army={
 				small="GFX_idea_SWE_lennart_peyron"
@@ -396,7 +332,7 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="Stig Ericson"
+		name=SWE_stig_ericson
 		portraits={
 			army={
 				small="GFX_idea_SWE_stig_ericson"
@@ -447,6 +383,9 @@ characters={
 			allowed = {
 				original_tag = SWE
 			}
+			research_bonus = {
+				cat_battlefield_support = 0.15
+			}
 			
 			traits = { close_air_support_proponent }
 			ai_will_do = {
@@ -457,7 +396,7 @@ characters={
 				}
 			}
 		}
-		name="Torsten Rapp"
+		name=SWE_torsten_rapp
 		portraits={
 			army={
 				small="GFX_idea_SWE_torsten_rapp"
@@ -473,6 +412,10 @@ characters={
 			ledger = air
 			allowed = {
 				original_tag = SWE
+			}
+
+			research_bonus = {
+				air_doctrine = 0.10
 			}
 			
 			traits = { air_warfare_theorist }
@@ -494,7 +437,7 @@ characters={
 				factor = 1
 			}
 		}		
-		name="Axel Ljungdahl"
+		name=SWE_axel_ljungdahl
 		portraits={
 			army={
 				small="GFX_idea_SWE_axel_ljungdahl"
@@ -511,11 +454,10 @@ characters={
 			allowed = {
 				original_tag = SWE
 			}
-			
-			available = {
-				NOT = { has_completed_focus = SWE_swedish_communism }
+			research_bonus = {
+				cat_battlefield_support = 0.10
 			}
-
+			
 			traits = { dive_bomber }
 			ai_will_do = {
 				factor = 0
@@ -532,17 +474,13 @@ characters={
 			allowed = {
 				original_tag = SWE
 			}
-
-			available = {
-				NOT = { has_completed_focus = SWE_regicide }
-			}	
-
+			
 			traits = { air_chief_ground_support_3 }
 			ai_will_do = {
 				factor = 1
 			}
 		}		
-		name="Bengt Nordenskiöld"
+		name=SWE_bengt_nordenskiold
 		portraits={
 			army={
 				small="GFX_idea_SWE_bengt_nordenskiold"
@@ -792,96 +730,6 @@ characters={
 			}
 		}
 	}
-	SWE_albin_strom={
-		advisor={
-			slot = political_advisor
-			idea_token = SWE_albin_strom
-			allowed  = {
-					original_tag  = SWE
-				}
-				traits  = {
-					editor 
-				}
-			available = {
-				has_completed_focus = SWE_swedish_communism
-				NOT = { has_government = fascism }
-			}
-		}
-
-		name="Albin Ström"
-		portraits={
-			army={
-				small="GFX_idea_SWE_albin_strom"
-			}
-		}
-	}
-	SWE_karl_kilbom={
-		advisor={
-			slot = political_advisor
-			idea_token = SWE_karl_kilbom
-			allowed  = {
-					original_tag  = SWE
-				}
-				traits  = {
-					captain_of_industry
-				}
-			available = {
-				has_completed_focus = SWE_swedish_communism
-				NOT = { has_government = fascism }
-			}
-		}
-
-		name="Karl Kilbom"
-		portraits={
-			army={
-				small="GFX_idea_SWE_karl_kilbom"
-			}
-		}
-	}
-	SWE_hugo_sillen={
-		advisor={
-			slot = political_advisor
-			idea_token = SWE_hugo_sillen
-			allowed  = {
-					original_tag  = SWE
-				}
-				traits  = {
-					backroom_backstabber
-				}
-			available = {
-				has_completed_focus = SWE_swedish_communism
-				NOT = { has_government = fascism }
-			}
-		}
-
-		name="Hugo Sillén"
-		portraits={
-			army={
-				small="GFX_idea_SWE_hugo_sillen"
-			}
-		}
-	}
-	SWE_anton_nilsson={
-		advisor={
-			cost = 100
-			slot = air_chief
-			idea_token = SWE_anton_nilsson
-			allowed  = {
-					original_tag  = SWE
-				}
-				traits  = {
-					air_chief_ground_support_2
-				}
-		available = { has_completed_focus = SWE_swedish_communism }
-		}
-
-		name="Anton Nilsson"
-		portraits={
-			army={
-				small="GFX_idea_SWE_anton_nilsson"
-			}
-		}
-	}				
 	SWE_per_edvin_skold={
 		advisor={
 			slot = political_advisor
@@ -889,11 +737,11 @@ characters={
 			allowed  = {
 				original_tag  = SWE
 			}
-			available = { has_completed_focus = SWE_swedish_defence_act }
+			available = { has_completed_focus = SWE_forsvarsbeslutet }
 			
 			traits = { quartermaster_general }
 		}
-		name="Per Edvin Sköld"
+		name=SWE_per_edvin_skold
 		portraits={
 			army={
 				small="GFX_idea_SWE_per_edvin_skold"
@@ -907,11 +755,11 @@ characters={
 			allowed  = {
 				original_tag  = SWE
 			}
-			available = { has_completed_focus = SWE_bofors_kanoner }
+			available = { has_completed_focus = SWE_bofors_nobelkrut }
 			
 			traits = { war_industrialist  }
 		}
-		name="Axel Wenner-Gren"
+		name=SWE_axel_wennergren
 		portraits={
 			army={
 				small="GFX_idea_SWE_axel_wennergren"
@@ -929,7 +777,7 @@ characters={
 			
 			traits = { backroom_backstabber  }
 		}
-		name="Christian Günther"
+		name=SWE_christian_gunther
 		portraits={
 			army={
 				small="GFX_idea_SWE_christian_gunther"
@@ -962,9 +810,6 @@ characters={
 				original_tag  = SWE
 			}
 			
-			available = {
-				NOT = { has_government = communism }
-			}
 			
 			ai_will_do = {
 				factor = 2
@@ -983,7 +828,7 @@ characters={
 			slot = political_advisor
 			idea_token = SWE_carl_petersen
 			available = { 
-				has_completed_focus = SWE_royalist_return
+				has_completed_focus = SWE_kings_council 
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
@@ -997,26 +842,9 @@ characters={
 			}
 			ai_will_do = {
 				factor = 0
-				modifier = {
-					has_idea = SWE_monarchist_fervor
-					
-					NOT = {
-						OR = {
-							AND = {
-								is_puppet = yes
-								NOT = {
-									has_government = neutrality
-								}
-							}
-							neutrality > 0.7
-							neutrality < 0.15
-						}						
-					}
-					add = 40
-				}				
 			}			
 		}
-		name="Carl Petersén"
+		name=SWE_carl_petersen
 		portraits={
 			army={
 				small="GFX_idea_SWE_carl_petersen"
@@ -1031,13 +859,7 @@ characters={
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-				NOT = { 
-					has_completed_focus = SWE_swedish_communism 
-					has_government = communism
-					has_government = fascism
-				}
-								
+				}				
 			}
 			allowed  = {
 				original_tag  = SWE
@@ -1049,7 +871,7 @@ characters={
 				factor = 0
 			}			
 		}
-		name="Tage Erlander"
+		name=SWE_tage_erlander
 		portraits={
 			army={
 				small="GFX_idea_SWE_tage_erlander"
@@ -1070,17 +892,13 @@ characters={
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-				NOT = { 
-					has_completed_focus = SWE_swedish_communism 
-					has_government = communism
-				}								
+				}				
 			}
 
 			ai_will_do = {
 				factor = 0
 				modifier = {
-					has_idea = collectivist_ethos_focus
+					has_idea = nationalism
 					
 					NOT = {
 						OR = {
@@ -1119,14 +937,13 @@ characters={
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
-					NOT = { has_completed_focus = SWE_anti_soviet }
 				}				
 			}
 
 			ai_will_do = {
 				factor = 0
 				modifier = {
-					has_idea = SWE_swedish_communism
+					has_idea = internationalism
 					
 					NOT = {
 						OR = {
@@ -1140,7 +957,7 @@ characters={
 							communism < 0.15
 						}						
 					}
-					add = 40
+					add = 20
 				}
 			}		
 		}
@@ -1157,15 +974,12 @@ characters={
 			slot = theorist
 			idea_token = alf_lysholm
 			ledger = army
-			allowed = {
-				original_tag = SWE
+				allowed = {
+					original_tag = SWE
 				}
-			research_bonus = {
-				rocketry = 0.15
-			}	
-			traits = { rocket_scientist }
+				traits = { rocket_scientist }
 		}
-		name="Alf Lysholm"
+		name=alf_lysholm
 		portraits={
 			army={
 				small="GFX_idea_alf_lysholm"
@@ -1177,7 +991,7 @@ characters={
 			allowed = {
 				has_dlc = "La Resistance"
 			}
-			name="Arne Beurling"
+			name=SWE_arne_beurling
 			portraits={
 				army={
 					small="GFX_idea_SWE_arne_beurling"
@@ -1214,7 +1028,7 @@ characters={
 					has_dlc = "La Resistance" 
 				}
 			}
-			name="Arne Beurling"
+			name=SWE_arne_beurling
 			portraits={
 				army={
 					small="GFX_idea_SWE_arne_beurling"

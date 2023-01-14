@@ -422,9 +422,7 @@ USA_congress = {
 			}
 		}
 		highlight_states = {
-			highlight_states_trigger = {
-				has_state_flag = USA_congress_build_factory
-			}
+			has_state_flag = USA_congress_build_factory
 		}
 		days_mission_timeout = 360
 		is_good = no
@@ -472,9 +470,7 @@ USA_congress = {
 			}
 		}
 		highlight_states = {
-			highlight_states_trigger = {
-				has_state_flag = USA_congress_build_arms_factory
-			}
+			has_state_flag = USA_congress_build_arms_factory
 		}
 		days_mission_timeout = 360
 		is_good = no
@@ -522,9 +518,7 @@ USA_congress = {
 			}
 		}
 		highlight_states = {
-			highlight_states_trigger = {
-				has_state_flag = USA_congress_build_dockyard
-			}
+			has_state_flag = USA_congress_build_dockyard
 		}
 		days_mission_timeout = 360
 		is_good = no
@@ -570,9 +564,7 @@ USA_congress = {
 			}
 		}
 		highlight_states = {
-			highlight_states_trigger = {
-				has_state_flag = USA_congress_build_infrastructure
-			}
+			has_state_flag = USA_congress_build_infrastructure
 		}
 		days_mission_timeout = 360
 		is_good = no

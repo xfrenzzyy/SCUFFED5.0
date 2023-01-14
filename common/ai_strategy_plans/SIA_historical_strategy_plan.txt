@@ -2,7 +2,7 @@
 
 SIA_historical_plan = {
 	name = "SIA: Siam Historical AI Plan"
-	desc = "Historical behaviour for Siam."
+	desc = "Historical behavior for Siam."
 	
 	enable = {
 		original_tag = SIA

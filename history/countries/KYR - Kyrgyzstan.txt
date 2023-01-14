@@ -9,6 +9,7 @@ set_technology = {
 	# Extended Technologies
 	etax_doctrine = 1
 	camo = 1
+<<<<<<< HEAD
 			
 }
 if = {
@@ -23,6 +24,9 @@ if = {
 			
 		}
 	}
+=======
+	transport_plane1 = 1		
+>>>>>>> parent of 0dd7864c (Merge branch 'temp')
 }
 set_country_flag = started_out_as_landlocked
 set_convoys = 5

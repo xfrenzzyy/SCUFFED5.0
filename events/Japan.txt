@@ -20,21 +20,6 @@ country_event = {
   			type = annex_everything
   			target = CHI
   		}
-		CHI = {
-			if = {
-				limit = {
-					NOT = {
-						has_completed_focus = KMT_national_def_propaganda
-						has_completed_focus = KMT_focus_on_our_own_army
-						has_completed_focus = KMT_incorporate_warlord_forces
-					}
-				}
-				add_timed_idea = {
-					idea = JAP_caught_off_gruad
-					days = 70
-				}
-			}
-		}
   		if = {
 			limit = {
 				OR = {
@@ -313,7 +298,7 @@ country_event = {
 			}
 			if = {
 				limit = {
-					924 = {
+					851 = {
 						CONTROLLER = {
 							OR = {
 								original_tag = FRA
@@ -324,11 +309,11 @@ country_event = {
 						}
 					}
 				}
-				transfer_state = 924
+				transfer_state = 851
 			}
 			if = {
 				limit = {
-					925 = {
+					852 = {
 						CONTROLLER = {
 							OR = {
 								original_tag = FRA
@@ -339,11 +324,11 @@ country_event = {
 						}
 					}
 				}
-				transfer_state = 925
+				transfer_state = 852
 			}
 			if = {
 				limit = {
-					926 = {
+					853 = {
 						CONTROLLER = {
 							OR = {
 								original_tag = FRA
@@ -354,11 +339,11 @@ country_event = {
 						}
 					}
 				}
-				transfer_state = 926
+				transfer_state = 853
 			}
 			if = {
 				limit = {
-					927 = {
+					854 = {
 						CONTROLLER = {
 							OR = {
 								original_tag = FRA
@@ -369,11 +354,11 @@ country_event = {
 						}
 					}
 				}
-				transfer_state = 927
+				transfer_state = 854
 			}
 			if = {
 				limit = {
-					928 = {
+					855 = {
 						CONTROLLER = {
 							OR = {
 								original_tag = FRA
@@ -384,7 +369,7 @@ country_event = {
 						}
 					}
 				}
-				transfer_state = 928
+				transfer_state = 855
 			}
 			if = {
 				limit = {
@@ -629,7 +614,7 @@ country_event = {
 					popularity = -0.05
 				}
 				else = {
-					add_ideas = RAJ_subhas_chanda_bose_tfv 
+					add_ideas = RAJ_subhas_chanda_bose 
 					ENG = {
 						country_event = { id = britain.19 }
 					}

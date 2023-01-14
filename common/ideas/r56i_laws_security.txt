@@ -62,14 +62,13 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				resistance_damage_to_garrison = -0.20
-				compliance_gain = 0.05
 			}
 			
 			on_add = {
 					custom_effect_tooltip = r56i_laws_security_order_tt
 				}
 
-				cost = 100
+				cost = 200
 
 			
 			cancel_if_invalid = no
@@ -101,11 +100,11 @@ ideas = {
 				}
 			}
 			
-			Cost = 125
+			#Cost = 125
 
 			modifier = {
 				compliance_gain = 0.03
-				stability_factor = 0.10
+				stability_factor = 0.05
 				resistance_damage_to_garrison = 0.10
 				drift_defence_factor = -0.10
 			}

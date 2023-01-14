@@ -273,7 +273,7 @@ equipments = {
 		}
 		
 		#Defensive Abilities
-		defense = 46
+		defense = 50
 		breakthrough = 11
 
 		#Offensive Abilities

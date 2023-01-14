@@ -18,17 +18,12 @@ armored_USA= {
 			OR = {
 				has_tech = basic_medium_tank
 				has_tech = basic_light_tank
-				has_tech = basic_medium_tank_chassis
-				has_tech = basic_light_tank_chassis
 			}
 		}
 		
 		modifier = {
 			factor = 2
-			OR = {
-				has_tech = main_battle_tank
-				has_tech = main_battle_tank_chassis
-			}
+			has_tech = main_battle_tank
 		}
 	}
 
@@ -39,10 +34,7 @@ armored_USA= {
 
 			modifier = {
 				factor = 10
-				OR = {
-					has_tech = improved_light_tank
-					has_tech = improved_light_tank_chassis
-				}
+				has_tech = improved_light_tank
 			}
 		}
 
@@ -104,6 +96,7 @@ armored_USA= {
 			support = {
 				artillery = 1
 				mot_recon = 1
+				logistics_company = 1
 			}
 			
 			regiments = {
@@ -117,6 +110,7 @@ armored_USA= {
 			motorized
 			engineer
 			mot_recon
+			armored_car_recon
 			light_tank_recon
 			artillery
 		}
@@ -133,10 +127,7 @@ armored_USA= {
 
 			modifier = {
 				factor = 10
-				OR = {
-					has_tech = improved_light_tank
-					has_tech = improved_light_tank_chassis
-				}
+				has_tech = improved_light_tank
 			}
 		}
 		
@@ -194,6 +185,7 @@ armored_USA= {
 				engineer = 1
 				mot_recon = 1
 				artillery = 1
+				logistics_company = 1
 			}
 			
 			regiments = {
@@ -207,6 +199,7 @@ armored_USA= {
 			motorized
 			engineer
 			mot_recon
+			armored_car_recon
 			light_tank_recon
 			artillery
 		}
@@ -278,6 +271,7 @@ armored_USA= {
 				mot_recon = 1
 				logistics_company = 1
 				maintenance_company = 1
+				logistics_company = 1
 			}
 			
 			regiments = {
@@ -302,6 +296,7 @@ armored_USA= {
 
 			engineer
 			mot_recon
+			armored_car_recon
 			light_tank_recon
 			signal_company
 			maintenance_company
@@ -326,10 +321,7 @@ armored_USA= {
 
 			modifier = {
 				factor = 10
-				OR = {
-					has_tech = basic_medium_tank
-					has_tech = basic_medium_tank_chassis
-				}
+				has_tech = basic_medium_tank
 			}
 		}
 
@@ -413,6 +405,7 @@ armored_USA= {
 
 			engineer
 			mot_recon
+			armored_car_recon
 			light_tank_recon
 			signal_company
 			maintenance_company
@@ -437,10 +430,7 @@ armored_USA= {
 
 			modifier = {
 				factor = 10
-				OR = {
-					has_tech = improved_medium_tank
-					has_tech = improved_medium_tank_chassis
-				}
+				has_tech = improved_medium_tank
 			}
 		}
 		production_prio = {
@@ -609,7 +599,7 @@ armored_USA= {
 			
 			support = {
 				engineer = 1
-				mot_recon = 1
+				armored_car_recon = 1
 				maintenance_company = 1
 				logistics_company = 1
 				artillery = 1
@@ -635,6 +625,7 @@ armored_USA= {
 
 			engineer
 			mot_recon
+			armored_car_recon
 			light_tank_recon
 			signal_company
 			maintenance_company
@@ -651,7 +642,6 @@ armored_USA= {
 		replace_with = modern_armor_default_USA
 		target_min_match = 0.5
 	}
-
 
 	modern_armor_default_USA = {
 	
@@ -782,7 +772,7 @@ garrison_USA = {
 		
 		reinforce_prio = 0
 		
-		target_width = 10.0
+		target_width = 5.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -829,11 +819,11 @@ garrison_USA = {
 			match_value = 3000.0
 			
 			support = {
-				engineer = 1
+				military_police = 1
 			}
 			
 			regiments = {
-				garrison = 5
+				infantry = 4
 			}
 		}
 		
@@ -858,7 +848,11 @@ infantry_USA = {
 	}
 	
 	upgrade_prio = {
-		factor = 30
+		factor = 2
+
+		modifier = {
+			factor = 1
+		}
 	}
 	
 	match_to_count = 0.45
@@ -866,12 +860,16 @@ infantry_USA = {
 	infantry_default_USA = {
 	
 		upgrade_prio = {
-			factor = 6
+			factor = 2
+
+			modifier = {
+				factor = 1
+			}
 		}
 		
-		target_width = 27.0
+		target_width = 40.0
 		width_weight = 1.0
-		column_swap_factor = 1.0
+		column_swap_factor = 0.5
 		
 		stat_weights = {
 			0.00 #-- default_morale
@@ -917,14 +915,15 @@ infantry_USA = {
 			
 			support = {
 				engineer = 1
-				artillery = 1
 				recon = 1
-				anti_tank = 1				
+				field_hospital = 1
+				anti_tank = 1
+				logistics_company = 1
 			}
 			
 			regiments = {
-				infantry = 9
-				artillery_brigade = 3
+				infantry = 14
+				artillery_brigade = 4
 			}
 		}
 		
@@ -936,9 +935,15 @@ infantry_USA = {
 			field_hospital
 			logistics_company
 			anti_tank
+			military_police
 			artillery
+	#		anti_air
+			rocket_artillery
 			anti_tank_brigade
 			artillery_brigade
+			rocket_artillery_brigade
+	#		light_tank_destroyer_brigade 
+	#		medium_tank_destroyer_brigade 
 		}
 	}
 }
@@ -1142,6 +1147,8 @@ marines_USA = {
 			marine
 			engineer
 			logistics_company
+			artillery
+			anti_air
 		}
 	}
 
@@ -1335,9 +1342,6 @@ paratroopers_USA = {
 		}
 	}	
 }
-
-
-
 	# REGIMENTS:
 	#infantry
 	#light_armor

@@ -228,18 +228,20 @@ country_event = {
 	}
 	option = {
 		name = luxembourg.14.c
-		trigger = {
-			LUX = { 
-				has_completed_focus = LUX_pass_maulkuerfgesetz
-			}
-			NOT = { 
+		trigger = { 
+			AND = {
 				LUX = { 
-					OR = {
-						has_completed_focus = LUX_maintain_minority_parties
-						has_completed_focus = LUX_foster_an_european_community
-					}
+					has_completed_focus = LUX_pass_maulkuerfgesetz
+				}
+				NOT = { 
+					LUX = { 
+						OR = {
+							has_completed_focus = LUX_maintain_minority_parties
+							has_completed_focus = LUX_foster_an_european_community
+						}
+					} 
 				} 
-			} 
+			}
 		}
 		ai_chance = {
 			factor = 2
@@ -554,7 +556,7 @@ country_event = {
 		LUX = { country_event = { id = luxembourg.110 hours = 22 } }
 	}
 }
-#Luxembourg side
+#Luxemburg side
 #yes
 country_event = {
 	id = luxembourg.109
@@ -720,7 +722,10 @@ news_event = {
 
 	picture = GFX_news_event_sweden_revokes_aland_convetion
 
+
 	is_triggered_only = yes
+
+	major = no
 	
 	option = {
 		name = luxembourg.111.a

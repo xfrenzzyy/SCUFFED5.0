@@ -74,17 +74,10 @@
 			}
 		}				
 		offset = {
-			x = -60
-			y = 13
-			trigger = {
-				tag = SWE
-			}
-		}				
-		offset = {
-			x = -63
+			x = -15
 			y = 0
 			trigger = {
-				tag = DEN
+				tag = SWE
 			}
 		}		
 		ai_will_do = {
@@ -105,15 +98,6 @@
 				is_core_of = ROOT
 			}
 
-		}
-		allow_branch = {
-			OR = {
-				NOT = { tag = DEN }
-				has_cosmetic_tag = SCA
-				has_cosmetic_tag = SCA_UNIFIED
-				has_cosmetic_tag = DEN_SCA
-				has_country_flag = DEN_SCA_formed
-			}
 		}
 
 	#	bypass = {
@@ -153,7 +137,7 @@
 			controls_state = 138
 			controls_state = 37
 			controls_state = 99
-			controls_state = 964
+			controls_state = 892
 		}
 	
 		bypass = {
@@ -167,11 +151,11 @@
 				level = 1
 				build_only_on_allied = yes
 				controller_priority = {
-				  	base = 1
+				  base = 1
 				}
 				fallback = yes
 				start_state = 144
-				target_state = 964
+				target_state = 892
 			}											
 		}		
 	}	
@@ -196,7 +180,11 @@
 				is_core_of = ROOT
 			}
 			controls_state = 138
-			
+			NOT = {
+				any_other_country = {
+					has_completed_focus = SWE_scania_rubber
+				}
+			}
 			has_tech = rubber_plant_a
 			NOT = {
 				has_idea = generic_recent_economic_unification
@@ -209,13 +197,6 @@
 		allow_branch = {
 			NOT = {
 				original_tag = SWE
-			}
-			OR = {
-				NOT = { tag = DEN }
-				has_cosmetic_tag = SCA
-				has_cosmetic_tag = SCA_UNIFIED
-				has_cosmetic_tag = DEN_SCA
-				has_country_flag = DEN_SCA_formed
 			}
 		}
 		completion_reward = {
@@ -286,13 +267,6 @@
 			NOT = {
 				original_tag = NOR
 			}
-			OR = {
-				NOT = { tag = DEN }
-				has_cosmetic_tag = SCA
-				has_cosmetic_tag = SCA_UNIFIED
-				has_cosmetic_tag = DEN_SCA
-				has_country_flag = DEN_SCA_formed
-			}
 		}
 		cancel_if_invalid = yes
 
@@ -354,13 +328,7 @@
 		prerequisite = { focus = SCA_scandinavian_unification }
 		x = 2
 		y = 2
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
-				tag = DEN
-			}
-		}
+
 		cost = 10
 
 		ai_will_do = {

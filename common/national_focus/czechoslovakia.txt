@@ -745,7 +745,7 @@ focus_tree = {
 
 	focus = {
 		id = CZKE_ministry_of_defense
-		icon = GFX_goal_CZE_defense
+		icon = GFX_goal_generic_military_sphere
 
 		x = 13
 		y = 0
@@ -1240,7 +1240,7 @@ focus_tree = {
 
 	focus = {
 		id = CZKE_artillery_focus
-		icon = GFX_goal_generic_combined_arms_artillery_antiair_antitank
+		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = CZKE_armament_2 focus = CZKE_explosives_production }
 
 		x = 8
@@ -1669,11 +1669,7 @@ focus_tree = {
                 bonus = 1.0
                 uses = 2
                 category = r56_special_forces_training_tech 
-            }	
-            hidden_effect = {
-                set_country_flag = cite_an_airborne_unit_flag
-            }
-            unlock_decision_tooltip = { decision = cite_an_airborne_unit show_effect_tooltip = yes }							
+            }				
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -2228,13 +2224,13 @@ focus_tree = {
 				OR = {
 					if = {
 						limit = {
-							NOT = { has_global_flag = ger_standard_focus_tree }
+							NOT = { has_global_flag = GER_use_vanilla_tree }
 						}
 						has_completed_focus = GER_anschluss
 					}
 					if = {
 						limit = {
-							has_global_flag = ger_standard_focus_tree
+							has_global_flag = GER_use_vanilla_tree
 						}
 						has_completed_focus = GER_anschluss_vanilla
 					}
@@ -2577,7 +2573,7 @@ focus_tree = {
 
 	focus = {
 		id = CZKE_invite_yugoslavia
-		icon = GFX_goal_generic_befriend_yugoslavia
+		icon = GFX_goal_cze_invite_yugoslavia
 		prerequisite = { focus = CZKE_revive_little_entente }
 		x = 19
 		y = 4
@@ -2611,7 +2607,7 @@ focus_tree = {
 
 	focus = {
 		id = CZKE_invite_romania
-		icon = GFX_goal_generic_befriend_romania
+		icon = GFX_goal_cze_invite_romania
 		prerequisite = { focus = CZKE_revive_little_entente }
 		x = 21
 		y = 4
@@ -2647,13 +2643,7 @@ focus_tree = {
 
 	focus = {
 		id = CZKE_hungary_intervention 
-		icon = GFX_goal_generic_attack_hungary
-		prerequisite = { focus = CZKE_invite_romania }
-		prerequisite = { focus = CZKE_invite_yugoslavia }
 		mutually_exclusive = { focus = CZKE_hungarian_alliance }
-		x = 19
-		y = 5
-		cost = 5
 		available = {
 			r56_script_i_am_sane = yes
 			HUN = {
@@ -2672,8 +2662,15 @@ focus_tree = {
 			}
 		}	
 		
+		icon = GFX_goal_HUN_coat_of_arms
+		prerequisite = { focus = CZKE_invite_romania }
+		prerequisite = { focus = CZKE_invite_yugoslavia }
 
-		will_lead_to_war_with = HUN
+
+		x = 19
+		y = 5
+		cost = 5
+
 		completion_reward = {
 			create_wargoal = {
 				type = topple_government
@@ -2697,7 +2694,7 @@ focus_tree = {
 			
 		}	
 		
-		icon = GFX_goal_generic_befriend_hungary
+		icon = GFX_goal_flag_hungary
 		prerequisite = { focus = CZKE_invite_romania }
 		prerequisite = { focus = CZKE_invite_yugoslavia }
 
@@ -3087,7 +3084,7 @@ focus_tree = {
 
 	focus = {
 		id = CZKE_democratic_reforms
-		icon = GFX_goal_generic_befriend_czech
+		icon = GFX_goal_czech_deal
 
 		prerequisite = { focus = CZKE_empower_internationalism focus = CZKE_sokol_movement }
 		mutually_exclusive = { focus = CZKE_state_defense_law focus = CZKE_boycott_press_law }
@@ -3313,17 +3310,19 @@ focus_tree = {
 
 		available = {
 			GER = {
-				if = {
-					limit = {
-						NOT = { has_global_flag = ger_standard_focus_tree }
+				OR = {
+					if = {
+						limit = {
+							NOT = { has_global_flag = GER_use_vanilla_tree }
+						}
+						has_completed_focus = GER_anschluss
 					}
-					has_completed_focus = GER_anschluss
-				}
-				if = {
-					limit = {
-						has_global_flag = ger_standard_focus_tree
+					if = {
+						limit = {
+							has_global_flag = GER_use_vanilla_tree
+						}
+						has_completed_focus = GER_anschluss_vanilla
 					}
-					has_completed_focus = GER_anschluss_vanilla
 				}
 			}
 		}
@@ -3403,13 +3402,13 @@ focus_tree = {
 					OR = {
 						if = {
 							limit = {
-								NOT = { has_global_flag = ger_standard_focus_tree }
+								NOT = { has_global_flag = GER_use_vanilla_tree }
 							}
 							has_completed_focus = GER_anschluss
 						}
 						if = {
 							limit = {
-								has_global_flag = ger_standard_focus_tree
+								has_global_flag = GER_use_vanilla_tree
 							}
 							has_completed_focus = GER_anschluss_vanilla
 						}
@@ -3860,8 +3859,8 @@ focus_tree = {
 					add_political_power = 75
 				}
 				if = {
-					limit = { has_idea = CZKE_radola_gajda_political_advisor }
-					remove_ideas = CZKE_radola_gajda_political_advisor
+					limit = { has_idea = CZKE_radola_gajda }
+					remove_ideas = CZKE_radola_gajda
 					add_ideas = CZKE_klement_gottwald
 				}
 				else = {

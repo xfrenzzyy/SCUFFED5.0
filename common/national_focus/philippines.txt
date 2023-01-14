@@ -115,7 +115,7 @@ focus_tree = {
 		prerequisite = { focus = PHI_urbanize_the_islands }
 		x = 3
 		y = 2
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 10
@@ -208,7 +208,7 @@ focus_tree = {
 
 		x = 1
 		y = 3
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 10
@@ -224,10 +224,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -237,7 +237,7 @@ focus_tree = {
 
 	focus = {
 		id = PHI_national_defence_fund
-		icon = GFX_goal_generic_barrack_industry
+		icon = GFX_goal_generic_defence
 		prerequisite = { focus = PHI_manila_central_railway }
 		x = 3
 		y = 3
@@ -334,7 +334,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
    
@@ -406,7 +406,7 @@ focus = {
 
 	focus = {
 		id = PHI_american_computer_imports
-		icon = GFX_goal_generic_engineering
+		icon = GFX_goal_generic_radar
 		prerequisite = { focus = PHI_additional_research_slot1 }
 		x = 5
 		y = 5
@@ -462,7 +462,7 @@ focus = {
 
 	focus = {
 		id = PHI_study_enemy_ciphers
-		icon = GFX_goal_generic_radar
+		icon = GFX_goal_generic_production2
 		prerequisite = { focus = PHI_additional_research_slot1 }
 		x = 3
 		y = 5
@@ -483,10 +483,6 @@ focus = {
 					bonus = 1.0
 					uses = 1
 					category = decryption_tech
-				}
-				add_tech_bonus = {
-					bonus = 0.5
-					uses = 1
 					category = computing_tech
 				}
 			}
@@ -495,11 +491,7 @@ focus = {
 					set_technology = { lar_decryption_bonus_tech = 1 }
 				}
 				custom_effect_tooltip = lar_decryption_bonus_tt
-				add_tech_bonus = {
-					bonus = 0.5
-					uses = 1
-					category = computing_tech
-				}
+				
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -507,7 +499,7 @@ focus = {
 
 	focus = {
 		id = PHI_research_new_enegry_options
-		icon = GFX_goal_generic_nuclear_energy
+		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = PHI_study_enemy_ciphers }
 		x = 3
 		y = 6
@@ -816,9 +808,10 @@ focus = {
 
 		completion_reward = {
 			add_tech_bonus = {
+				name = PHI_create_main_battle_tanks
 				bonus = 1
 				uses = 1
-				category = cat_medium_armor
+				technology = basic_medium_tank
 			}
 			#1x 50% reduction on research for medium tanks
 		}
@@ -1004,8 +997,8 @@ focus = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = POL_air_innovations
-				cost_reduction = 0.5	#was 100% instead of described 50%
-				uses = 2
+				cost_reduction = 0.35	#was 100% instead of described 50%
+				uses = 1
 				category = air_doctrine
 			}
 			#1x50% research bonus to Air Doctrine Research
@@ -1503,7 +1496,7 @@ focus = {
 
 	focus = {
 		id = PHI_a_new_regime
-		icon = GFX_goal_generic_crisis
+		icon = GFX_goal_generic_destroy_government
 		prerequisite = { focus = PHI_post_indenpence_stabilization }
 		mutually_exclusive = { focus = PHI_follow_the_american_way }
 
@@ -2092,7 +2085,6 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
 			327 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -2118,7 +2110,7 @@ focus = {
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = PHI_european_intervention}
 		available = {
-			country_exists = USA
+			country_exists = ENG
 		}
 
 		x = 31
@@ -2132,15 +2124,11 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			USA = {
-				country_event = phil.80
-			}
-
 			#hidden_effect = {
 			#	load_oob = PHI_filipino_corridor
 			#}
-			add_opinion_modifier = { target = USA modifier = POL_draw_closer_to_britain }
-			USA = { add_opinion_modifier = { target = ROOT modifier = POL_draw_closer_to_britain } }
+			add_opinion_modifier = { target = ENG modifier = POL_draw_closer_to_britain }
+			ENG = { add_opinion_modifier = { target = ROOT modifier = POL_draw_closer_to_britain } }
 			#Relation boost with the UK
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -2158,7 +2146,7 @@ focus = {
 
 		x = 33
 		y = 4
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 10

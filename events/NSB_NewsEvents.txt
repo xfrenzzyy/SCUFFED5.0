@@ -188,8 +188,10 @@ news_event = {
 			has_government = democratic
 			GER = {
 				NOT = {
-					has_completed_focus = GER_rhineland
-					has_completed_focus = GER_oppose_hitler
+					OR = {
+						has_completed_focus = GER_rhineland
+						has_completed_focus = GER_oppose_hitler
+					}
 				}
 			}
 		}
@@ -228,18 +230,6 @@ news_event = {
 news_event = {
 	id = nsb_news.5
 	title = nsb_news.5.t
-	picture = "[GetPolishKingImage]" 
-	desc = {
-		text = nsb_news.5.desc.wojtek
-		trigger = {
-			POL = { 
-				has_country_leader = {
-					character = POL_wojtek
-					ruling_only = yes
-				} 
-			}
-		}
-	}	
 	desc = {
 		text = nsb_news.5.desc.saxon
 		trigger = {
@@ -270,7 +260,7 @@ news_event = {
 			POL = { has_completed_focus = POL_habsburg }
 		}
 	}
-
+	picture = GFX_news_event_generic_parliament
 	
 	major = yes
 	
@@ -288,8 +278,10 @@ news_event = {
 			NOT = { tag = FROM }
 			POL = {
 				NOT = {
-					has_completed_focus = POL_cossack_king
-					has_completed_focus = POL_romanov
+					OR = {
+						has_completed_focus = POL_cossack_king
+						has_completed_focus = POL_romanov
+					}
 				}
 			}
 		}
@@ -346,7 +338,7 @@ news_event = {
 	id = nsb_news.7
 	title = nsb_news.7.t
 	desc = nsb_news.7.desc
-	picture = "[GetPolishKingPersonalUnionImage]"
+	picture = GFX_news_event_generic_parliament
 	
 	major = yes
 	
@@ -441,7 +433,7 @@ news_event = {
 		}
 	}
 	
-	picture = GFX_news_event_SOV_tanks_dinitriy_donskoj
+	picture = GFX_news_event_generic_riot
 	
 	major = yes
 	

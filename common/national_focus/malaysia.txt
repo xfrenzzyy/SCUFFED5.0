@@ -486,27 +486,27 @@ focus = {
 	}
 }
 
-#Focus for -	#if it doesn't do anything and tree is not developing, no
-#focus = {
-#	#The Singapore Question
-#	id =MAL_deslashcentralisation_3
-#	icon =GFX_goal_generic_forceful_treaty
-#	
-#	ai_will_do = {
-#		factor = 2 }
-#	x =14
-#	y =7
-#	
-#	prerequisite = { focus = MAL_deslashcentralisation_2 }
-#	available = {
-#		always = no
-#	}
-#	cost = 10
-#	 available_if_capitulated = yes
-#	completion_reward = {
-#		custom_effect_tooltip = MAL_singapore_tooltip
-#	}
-#}
+#Focus for -
+focus = {
+	#The Singapore Question
+	id =MAL_deslashcentralisation_3
+	icon =GFX_goal_generic_forceful_treaty
+	
+	ai_will_do = {
+		factor = 2 }
+	x =14
+	y =7
+	
+	prerequisite = { focus = MAL_deslashcentralisation_2 }
+	available = {
+		always = no
+	}
+	cost = 10
+	 available_if_capitulated = yes
+	completion_reward = {
+		custom_effect_tooltip = MAL_singapore_tooltip
+	}
+}
 
 
 #Focus for -
@@ -527,30 +527,32 @@ focus = {
 		swap_ideas = {
 			remove_idea = MAL_political_idea
 			add_idea = MAL_political_idea_neutrality
+
 		}
-		effect_tooltip = {
-			create_corps_commander = {
-				name = "Lewis Heath"
-				portrait_path = "gfx/leaders/MAL/Portrait_Lewis_Heath.dds"
-				traits = {  }
-				skill = 3
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 2
-				id = 1217
-			}
-			create_corps_commander = {
-				name = "Gordon Bennett"
-				portrait_path = "gfx/leaders/MAL/Portrait_Gordon_Bennett.dds"
-				traits = {  }
-				skill = 2
-				attack_skill = 3
-				defense_skill = 1
-				planning_skill = 2
-				logistics_skill = 1
-				id = 1218
-			}
+
+
+		create_corps_commander = {
+			name = "Lewis Heath"
+			portrait_path = "gfx/leaders/MAL/Portrait_Lewis_Heath.dds"
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			id = 1217
+		}
+
+		create_corps_commander = {
+			name = "Gordon Bennett"
+			portrait_path = "gfx/leaders/MAL/Portrait_Gordon_Bennett.dds"
+			traits = {  }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			id = 1218
 		}
 
 	}
@@ -1513,15 +1515,9 @@ focus = {
 
 		}
 		add_equipment_to_stockpile = {
-		    type = large_plane_airframe_1
+		    type = strat_bomber_equipment
 		    amount = 50
 		}
-	#	add_equipment_to_stockpile = { 
-	#		type = small_plane_cas_airframe_1
-	#		amount = 100
-	#		producer = GER
-	#		variant_name = "Ju 87"
-	#	}		
 	}
 	search_filters = {
 		FOCUS_FILTER_MILITARY_EQUIPMENT
@@ -1554,7 +1550,7 @@ focus = {
      		   }
    			 }
 		}
-		951 = {
+		879 = {
     		if = {
        		 limit = { is_controlled_by = ROOT }
        		 add_building_construction = {
@@ -1574,7 +1570,7 @@ focus = {
      		   }
    			 }
 		}
-		971 = {
+		899 = {
     		if = {
        		 limit = { is_controlled_by = ROOT }
        		 add_building_construction = {
@@ -1695,7 +1691,7 @@ focus = {
 	cost = 10
 	 available_if_capitulated = yes
 	completion_reward = {
-		915 = {
+		842 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -1715,7 +1711,7 @@ focus = {
 				province = 7342
 			}
 		}
-		916 = {
+		843 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -1723,7 +1719,7 @@ focus = {
 				province = 4310
 			}
 		}
-		960 = {
+		888 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -1750,7 +1746,7 @@ focus = {
 	cost = 10
 	 available_if_capitulated = yes
 	completion_reward = {
-		951 = {
+		879 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -1758,7 +1754,7 @@ focus = {
 				province = 7427
 			}
 		}
-		916 = {
+		843 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -1766,7 +1762,7 @@ focus = {
 				province = 10297
 			}
 		}
-		960 = {
+		888 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -1774,7 +1770,7 @@ focus = {
 				province = 7329
 			}
 		}
-		915 = {
+		842 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -2004,7 +2000,7 @@ focus = {
 			    province = 12299
 			}
 		}
-		916 = {
+		843 = {
 			add_building_construction = {
 				type = coastal_bunker
 				level = 2
@@ -2012,7 +2008,7 @@ focus = {
 				province = 10297
 			}
 		}
-		951 = {
+		879 = {
 			add_building_construction = {
 				type = coastal_bunker
 				level = 2
@@ -2020,7 +2016,7 @@ focus = {
 				province = 7427
 			}
 		}
-		960 = {
+		888 = {
 			add_building_construction = {
 				type = coastal_bunker
 				level = 2
@@ -2348,11 +2344,9 @@ focus = {
 	icon =GFX_focus_generic_join_comintern
 	
 	ai_will_do = {
-		factor = 2
-	}
-	relative_position_id = MAL_worldstage
-	x =-3
-	y =1
+		factor = 2 }
+	x =29
+	y =6
 	
 	prerequisite = { focus = MAL_worldstage}
 	available = {
@@ -2377,11 +2371,9 @@ focus = {
 	icon =GFX_goal_generic_occupy_states_ongoing_war
 	
 	ai_will_do = {
-		factor = 2
-	}
-	relative_position_id = MAL_worldstage_1
-	x =0
-	y =1
+		factor = 2 }
+	x =29
+	y =7
 	
 	prerequisite = { focus = MAL_worldstage_1 }
 	available = {
@@ -2409,12 +2401,9 @@ focus = {
 	icon =GFX_goal_generic_demand_territory
 	
 	ai_will_do = {
-		factor = 2
-	}
-	relative_position_id = MAL_worldstage
-	x =-1
-	y =1
-
+		factor = 2 }
+	x =31
+	y =6
 	mutually_exclusive = {focus = MAL_worldstage_5 }
 	prerequisite = { focus = MAL_worldstage }
 	available = {
@@ -2446,11 +2435,9 @@ focus = {
 	icon =GFX_focus_generic_strike_at_democracy1
 	
 	ai_will_do = {
-		factor = 2
-	}
-	relative_position_id = MAL_worldstage_3
-	x =1
-	y =1
+		factor = 2 }
+	x =32
+	y =7
 	
 	prerequisite = { focus = MAL_worldstage_3 focus = MAL_worldstage_5}
 	available = {
@@ -2482,12 +2469,9 @@ focus = {
 	icon =GFX_goal_generic_demand_territory
 	
 	ai_will_do = {
-		factor = 2
-	}
-	relative_position_id = MAL_worldstage
-	x =1
-	y =1
-
+		factor = 2 }
+	x =33
+	y =6
 	mutually_exclusive = { focus = MAL_worldstage_3}
 	prerequisite = { focus = MAL_worldstage }
 	available = {
@@ -2506,9 +2490,9 @@ focus = {
 				add_claim_by = MAL
 			}
 		}
-		add_state_core = 334
-		add_state_core = 977
-		add_state_core = 978
+		334 = {
+			add_core_of = MAL
+		}
 	}
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 }
@@ -2521,11 +2505,9 @@ focus = {
 	icon =GFX_goal_generic_improve_relations
 	
 	ai_will_do = {
-		factor = 2
-	}
-	relative_position_id = MAL_worldstage
-	x =3
-	y =1
+		factor = 2 }
+	x =35
+	y =6
 	
 	prerequisite = { focus = MAL_worldstage }
 	available = {
@@ -2576,11 +2558,9 @@ focus = {
 	icon =GFX_goal_anschluss
 	
 	ai_will_do = {
-		factor = 2
-	}
-	relative_position_id = MAL_worldstage_6
-	x =0
-	y =1
+		factor = 2 }
+	x =35
+	y =7
 	
 	prerequisite = { focus = MAL_worldstage_6}
 	available = {

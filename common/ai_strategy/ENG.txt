@@ -33,11 +33,6 @@ ENG_unit_production = {
 	# 	value = 1
 	# }
 
-	ai_strategy = {
-		type = role_ratio
-		id = shocktroop
-		value = 0
-	}
 
 	ai_strategy = {
 		type = role_ratio
@@ -60,7 +55,7 @@ ENG_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = cavalry
-		value = 2
+		value = 0
 	}
 
 	ai_strategy = {
@@ -186,10 +181,7 @@ protect_poland_against_germany = {
 	allowed = { original_tag = ENG }
 	enable = {
 		NOT = {
-			has_country_leader = { 
-				character = ENG_oswald_mosley
-				ruling_only = yes
-			}
+			has_country_leader = { ruling_only = yes name = "Oswald Mosley" }
 		}
 		GER = { 
 			OR = {
@@ -229,10 +221,7 @@ protect_poland_against_germany_even_more = {
 	allowed = { original_tag = ENG }
 	enable = {
 		NOT = {
-			has_country_leader = { 
-				character = ENG_oswald_mosley
-				ruling_only = yes
-			}
+			has_country_leader = { ruling_only = yes name = "Oswald Mosley" }
 		}
 		GER = { 
 			OR = {
@@ -263,10 +252,7 @@ defend_poland_against_germany = {
 	allowed = { original_tag = ENG }
 	enable = {
 		NOT = {
-			has_country_leader = { 
-				character = ENG_oswald_mosley
-				ruling_only = yes
-			}
+			has_country_leader = { ruling_only = yes name = "Oswald Mosley" }
 		}		
 		GER = { has_war_with = POL }
 		country_exists = POL
@@ -323,14 +309,14 @@ ENG_template_design_1 = {
 
 	ai_strategy = {
 		type = template_prio
-		id = mobile
-		value = 0
+		id = motorized
+		value = -50
 	}
 
 	ai_strategy = {
 		type = template_prio
 		id = cavalry
-		value = -2
+		value = -100
 	}
 
 	ai_strategy = {
@@ -378,14 +364,14 @@ ENG_template_design_2 = {
 
 	ai_strategy = {
 		type = template_prio
-		id = mobile
+		id = motorized
 		value = 10
 	}
 
 	ai_strategy = {
 		type = template_prio
 		id = cavalry
-		value = 0
+		value = -100
 	}
 
 	ai_strategy = {
@@ -597,7 +583,7 @@ ENG_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_capital_bb
-		value = 12#MODDED
+		value = -90
 	}
 	ai_strategy = {
 		type = dockyard_to_military_factory_ratio
@@ -606,19 +592,19 @@ ENG_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_capital_bc
-		value = -20
+		value = -10
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_carrier
-		value = 23 #MODDED
+		value = -90
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_carrier_light
-		value = 10  #MODDED
+		value = 15
 	}
 
 	ai_strategy = {
@@ -630,37 +616,37 @@ ENG_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_screen
-		value = 110  #MODDED
+		value = 250
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_escort
-		value = 30  #MODDED
+		value = 50
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_cruiser_light
-		value = 50  #MODDED
+		value = 60
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_cruiser_heavy
-		value = 10  #MODDED
+		value = 00
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_mine_sweeper
-		value = 5  #MODDED #you dont need that many
+		value = 20
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_mine_layer
-		value = 5  #MODDED
+		value = 10
 	}
 }
 
@@ -693,13 +679,13 @@ ENG_naval_role_ratios_anti_submarines = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_carrier
-		value = 30  #MODDED
+		value = -90
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_carrier_light
-		value = 10  #MODDED
+		value = -25
 	}
 
 	ai_strategy = {
@@ -711,19 +697,19 @@ ENG_naval_role_ratios_anti_submarines = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_screen
-		value = 80  #MODDED
+		value = -70
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_escort
-		value = 30  #MODDED
+		value = 100
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_cruiser_light
-		value = 15  #MODDED
+		value = -25
 	}
 
 	ai_strategy = {
@@ -769,20 +755,6 @@ ENG_baltic_is_a_trap = {
 		type = naval_avoid_region
 		id = 207 #danish belts
 		value = 100
-	}
-}
-
-ENG_black_sea_is_a_trap = {
-	allowed = { original_tag = ENG }
-	enable = {
-		has_war_with = GER
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = naval_avoid_region
-		id = 30 #black sea
-		value = 500
 	}
 }
 
@@ -899,7 +871,7 @@ ENG_evacuate_troops_after_fall_of_france = {
 	ai_strategy = {
 		type = front_unit_request
 		area = mainland_europe
-		value = -175
+		value = -150
 	}
 }
 
@@ -928,7 +900,7 @@ ENG_time_to_ditch_FRA = {
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = FRA
-		value = 125
+		value = 100
 	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
@@ -1188,10 +1160,6 @@ ENG_Defends_Mediterranean = {
 		tag = ENG
 	}
 
-	enable = {
-		always = yes
-	}
-
 	# Alexandria
 	ai_strategy = {
 		type = theatre_distribution_demand_increase
@@ -1218,10 +1186,6 @@ ENG_Defends_Mediterranean = {
 ENG_convoy_raids_german_italian_convoys = {
 	allowed = {
 		tag = ENG
-	}
-
-	enable = {
-		always = yes
 	}
 
 	ai_strategy = {
@@ -1454,7 +1418,7 @@ ENG_onto_the_beaches_4 = {
 
 	ai_strategy = {
 		type = naval_invasion_focus
-		value = 40
+		value = 20
 	}
 }
 

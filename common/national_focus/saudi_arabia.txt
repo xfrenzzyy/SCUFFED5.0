@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = saudi_focus
 	country = {
 		factor = 0
@@ -16,7 +16,7 @@
 	focus = {
 		id = SAU_the_unifier
 		icon = GFX_goal_SAU_the_unifier
-		cost = 7.00
+		cost = 10.00
 		x = 10
 		y = 0
 		ai_will_do = {
@@ -32,7 +32,7 @@
 	focus = {
 		id = SAU_al_hasa_oil_discovery
 		icon = GFX_goal_refining
-		cost = 10.00
+		cost = 5.00
 		x = 0
 		y = 1
 		prerequisite = { focus = SAU_the_unifier }
@@ -42,26 +42,16 @@
 
 		completion_reward = {
 			292 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = fuel_silo
 					level = 1
 					instant_build = yes
 				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_resource = {
-						type = oil
-						amount = 6
-						state = 292
-				}
 			}	
 			add_tech_bonus = {
 				name = IRQ_arab_industrial_revolution
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = refining_tech
 			}						
@@ -82,13 +72,6 @@
 			focus = SAU_concessions_to_standard_oil
 			focus = SAU_2_Invite_the_Soviet_oil_barons
 		}
-
-		available = {
-			NOT = {
-				has_war_with = ENG
-			}
-		}
-
 		ai_will_do = {
 			factor = 50
 			modifier = {
@@ -151,7 +134,7 @@
 	focus = {
 		id = SAU_expand_the_shura_council
 		icon = GFX_focus_generic_self_management
-		cost = 7.16
+		cost = 10.00
 		prerequisite = {
 			focus = SAU_the_unifier
 		}
@@ -159,10 +142,7 @@
 			factor = 45
 		}
 		completion_reward = {
-			add_timed_idea = {
-				idea = SAU_expand_the_shura_council
-				days = 270
-			}
+			add_ideas = SAU_expand_the_shura_council
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		x = -4
@@ -201,11 +181,6 @@
 		ai_will_do = {
 			factor = 40
 		}
-		available = {
-			NOT = {
-				has_war_with = USA
-			}
-		}		
 		completion_reward = {
 			add_offsite_building = { type = industrial_complex level = 1 }
 			add_offsite_building = { type = dockyard level = 1 }			
@@ -228,13 +203,6 @@
 			focus = SAU_concessions_to_standard_oil
 			focus = SAU_2_Invite_the_Soviet_oil_barons
 		}
-
-		available = {
-			NOT = {
-				has_war_with = GER
-			}
-		}
-
 		ai_will_do = {
 			factor = 50
 			modifier = {
@@ -310,12 +278,6 @@
 			}
 		}
 
-		available = {
-			NOT = {
-				has_war_with = SOV
-			}
-		}
-
 		cost = 5
 
 		available_if_capitulated = yes
@@ -326,12 +288,6 @@
 				factor = 0
 				is_historical_focus_on = yes
 			}
-			modifier = {
-				factor = 2.5
-				SOV = {
-					has_completed_focus = SOV_the_khakimov_proposal
-				}
-			}			
 		}
 
 		bypass = {
@@ -391,11 +347,6 @@
 		ai_will_do = {
 			factor = 35
 		}
-		available = {
-			NOT = {
-				has_war_with = SOV
-			}
-		}		
 		completion_reward = {
 			add_offsite_building = { type = arms_factory level = 2 }
 			
@@ -420,12 +371,6 @@
 		}
 		ai_will_do = {
 			factor = 50
-		}
-
-		available = {
-			NOT = {
-				has_war_with = USA
-			}
 		}
 
 		completion_reward = {
@@ -482,7 +427,7 @@
 	focus = {
 		id = SAU_persian_gulf_to_riyadh_railway
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = SAU_invite_brabag
 			focus = SAU_deal_with_bp
@@ -493,16 +438,6 @@
 			factor = 45
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					292 = {
-						is_fully_controlled_by = ROOT
-					}
-				} 
-				build_railway = { 
-					path = { 12727 5024 12702 }
-				}
-			}
 			random_owned_controlled_state = {
 				prioritize = { 292 }
 				limit = {
@@ -517,7 +452,7 @@
 								any_owned_state = {
 									free_building_slots = {
 										building = infrastructure
-										size > 0
+										size > 1
 									}
 									is_in_home_area = yes
 								}
@@ -527,7 +462,7 @@
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -536,7 +471,7 @@
 				limit = {
 					free_building_slots = {
 						building = infrastructure
-						size > 0
+						size > 1
 					}
 					OR = {
 						is_in_home_area = yes
@@ -545,7 +480,7 @@
 								any_owned_state = {
 									free_building_slots = {
 										building = infrastructure
-										size > 0
+										size > 1
 									}
 									is_in_home_area = yes
 								}
@@ -555,7 +490,7 @@
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -578,11 +513,6 @@
 		ai_will_do = {
 			factor = 30
 		}
-		available = {
-			NOT = {
-				has_war_with = USA
-			}
-		}		
 		completion_reward = {
 			add_offsite_building = { type = industrial_complex level = 2 }
 		}
@@ -599,11 +529,6 @@
 		prerequisite = {
 			focus = SAU_invite_brabag
 		}
-		available = {
-			NOT = {
-				has_war_with = GER
-			}
-		}		
 		ai_will_do = {
 			factor = 35
 		}
@@ -700,12 +625,7 @@
 			}
 		}
 		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.15
-				
-			}
-			add_timed_idea = { idea = internationalism days = 1100 }
+			add_ideas = PER_revive_the_jungle_movement
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -754,26 +674,17 @@
 		x = 0
 		y = 4
 			ai_will_do = {
-				factor = 20
-				modifier = {
-					factor = 0
-					is_historical_focus_on = yes
+					factor = 20
+					modifier = {
+							factor = 0
+							is_historical_focus_on = yes
+						}
 				}
-			}
-		completion_reward = {
-			add_ideas = PER_restore_constitutionalism
-			add_stability = 0.1
-			if = {
-				limit = {
-					is_ai = yes
+			completion_reward = {
+					add_ideas = PER_restore_constitutionalism
+					add_stability = 0.1
 				}
-				add_popularity = {
-					ideology = democratic
-					popularity = 0.1
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+				search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 
 	}
 	focus = {
@@ -794,8 +705,8 @@
 			}
 			add_tech_bonus = {
 				name = SAU_invite_western_advisors
-				bonus = 1.25
-				uses = 2
+				bonus = 1.0
+				uses = 1
 				category = industry
 			}
 		}
@@ -827,7 +738,7 @@
 	focus = {
 		id = SAU_move_the_court_to_murabba_palace
 		icon = GFX_focus_generic_home_defense
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = SAU_restore_the_caliphate focus = SAU_restore_constitutionalism focus = SAU_communmism_001 focus = SAU_arabian_spring
 		}
@@ -851,7 +762,7 @@
 	focus = {
 		id = SAU_provide_shelter_for_fritz_gobba
 		icon = GFX_goal_generic_dangerous_deal
-		cost = 5.00
+		cost = 10.00
 		prerequisite = { focus = SAU_restore_the_caliphate }
 		relative_position_id = SAU_restore_the_caliphate
 		x = 1
@@ -887,9 +798,6 @@
 			focus = SAU_western_alignment
 			focus = SAU_maintain_international_neutrality
 			focus = SAU_join_the_comintern
-		}
-		bypass = {
-			is_in_faction_with = GER
 		}
 		ai_will_do = {
 			factor = 50
@@ -990,7 +898,7 @@
 	}
 	focus = {
 		id = SAU_western_alignment
-		icon = GFX_allies
+		icon = GFX_focus_attack_germany
 		cost = 5
 		prerequisite = {
 			focus = SAU_invite_western_advisors
@@ -1124,10 +1032,10 @@
 											include_locked = yes
 										}
 								}
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = industrial_complex
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -1206,7 +1114,7 @@
 	focus = {
 		id = SAU_army_focus_1
 		icon = GFX_goal_generic_small_arms
-		cost = 5.00
+		cost = 10.00
 		ai_will_do = {
 			factor = 1
 		}
@@ -1217,10 +1125,10 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 		army_experience = 20
-		add_doctrine_cost_reduction = {
+		add_tech_bonus = {
 				name = SAU_army_focus_1
-				cost_reduction = 0.5
-				uses = 2
+				bonus = 1
+				uses = 1
 				category = land_doctrine
 			}
 		}
@@ -1230,7 +1138,7 @@
 	focus = {
 		id = SAU_army_infantry
 		icon = GFX_goal_generic_axis_build_infantry
-		cost = 5.00
+		cost = 10.00
 		prerequisite = { focus = SAU_army_focus_1 }
 		ai_will_do = {
 			factor = 1
@@ -1297,7 +1205,7 @@
 	focus = {
 		id = SAU_land_doctrine1
 		icon = GFX_goal_generic_position_armies
-		cost = 5.00
+		cost = 10.00
 		prerequisite = { focus = SAU_army_infantry_desert }
 		ai_will_do = {
 			factor = 1
@@ -1310,7 +1218,7 @@
 			add_doctrine_cost_reduction = {
 				name = SAU_land_doctrine
 				cost_reduction = 0.5
-				uses = 2
+				uses = 1
 				category = land_doctrine
 			}
 		}
@@ -1343,7 +1251,7 @@
 	focus = {
 		id = SAU_yemen_lessons
 		icon = GFX_focus_prc_infiltration
-		cost = 5.00
+		cost = 10.00
 		prerequisite = { focus = SAU_army_focus_1 }
 		ai_will_do = { 
 			factor = 1 
@@ -1357,7 +1265,7 @@
 			add_doctrine_cost_reduction = {
 				name = SAU_yemen_lessons
 				cost_reduction = 0.5
-				uses = 2
+				uses = 1
 				category = land_doctrine
 			}
 		}
@@ -1389,7 +1297,7 @@
 	focus = {
 		id = SAU_romanticize_army
 		icon = GFX_focus_generic_military_mission
-		cost = 8.00
+		cost = 10.00
 		prerequisite = { focus = SAU_strengthen_weakness }
 		prerequisite = { focus = SAU_incorporate_nomad_tactics }
 		ai_will_do = {
@@ -1440,48 +1348,19 @@
 			if = {
 				limit = {
 					has_dlc = "No Step Back"
-					NOT = {
-						OR = {
-							has_idea = bold_attack_spirit
-							has_idea = tenacious_defense_spirit
-							has_idea = meticulous_preparation_spirit
-							has_idea = best_of_the_best_spirit
-							has_idea = inventive_leadership_spirit
-							has_idea = academy_scholarships_spirit
-							has_idea = political_loyalty_spirit
-							has_idea = inventive_leadership_spirit
-							has_idea = mobile_warfare_academy_spirit
-							has_idea = superior_firepower_academy_spirit
-							has_idea = theatre_training_spirit
-							has_idea = mass_assault_academy_spirit
-						}
-					}
 				}
 				add_ideas = { inventive_leadership_spirit }
 			}
-			add_ideas = { SAU_creative_generals }
-			#else = {
-				
-			#}
-			show_ideas_tooltip = SAU_mohammad_tarek_abdelkader_al_tarabulsi
-			effect_tooltip = {
-				create_field_marshal = {
-					name = "Mohammad Al-Tarabulsi"
-					traits = { offensive_doctrine desert_fox organizer war_hero }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 2
-					planning_skill = 2
-					logistics_skill = 3
-				}
-			}			
+			else = {
+				add_ideas = { SAU_creative_generals }
+			}
 		}
 	}
 
 	focus = {
 		id = SAU_incorporate_nomad_tactics
-		icon = GFX_focus_generic_camel_corps
-		cost = 5.00
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
 		prerequisite = { focus = SAU_encourage_general_creativity }
 		ai_will_do = {
 			factor = 1
@@ -1491,54 +1370,8 @@
 		y = 1
 		completion_reward = {
 			add_ideas = { SAU_incorporate_nomad_tactics1 }
-			if = {
-				limit = {
-					has_dlc = "Battle for the Bosporus"
-					has_tech = camelry
-					has_template = "Camel Corps"
-				}
-				capital_scope = {
-					create_unit = {
-						division = "name = \"Camel Corps\" division_template = \"Camel Corps\" start_experience_factor = 0.05 start_equipment_factor = 1 start_manpower_factor = 1"
-						owner = ROOT
-						count = 1
-					}
-				}
-			}			
 		}
 
-	}
-
-	focus = {
-		id = SAU_camelry_expertise
-		icon = GFX_goal_camelry
-		prerequisite = { focus = SAU_incorporate_nomad_tactics }
-		x = 1
-		y = 1
-		relative_position_id = SAU_incorporate_nomad_tactics
-	
-		cost = 5
-	
-		ai_will_do = {
-			factor = 5
-		}
-		allow_branch = {
-			has_dlc = "Battle for the Bosporus"
-		}
-		cancel_if_invalid = yes
-	
-		completion_reward = {
-		#	add_ideas = SAU_camelry_expertise
-			custom_effect_tooltip = ARAB_unlock_camelry_expertise_effect_tt
-			hidden_effect = { set_technology = { camelry_expertise = 1 } } 		
-			army_experience = 5
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.25
-				uses = 1
-				category = land_doctrine
-			}
-		}
 	}
 
 	focus = {
@@ -1571,11 +1404,7 @@
                 bonus = 1.0
                 uses = 1
                 category = r56_special_forces_training_tech 
-            }		
-			hidden_effect = {
-				set_country_flag = cite_an_airborne_unit_flag
-			}
-			unlock_decision_tooltip = { decision = cite_an_airborne_unit show_effect_tooltip = yes }					
+            }				
 		}
 	}
 
@@ -1633,7 +1462,7 @@
 			factor = 1
 		}
 		relative_position_id = SAU_support_companies
-		x = 1
+		x = 0
 		y = 1
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -1649,7 +1478,7 @@
 	focus = {
 		id = SAU_radio_innovations
 		icon = GFX_focus_generic_cryptologic_bomb
-		cost = 5.00
+		cost = 10.00
 		prerequisite = { focus = SAU_tank_focus }
 		available = {
 		has_tech = radio
@@ -1681,7 +1510,7 @@
 		y = 1
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-		army_experience = 50
+		army_experience = 20
 		add_ideas = { SAU_general_army_buff1 }
 		}
 	}
@@ -1745,7 +1574,7 @@
 		y = 1
 		relative_position_id = SAU_2_Industrial_Start
 		
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -1993,10 +1822,10 @@
 				limit = {
 					has_state_flag = SAU_2_Civilian_One_1
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 
@@ -2008,14 +1837,14 @@
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
-						size > 3
+						size > 2
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 
@@ -2074,10 +1903,10 @@
 				limit = {
 					has_state_flag = SAU_2_Civilian_Two_1
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 
@@ -2089,14 +1918,14 @@
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
-						size > 3
+						size > 2
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SAU_2_Civilian_Two_1
@@ -2304,10 +2133,10 @@
 				limit = {
 					has_state_flag = SAU_2_Refinery_1
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2322,10 +2151,10 @@
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2350,7 +2179,7 @@
 		y = 1
 		relative_position_id = SAU_2_Excavation
 		
-		cost = 8
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -3494,7 +3323,7 @@
 				has_focus_tree = r56_india
 			}
 		}		
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -4268,7 +4097,7 @@
 				}
 
 				add_equipment_to_stockpile = {
-					type = large_plane_airframe
+					type = strat_bomber_equipment
 					amount = 15
 					producer = SOV
 				}
@@ -4357,7 +4186,7 @@
 
 	focus ={
 		id = SAU_2_aircraft_design_cooperation
-		icon = GFX_focus_generic_copy_plane_designs
+		icon = GFX_focus_manufacturers_cooperation
 		prerequisite = { focus = SAU_2_Fighter_Competition focus = SAU_2_Bomber_Competition }
 		relative_position_id = SAU_2_Bomber_Competition
 		text = GEN_aircraft_design_cooperation
@@ -4547,7 +4376,7 @@
 		y = 1
 		relative_position_id = SAU_2_Own_Naval_Bomber
 		
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -4557,7 +4386,7 @@
 			add_doctrine_cost_reduction = {
 				name = air_doc_bonus
 				cost_reduction = 0.5
-				uses = 2
+				uses = 1
 				category = air_doctrine
 			}
 			
@@ -4728,7 +4557,7 @@
 		x = -1
 		y = 1
 		relative_position_id = SAU_2_Naval_Effort
-		cost = 5
+		cost = 7.9
 
 		available_if_capitulated = yes
 
@@ -4746,9 +4575,9 @@
 		}
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
+			add_tech_bonus = {
 				name = trade_interdiction_bonus
-				cost_reduction = 0.5
+				bonus = 1
 				uses = 2
 				category = trade_interdiction_tree
 			}
@@ -4804,7 +4633,7 @@
 		x = 0
 		y = 1
 		text = GEN_stealth_upgrades
-		cost = 5
+		cost = 8
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
@@ -4848,7 +4677,7 @@
 		y = 1
 		relative_position_id = SAU_2_Naval_Effort
 		
-		cost = 5
+		cost = 7.9
 
 		available_if_capitulated = yes
 
@@ -4867,9 +4696,9 @@
 		}
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
+			add_tech_bonus = {
 				name = fleet_in_being_bonus
-				cost_reduction = 0.5
+				bonus = 1
 				uses = 2
 				category = fleet_in_being_tree
 			}
@@ -5494,7 +5323,7 @@
 		relative_position_id = SAU_join_the_comintern
 		x = -1
 		y = 1
-        cost = 5
+        cost = 10
         completion_reward = {
             if = {
                 limit = { has_idea = neutrality_idea }
@@ -5533,7 +5362,7 @@
 	
 	focus = {
 		id = SAU_deterrence
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_goal_generic_defence
 		prerequisite = { focus = SAU_maintain_international_neutrality }
 		relative_position_id = SAU_maintain_international_neutrality
 		x = 0
@@ -5553,7 +5382,7 @@
 		relative_position_id = SAU_move_toward_german_alignment
 		x = -3
 		y = 1
-		cost = 7
+		cost = 10
 		
 		ai_will_do = {
 			factor = 1
@@ -5720,11 +5549,11 @@
 	 }
     add_extra_state_shared_building_slots = 1
     USA = {
-				add_opinion_modifier = { target = SAU modifier = labour_camps }
+				add_opinion_modifier = { target = SAU modifier = slave_camps }
 				}
 			}
     ENG = {
-				add_opinion_modifier = { target = SAU modifier = labour_camps }
+				add_opinion_modifier = { target = SAU modifier = slave_camps }
 				}
 			}
 	search_filters = { FOCUS_FILTER_INDUSTRY	}
@@ -5732,7 +5561,7 @@
 		
 	focus = {
 		id = SAU_attack_iran
-		icon = GFX_goal_generic_attack_persia
+		icon = GFX_goal_ENG_attack_iran
 		prerequisite = { focus = SAU_war_with_yemen_and_oman }	
 		relative_position_id = SAU_war_with_yemen_and_oman
 		bypass = {

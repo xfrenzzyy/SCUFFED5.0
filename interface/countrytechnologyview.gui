@@ -200,7 +200,7 @@ guiTypes = {
 		iconType = {
 			name = "equipment"
 			position = { x = 328 y = 27 }
-			spriteType = "GFX_land_equipment_role_icons"
+			spriteType = "GFX_sub_tech_strip_w_bg"
 			frame = 1
 		}
 		

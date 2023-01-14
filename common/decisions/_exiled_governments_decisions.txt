@@ -314,7 +314,6 @@ governments_in_exile = {
 		    		communism > 0.05
 		    	}
 		    }
-			has_government = democratic
 		}
 		
 		target_array = exiles

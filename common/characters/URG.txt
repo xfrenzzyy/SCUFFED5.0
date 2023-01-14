@@ -8,7 +8,7 @@ characters={
 		}
 		country_leader={
 			ideology=despotism
-			expire="1965.1.1"
+			expire="1965.1.1.1"
 			id=-1
 		}
 	}
@@ -26,10 +26,10 @@ characters={
 	#	}
 	#}
 	URG_rodney_arismendi={
-		name="Eugenio Gomez"
+		name="Rodney Arismendi"
 		portraits={
 			civilian={
-				large="gfx/leaders/URG/r56_portrait_URG_eugenio_gomez.dds"
+				large="gfx/leaders/URG/r56_portrait_URG_Rodney_Arismendi.dds"
 			}
 		}
 		country_leader={
@@ -111,7 +111,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_urg_baldomir_military"
-				large="gfx/leaders/URG/r56_portrait_urg_alfredo_baldomir_general.dds"
 			}
 			civilian={
 				small="GFX_idea_urg_baldomir_civilian"
@@ -120,16 +119,8 @@ characters={
 		}		
 		country_leader={
 			ideology=conservatism
-			expire="1965.1.1"
+			expire="1965.1.1.1"
 			id=-1
-		}
-		corps_commander = { #Promoted to general in 1935
-			traits = { unyielding_defender politically_connected }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 3
-			planning_skill = 4
-			logistics_skill = 2
 		}
 	}
 	URG_julio_roletti={
@@ -147,7 +138,7 @@ characters={
 					military_theorist
 				}
 		}
-		name="Julio Roletti"
+		name=URG_julio_roletti
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_south_america_3"
@@ -158,7 +149,7 @@ characters={
 		advisor={
 			cost = 100
 			
-			slot = high_command
+			slot = theorist
 			idea_token = URG_cesareo_l_berisso
 			ledger = air
 				allowed = {
@@ -166,10 +157,10 @@ characters={
 				}
 				
 				traits = {
-					air_close_air_support_2
+					air_warfare_theorist
 				}
 		}
-		name= "Cesáreo L. Berisso"
+		name=URG_cesareo_l_berisso
 		portraits={
 			army={
 				small="GFX_idea_urg_cesareo_l_berisso"
@@ -194,7 +185,7 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="Alberto Mañe"
+		name=URG_alberto_mane
 		portraits={
 			army={
 				small="GFX_idea_generic_army_south_america_2"
@@ -219,7 +210,7 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="José Maria Gomeza"
+		name=URG_alberto_mane
 		portraits={
 			army={
 				small="GFX_idea_generic_army_south_america_1"
@@ -244,7 +235,7 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="Alfredo Campos"
+		name=URG_alfredo_campos
 		portraits={
 			army={
 				small="GFX_idea_generic_army_south_america_4"
@@ -275,7 +266,7 @@ characters={
 			planning_skill = 2
 			logistics_skill = 4
 		}	
-		name="Tydeo Larre Borges"
+		name=URG_tydeo_borges
 		portraits={
 			army={
 				small="GFX_idea_urg_tydeo_borges"
@@ -299,7 +290,7 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="Luis Tuya"
+		name=URG_luis_tuya
 		portraits={
 			army={
 				small="GFX_idea_urg_luis_tuya"
@@ -330,7 +321,7 @@ characters={
 			maneuvering_skill = 1
 			coordination_skill = 2
 		}		
-		name="Arturo Juambeltz"
+		name=URG_arturo_juambeltz
 		portraits={
 			army={
 				small="GFX_idea_urg_arturo_juambeltz"
@@ -355,7 +346,7 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="Domingo Mendivil"
+		name=URG_domingo_mendivil
 		portraits={
 			army={
 				small="GFX_idea_urg_domingo_mendivil"
@@ -379,7 +370,7 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="Andrés Puyol"
+		name=URG_andres_puyol
 		portraits={
 			army={
 				small="GFX_idea_generic_army_south_america_1"
@@ -404,7 +395,7 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="Adhemar Saenz Lacueva"
+		name=URG_adhemar_saenz_lacueva
 		portraits={
 			army={
 				small="GFX_idea_generic_air_south_america_3"
@@ -428,7 +419,7 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="Esteban Cristi"
+		name=URG_esteban_cristi
 		portraits={
 			army={
 				small="GFX_idea_generic_air_south_america_2"
@@ -452,7 +443,7 @@ characters={
 					factor = 1.000
 				}
 		}
-		name="Federico García"
+		name=URG_federico_garcia
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_south_america_2"
@@ -482,7 +473,7 @@ characters={
 			maneuvering_skill = 2
 			coordination_skill = 1
 		}	
-		name="Juan Battione"
+		name=URG_juan_battione
 		portraits={
 			army={
 				small="GFX_idea_r56_generic_navy_south_america_4"
@@ -490,7 +481,6 @@ characters={
 			}
 		}
 	}
-
 	URG_pedro_sicco={
 		name="Pedro Sicco"
 		portraits={
@@ -506,56 +496,6 @@ characters={
 			defense_skill = 4
 			planning_skill = 1
 			logistics_skill = 3
-		}		
-	}
-
-	URG_alfredo_r_campos={
-		name="Alfredo R. Campos"
-		portraits={
-			army={
-				small="GFX_idea_r56_generic_army_south_america_5"
-				large="gfx/leaders/URG/r56_portrait_URG_Alfredo_R_Campos.dds"
-			}
-		}
-		corps_commander = { #Brigadier General. Involved in the Paso Morlan skirmish
-			traits = { artillerist meticulous }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 2
-			logistics_skill = 2
-		}		
-	}
-
-	URG_oscar_diego_gestido={
-		name="Oscar Diego Gestido"
-		portraits={
-			army={
-				small="GFX_idea_r56_generic_army_south_america_5"
-				large="gfx/leaders/URG/portrait_URG_Oscar_Diego_Gestido.dds"
-			}
-		}
-		advisor={
-			slot = theorist
-			idea_token = URG_juan_battione
-			allowed = {
-				original_tag = URG
-			}
-			traits = {
-				air_warfare_theorist
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		corps_commander = { #Colonel, ascended to general in 1949. Chief of Aviations corps in 1938
-			traits = { air_force_ties }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
 		}		
 	}
 	
@@ -607,7 +547,7 @@ characters={
 					smooth_talking_charmer 
 				}
 		}
-		name="José Espalter"
+		name=URG_jose_espalter
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_south_america_4"
@@ -625,7 +565,7 @@ characters={
 					quartermaster_general 
 				}
 		}
-		name="Juan José de Amezaga"
+		name=URG_juan_jose_amezaga
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_south_america_2"
@@ -670,10 +610,9 @@ characters={
 					factor  = 0.000
 				}
 		}
-		name = "Julia Arévalo de Roche"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_female_europe"
+				small="GFX_idea_generic_political_advisor_south_america_3"
 			}
 		}
 	}
@@ -696,7 +635,6 @@ characters={
 					factor  = 0.000
 				}
 		}
-		name =  "Pedro Manini Ríos"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_south_america_2"
@@ -722,7 +660,6 @@ characters={
 					factor  = 0.000
 				}
 		}
-		name = "Alfeo Brum"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_south_america_1"

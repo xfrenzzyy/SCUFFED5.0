@@ -41,6 +41,8 @@ TUR_fascist_category = {
 		
 		remove_effect = {
 			add_stability = 0.03
+		}		
+		complete_effect = {
 		}
 	}
 	TUR_reclaim_trabzon = {
@@ -86,6 +88,8 @@ TUR_fascist_category = {
 			ARM = {
 				remove_state_core = 354
 			}			
+		}		
+		complete_effect = {
 		}
 	}
 	TUR_reclaim_erzurum = {
@@ -130,6 +134,8 @@ TUR_fascist_category = {
 			ARM = {
 				remove_state_core = 353
 			}			
+		}		
+		complete_effect = {
 		}
 	}
 	TUR_reclaim_van = {
@@ -174,6 +180,8 @@ TUR_fascist_category = {
 			ARM = {
 				remove_state_core = 352
 			}			
+		}		
+		complete_effect = {
 		}
 	}
 	TUR_undo_armenian_policies = {
@@ -227,6 +235,8 @@ TUR_fascist_category = {
 				remove_state_core = 353
 				remove_state_core = 354
 			}			
+		}		
+		complete_effect = {
 		}
 	}	
 }

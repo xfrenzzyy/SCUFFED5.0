@@ -3,6 +3,10 @@ prospect_for_resources = {
 		
 		icon = aluminium
 
+		allowed = {
+			
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 597
@@ -25,7 +29,7 @@ prospect_for_resources = {
 			OR = {
 				has_full_control_of_state = 597
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 597
 				}				
 			}
@@ -35,7 +39,7 @@ prospect_for_resources = {
 			OR = {
 				has_full_control_of_state = 597
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 597
 				}				
 			}
@@ -89,6 +93,10 @@ prospect_for_resources = {
 	develop_suiyuan_steel_deposits = { #621
 		
 		icon = steel
+
+		allowed = {
+			
+		}
 		highlight_states = {
 			highlight_state_targets = {
 				state = 621
@@ -109,7 +117,7 @@ prospect_for_resources = {
 			OR = {
 				has_full_control_of_state = 621
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 621
 				}				
 			}
@@ -120,7 +128,7 @@ prospect_for_resources = {
 			OR = {
 				has_full_control_of_state = 621
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 621
 				}				
 			}
@@ -174,6 +182,10 @@ prospect_for_resources = {
 	develop_daqing_deposits = { #714
 		
 		icon = oil
+
+		allowed = {
+			
+		}
 		highlight_states = {
 			highlight_state_targets = {
 				state = 714
@@ -194,7 +206,7 @@ prospect_for_resources = {
 			OR = {
 				has_full_control_of_state = 714
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 714
 				}				
 			}
@@ -204,7 +216,7 @@ prospect_for_resources = {
 			OR = {
 				has_full_control_of_state = 714
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 714
 				}				
 			}
@@ -245,6 +257,10 @@ prospect_for_resources = {
 	develop_daqing_deposits_2 = { #714
 		
 		icon = oil
+
+		allowed = {
+			
+		}
 		highlight_states = {
 			highlight_state_targets = {
 				state = 714
@@ -265,7 +281,7 @@ prospect_for_resources = {
 			OR = {
 				has_full_control_of_state = 714
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 714
 				}				
 			}
@@ -275,7 +291,7 @@ prospect_for_resources = {
 			OR = {
 				has_full_control_of_state = 714
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 714
 				}				
 			}
@@ -318,6 +334,10 @@ prospect_for_resources = {
 		
 		icon = aluminium
 
+		allowed = {
+			
+		}
+
 		available = {
 			325 = {
 				OR = {
@@ -333,7 +353,7 @@ prospect_for_resources = {
 			OR = {
 				has_full_control_of_state = 325
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 325
 				}				
 			}
@@ -348,7 +368,7 @@ prospect_for_resources = {
 			OR = {
 				has_full_control_of_state = 325
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 325
 				}				
 			}
@@ -475,6 +495,10 @@ prospect_for_resources = {
 		
 		icon = aluminium
 
+		allowed = {
+			
+		}
+
 		available = {
 			605 = {
 				OR = {
@@ -492,7 +516,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 605
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 605
 				}				
 			}
@@ -509,7 +533,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 605
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 605
 				}			
 			}
@@ -564,6 +588,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+			
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 627
@@ -587,7 +615,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 627
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 627
 				}			
 			}
@@ -599,7 +627,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 627
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 627
 				}			
 			}
@@ -654,6 +682,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+			
+		}
+
 		available = {
 			625 = {
 				OR = {
@@ -671,7 +703,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 625
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 625
 				}			
 			}
@@ -689,7 +721,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 625
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 625
 				}			
 			}
@@ -811,6 +843,10 @@ prospect_for_resources = {
 		
 		icon = aluminium
 
+		allowed = {
+			
+		}
+
 		available = {
 			671 = {
 				OR = {
@@ -828,7 +864,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 671
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 671
 				}			
 			}
@@ -846,7 +882,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 671
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 671
 				}			
 			}
@@ -897,12 +933,16 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_singapore_aluminium_deposits = { #336-> 951
+	develop_singapore_aluminium_deposits = { #336-> 879
 		
 		icon = aluminium
 
+		allowed = {
+			
+		}
+
 		available = {
-			951 = {
+			879 = {
 				OR = {
 					has_resistance = no
 					AND = {
@@ -915,29 +955,29 @@ prospect_for_resources = {
 			num_of_civilian_factories_available_for_projects > 2
 			OR = {
 				AND = {
-					has_full_control_of_state = 951
+					has_full_control_of_state = 879
 				}
 				any_country = {
-					is_subject_of = ROOT
-					has_full_control_of_state = 951
+					is_puppet_of = ROOT
+					has_full_control_of_state = 879
 				}			
 			}
 		}
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 951
+				state = 879
 			} 
 		}
 
 		visible = {
 			OR = {
 				AND = {
-					has_full_control_of_state = 951
+					has_full_control_of_state = 879
 				}
 				any_country = {
-					is_subject_of = ROOT
-					has_full_control_of_state = 951
+					is_puppet_of = ROOT
+					has_full_control_of_state = 879
 				}			
 			}
 			NOT = {
@@ -945,7 +985,7 @@ prospect_for_resources = {
 					has_decision = develop_singapore_aluminium_deposits
 				}
 			}
-			951 = {
+			879 = {
 				NOT = {
 					has_state_flag = singapore_aluminium_developed
 				}
@@ -966,8 +1006,8 @@ prospect_for_resources = {
 		}
 
 		remove_effect = {
-			951 = { set_state_flag = singapore_aluminium_developed }
-			951 = {
+			879 = { set_state_flag = singapore_aluminium_developed }
+			879 = {
 				add_resource = {
 					type = aluminium
 					amount = 12
@@ -1002,7 +1042,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 662
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 662
 				}			
 			}
@@ -1020,7 +1060,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 662
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 662
 				}			
 			}
@@ -1088,7 +1128,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 450
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 450
 				}			
 			}
@@ -1106,7 +1146,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 450
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 450
 				}			
 			}
@@ -1152,6 +1192,10 @@ prospect_for_resources = {
 		
 		icon = aluminium
 
+		allowed = {
+
+		}
+
 		available = {
 			518 = {
 				OR = {
@@ -1170,7 +1214,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 518
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 518
 				}			
 			}
@@ -1187,7 +1231,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 518
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 518
 				}			
 			}
@@ -1244,6 +1288,10 @@ prospect_for_resources = {
 		
 		icon = aluminium
 
+		allowed = {
+
+		}
+
 		available = {
 			780 = {
 				OR = {
@@ -1261,7 +1309,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 780
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 780
 				}			
 			}
@@ -1279,7 +1327,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 780
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 780
 				}			
 			}
@@ -1328,6 +1376,10 @@ prospect_for_resources = {
 		
 		icon = aluminium
 
+		allowed = {
+
+		}
+
 		available = {
 			780 = {
 				OR = {
@@ -1346,7 +1398,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 780
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 780
 				}			
 			}
@@ -1364,7 +1416,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 780
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 780
 				}			
 			}
@@ -1425,6 +1477,10 @@ prospect_for_resources = {
 		
 		icon = rubber
 
+		allowed = {
+
+		}
+
 		available = {
 			453 = {
 				OR = {
@@ -1440,7 +1496,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 543
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 543
 				}			
 			}
@@ -1458,7 +1514,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 543
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 543
 				}			
 			}
@@ -1515,6 +1571,10 @@ prospect_for_resources = {
 		
 		icon = rubber
 
+		allowed = {
+
+		}
+
 		available = {
 			543 = {
 				OR = {
@@ -1530,7 +1590,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 543
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 543
 				}			
 			}
@@ -1549,7 +1609,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 543
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 543
 				}			
 			}
@@ -1609,6 +1669,10 @@ prospect_for_resources = {
 		
 		icon = rubber
 
+		allowed = {
+
+		}
+
 		available = {
 			558 = {
 				OR = {
@@ -1624,7 +1688,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 558
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 558
 				}			
 			}
@@ -1643,7 +1707,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 558
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 558
 				}			
 			}
@@ -1705,6 +1769,10 @@ prospect_for_resources = {
 		
 		icon = oil
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 56
@@ -1728,7 +1796,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 56
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 56
 				}			
 			}
@@ -1740,7 +1808,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 56
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 56
 				}			
 			}
@@ -1787,6 +1855,10 @@ prospect_for_resources = {
 		
 		icon = oil
 
+		allowed = {
+
+		}
+
 		available = {
 			4 = {
 				OR = {
@@ -1804,7 +1876,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 4
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 4
 				}			
 			}
@@ -1822,7 +1894,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 4
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 4
 				}			
 			}
@@ -1868,6 +1940,10 @@ prospect_for_resources = {
 		
 		icon = oil
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 36
@@ -1891,7 +1967,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 36
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 36
 				}			
 			}
@@ -1903,7 +1979,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 36
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 36
 				}			
 			}
@@ -1947,6 +2023,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 347
@@ -1971,7 +2051,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 347
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 347
 				}			
 			}
@@ -1983,7 +2063,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 347
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 347
 				}			
 			}
@@ -2040,6 +2120,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 331
@@ -2063,7 +2147,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 331
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 331
 				}			
 			}
@@ -2075,7 +2159,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 331
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 331
 				}			
 			}
@@ -2135,6 +2219,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+
+		}
+
 		available = {
 			466 = {
 				OR = {
@@ -2155,7 +2243,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 466
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 466
 				}			
 			}
@@ -2172,7 +2260,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 466
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 466
 				}			
 			}
@@ -2229,6 +2317,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 315
@@ -2252,7 +2344,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 315
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 315
 				}			
 			}
@@ -2264,7 +2356,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 315
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 315
 				}			
 			}
@@ -2322,6 +2414,10 @@ prospect_for_resources = {
 		
 		icon = aluminium
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 372
@@ -2345,7 +2441,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 372
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 372
 				}			
 			}
@@ -2357,7 +2453,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 372
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 372
 				}			
 			}
@@ -2443,6 +2539,10 @@ prospect_for_resources = {
 	develop_new_york_aluminium_deposits = { #358
 		
 		icon = aluminium
+
+		allowed = {
+
+		}
 		highlight_states = {
 			highlight_state_targets = {
 				state = 358
@@ -2465,7 +2565,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 358
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 358
 				}			
 			}
@@ -2477,7 +2577,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 358
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 358
 				}			
 			}
@@ -2565,6 +2665,10 @@ prospect_for_resources = {
 		
 		icon = aluminium
 
+		allowed = {
+
+		}
+
 		available = {
 			368 = {
 				OR = {
@@ -2581,7 +2685,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 368
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 368
 				}			
 			}
@@ -2600,7 +2704,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 368
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 368
 				}			
 			}
@@ -2690,6 +2794,10 @@ prospect_for_resources = {
 		
 		icon = aluminium
 
+		allowed = {
+
+		}
+
 		available = {
 			386 = {
 				OR = {
@@ -2706,7 +2814,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 386
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 386
 				}			
 			}
@@ -2725,7 +2833,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 386
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 386
 				}			
 			}
@@ -2815,6 +2923,10 @@ prospect_for_resources = {
 		
 		icon = tungsten
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 387
@@ -2838,7 +2950,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 387
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 387
 				}			
 			}
@@ -2850,7 +2962,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 387
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 387
 				}			
 			}
@@ -2940,6 +3052,10 @@ prospect_for_resources = {
 		
 		icon = tungsten
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 378
@@ -2963,7 +3079,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 378
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 378
 				}			
 			}
@@ -2975,7 +3091,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 378
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 378
 				}			
 			}
@@ -3065,6 +3181,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+
+		}
+
 		available = {
 			391 = {
 				OR = {
@@ -3082,7 +3202,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 391
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 391
 				}			
 			}
@@ -3100,7 +3220,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 391
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 391
 				}			
 			}
@@ -3190,6 +3310,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 360
@@ -3213,7 +3337,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 360
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 360
 				}			
 			}
@@ -3225,7 +3349,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 360
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 360
 				}			
 			}
@@ -3316,6 +3440,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+
+		}
+
 		available = {
 			261 = {
 				OR = {
@@ -3333,7 +3461,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 261
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 261
 				}			
 			}
@@ -3351,7 +3479,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 261
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 261
 				}			
 			}
@@ -3441,6 +3569,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 396
@@ -3464,7 +3596,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 396
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 396
 				}			
 			}
@@ -3476,7 +3608,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 396
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 396
 				}			
 			}
@@ -3567,6 +3699,10 @@ prospect_for_resources = {
 		
 		icon = chromium
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 388
@@ -3590,7 +3726,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 388
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 388
 				}			
 			}
@@ -3602,7 +3738,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 388
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 388
 				}			
 			}
@@ -3693,6 +3829,10 @@ prospect_for_resources = {
 	develop_california_chromium_deposits = { #378
 		
 		icon = chromium
+
+		allowed = {
+
+		}
 		highlight_states = {
 			highlight_state_targets = {
 				state = 378
@@ -3716,7 +3856,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 378
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 378
 				}			
 			}
@@ -3728,7 +3868,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 378
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 378
 				}			
 			}
@@ -3909,6 +4049,10 @@ prospect_for_resources = {
 		
 		icon = chromium
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 463
@@ -4017,7 +4161,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 537
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 537
 				}			
 			}
@@ -4031,7 +4175,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 537
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 537
 				}			
 			}
@@ -4096,7 +4240,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 647
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 647
 				}			
 			}
@@ -4110,7 +4254,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 647
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 647
 				}			
 			}
@@ -4149,6 +4293,10 @@ prospect_for_resources = {
 		
 		icon = tungsten
 
+		allowed = {
+			
+		}
+
 		available = {
 			123 = {
 				OR = {
@@ -4166,7 +4314,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 123
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 123
 				}			
 			}
@@ -4184,7 +4332,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 123
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 123
 				}			
 			}
@@ -4243,6 +4391,10 @@ prospect_for_resources = {
 		
 		icon = tungsten
 
+		allowed = {
+			
+		}
+
 		available = {
 			123 = {
 				OR = {
@@ -4260,7 +4412,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 123
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 123
 				}			
 			}
@@ -4278,7 +4430,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 123
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 123
 				}			
 			}
@@ -4358,7 +4510,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 195
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 195
 				}			
 			}
@@ -4373,7 +4525,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 195
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 195
 				}			
 			}
@@ -4443,7 +4595,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 653
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 653
 				}			
 			}
@@ -4457,7 +4609,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 653
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 653
 				}			
 			}
@@ -4534,7 +4686,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 217
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 217
 				}			
 			}
@@ -4546,7 +4698,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 217
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 217
 				}			
 			}
@@ -4601,6 +4753,10 @@ prospect_for_resources = {
 		
 		icon = tungsten
 
+		allowed = {
+			
+		}
+
 		available = {
 			233 = {
 				OR = {
@@ -4618,7 +4774,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 233
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 233
 				}			
 			}
@@ -4635,7 +4791,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 233
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 233
 				}			
 			}
@@ -4695,6 +4851,10 @@ prospect_for_resources = {
 		
 		icon = tungsten
 
+		allowed = {
+			
+		}
+
 		available = {
 			233 = {
 				OR = {
@@ -4712,7 +4872,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 233
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 233
 				}			
 			}
@@ -4730,7 +4890,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 233
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 233
 				}			
 			}
@@ -4791,6 +4951,10 @@ prospect_for_resources = {
 		
 		icon = tungsten
 
+		allowed = {
+			
+		}
+
 		available = {
 			404 = {
 				OR = {
@@ -4808,7 +4972,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 404
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 404
 				}			
 			}
@@ -4826,7 +4990,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 404
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 404
 				}			
 			}
@@ -4883,6 +5047,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+			
+		}
+
 		available = {
 			572 = {
 				OR = {
@@ -4900,7 +5068,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 572
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 572
 				}			
 			}
@@ -4919,7 +5087,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 572
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 572
 				}			
 			}
@@ -5001,6 +5169,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+			
+		}
+
 		available = {
 			573 = {
 				OR = {
@@ -5018,7 +5190,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 573
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 573
 				}			
 			}
@@ -5036,7 +5208,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 573
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 573
 				}			
 			}
@@ -5096,6 +5268,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+			
+		}
+
 		available = {
 			573 = {
 				OR = {
@@ -5113,7 +5289,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 573
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 573
 				}			
 			}
@@ -5131,7 +5307,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 573
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 573
 				}			
 			}
@@ -5192,6 +5368,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 220
@@ -5215,7 +5395,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 220
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 220
 				}			
 			}
@@ -5227,7 +5407,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 220
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 220
 				}			
 			}
@@ -5318,6 +5498,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 220
@@ -5341,7 +5525,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 220
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 220
 				}			
 			}
@@ -5353,7 +5537,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 220
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 220
 				}			
 			}
@@ -5448,6 +5632,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 220
@@ -5471,7 +5659,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 220
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 220
 				}			
 			}
@@ -5483,7 +5671,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 220
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 220
 				}			
 			}
@@ -5578,6 +5766,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 240
@@ -5601,7 +5793,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 240
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 240
 				}			
 			}
@@ -5613,7 +5805,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 240
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 240
 				}			
 			}
@@ -5704,6 +5896,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 240
@@ -5727,7 +5923,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 240
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 240
 				}			
 			}
@@ -5739,7 +5935,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 240
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 240
 				}			
 			}
@@ -5834,6 +6030,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 240
@@ -5857,7 +6057,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 240
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 240
 				}			
 			}
@@ -5869,7 +6069,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 240
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 240
 				}			
 			}
@@ -5964,6 +6164,10 @@ prospect_for_resources = {
 		
 		icon = chromium
 
+		allowed = {
+			
+		}
+
 		available = {
 			407 = {
 				OR = {
@@ -5981,7 +6185,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 407
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 407
 				}			
 			}
@@ -5999,7 +6203,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 407
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 407
 				}			
 			}
@@ -6059,6 +6263,10 @@ prospect_for_resources = {
 		
 		icon = chromium
 
+		allowed = {
+			
+		}
+
 		available = {
 			407 = {
 				OR = {
@@ -6075,7 +6283,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 407
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 407
 				}			
 			}
@@ -6093,7 +6301,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 407
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 407
 				}			
 			}
@@ -6154,6 +6362,10 @@ prospect_for_resources = {
 		
 		icon = steel
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 716
@@ -6178,7 +6390,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 716
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 716
 				}			
 			}
@@ -6190,7 +6402,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 716
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 716
 				}			
 			}
@@ -6246,6 +6458,10 @@ prospect_for_resources = {
 		
 		icon = tungsten
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 525
@@ -6269,7 +6485,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 525
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 525
 				}			
 			}
@@ -6281,7 +6497,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 525
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 525
 				}			
 			}
@@ -6368,6 +6584,10 @@ prospect_for_resources = {
 		
 		icon = oil
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 658
@@ -6391,7 +6611,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 658
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 658
 				}			
 			}
@@ -6403,7 +6623,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 658
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 658
 				}			
 			}
@@ -6449,6 +6669,10 @@ prospect_for_resources = {
 		
 		icon = oil
 
+		allowed = {
+
+		}
+
 		available = {
 			656 = {
 				OR = {
@@ -6465,7 +6689,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 656
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 656
 				}			
 			}
@@ -6484,7 +6708,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 656
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 656
 				}			
 			}
@@ -6556,6 +6780,10 @@ prospect_for_resources = {
 		
 		icon = oil
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 413
@@ -6579,7 +6807,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 413
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 413
 				}			
 			}
@@ -6591,7 +6819,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 413
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 413
 				}			
 			}
@@ -6637,6 +6865,10 @@ prospect_for_resources = {
 		
 		icon = oil
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 412
@@ -6660,7 +6892,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 412
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 412
 				}			
 			}
@@ -6672,7 +6904,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 412
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 412
 				}			
 			}
@@ -6718,6 +6950,10 @@ prospect_for_resources = {
 		
 		icon = oil
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 291
@@ -6741,7 +6977,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 291
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 291
 				}			
 			}
@@ -6753,7 +6989,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 291
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 291
 				}			
 			}
@@ -6799,6 +7035,10 @@ prospect_for_resources = {
 		
 		icon = oil
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 676
@@ -6815,17 +7055,16 @@ prospect_for_resources = {
 					}
 				}
 			}
-			num_of_civilian_factories_available_for_projects > 5
+			num_of_civilian_factories_available_for_projects > 4
 			OR = {
 				AND = {
 					has_full_control_of_state = 676
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 676
 				}			
 			}
-			has_tech = excavation3
 		}
 
 		visible = {
@@ -6834,7 +7073,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 676
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 676
 				}			
 			}
@@ -6843,7 +7082,7 @@ prospect_for_resources = {
 					has_decision = develop_mosul_oil_fields
 				}
 			}
-			
+			has_tech = excavation3
 			676 = {
 				NOT = {
 					has_state_flag = mosul_developed
@@ -6857,7 +7096,7 @@ prospect_for_resources = {
 		days_remove = 180
 
 		modifier = {
-			civilian_factory_use = 6
+			civilian_factory_use = 15
 		}
 
 		ai_will_do = {
@@ -6880,6 +7119,10 @@ prospect_for_resources = {
 		
 		icon = oil
 
+		allowed = {
+
+		}
+
 		available = {
 			292 = {
 				OR = {
@@ -6896,7 +7139,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 292
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 292
 				}			
 			}
@@ -6914,7 +7157,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 292
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 292
 				}			
 			}
@@ -6986,6 +7229,10 @@ prospect_for_resources = {
 		
 		icon = oil
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 457
@@ -7009,7 +7256,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 457
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 457
 				}			
 			}
@@ -7021,7 +7268,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 457
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 457
 				}			
 			}
@@ -7067,6 +7314,10 @@ prospect_for_resources = {
 		
 		icon = oil
 
+		allowed = {
+
+		}
+
 		highlight_states = {
 			highlight_state_targets = {
 				state = 765
@@ -7090,7 +7341,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 765
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 765
 				}			
 			}
@@ -7102,7 +7353,7 @@ prospect_for_resources = {
 					has_full_control_of_state = 765
 				}
 				any_country = {
-					is_subject_of = ROOT
+					is_puppet_of = ROOT
 					has_full_control_of_state = 765
 				}			
 			}
@@ -7139,190 +7390,6 @@ prospect_for_resources = {
 			765 = {
 				add_resource = {
 					type = oil
-					amount = 8
-				}
-			}
-		}
-	}
-	###BBA
-	develop_tripoli_oil_fields = { #448
-
-		icon = oil
-
-		allowed = {
-			original_tag = ITA			
-		}
-
-		available = {
-			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
-			OR = { 
-				has_full_control_of_state = 448 
-				any_subject_country = { #FOR PUPPETS
-					has_full_control_of_state = 448
-				}
-			} 
-		}
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 448
-			}
-		}
-
-		visible = {
-			has_completed_focus = ITA_oil_in_tripoli
-			448 = {
-				NOT = {
-					has_state_flag = {
-						flag = tripoli_oil_developed
-						value = 3
-					}
-				}
-			}
-		}
-
-		cost = 25
-		days_remove = 60
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		ai_will_do = {
-			base = 0.5
-			modifier = {  # Too low PP
-				factor = 0.5
-					has_political_power < 80
-			}
-			modifier = { #We have plenty of PP, avanti!
-				factor = 3
-				has_political_power > 200
-			}
-			modifier = { #Running out of the stuff, need more!
-				factor = 5
-				has_resources_in_country = {
-					resource = oil
-					amount < 1
-				}
-			}
-		}
-
-		remove_effect = {
-			custom_effect_tooltip = repeatable_decision_tt
-			448 = {
-				if = {
-					limit = {
-						NOT = {
-							has_state_flag = tripoli_oil_developed
-						}
-					}
-					set_state_flag = {
-						flag = tripoli_oil_developed
-						value = 1
-					}
-				}
-				else = {
-					modify_state_flag = {
-						flag = tripoli_oil_developed
-						value = 1
-					}
-				}
-			}	
-			448 = {
-				add_resource = {
-					type = oil
-					amount = 4
-				}
-			}
-		}
-	}
-
-	develop_tripoli_steel_deposits = { #448
-
-		icon = steel
-
-		allowed = {
-			original_tag = ITA
-		}
-		available = {
-			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
-			OR = { 
-				has_full_control_of_state = 448 
-				any_subject_country = { #FOR PUPPETS
-					has_full_control_of_state = 448
-				}
-			} 
-		}
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 448
-			}
-		}
-
-		visible = {
-			has_completed_focus = ITA_steel_in_tripoli
-			448 = {
-				NOT = {
-					has_state_flag = {
-						flag = tripoli_steel_developed
-						value = 3
-					}
-				}
-			}
-		}
-
-		cost = 25
-		days_remove = 60
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		ai_will_do = {
-			base = 0.5
-			modifier = {  # Too low PP
-				factor = 0.5
-					has_political_power < 80
-			}
-			modifier = { #We have plenty of PP, avanti!
-				factor = 3
-				has_political_power > 200
-			}
-			modifier = { #Running out of the stuff, need more!
-				factor = 5
-				has_resources_in_country = {
-					resource = steel
-					amount < 1
-				}
-			}
-		}
-		remove_effect = {
-			custom_effect_tooltip = repeatable_decision_tt
-			448 = {
-				if = {
-					limit = {
-						NOT = {
-							has_state_flag = tripoli_steel_developed
-						}
-					}
-					set_state_flag = {
-						flag = tripoli_steel_developed
-						value = 1
-					}
-				}
-				else = {
-					modify_state_flag = {
-						flag = tripoli_steel_developed
-						value = 1
-					}
-				}
-			}	
-			448 = {
-				add_resource = {
-					type = steel
 					amount = 8
 				}
 			}

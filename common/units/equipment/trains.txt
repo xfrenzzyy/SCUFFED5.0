@@ -75,9 +75,7 @@ equipments = {
 			train
 		}
 		armor_value = 250 # HP = BASE_TRAIN_HP + armor_value
-		air_attack = 18
-
-		priority = 30
+		priority = 40
 		build_cost_ic = 105
 		resources = {
 			steel = 2

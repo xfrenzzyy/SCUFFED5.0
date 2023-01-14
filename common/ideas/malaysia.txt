@@ -1120,203 +1120,345 @@ ideas = {
 
 			}									
 		}
+	}	
 
-		mal_internal_investments_idea = {
+	
+	political_advisor = {
 
-			picture = generic_central_management
-
-			allowed = {}
-
-			removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = -0.025
-
-
+		lai_teck = {			
+			allowed = {
+				original_tag = MAL
 			}
-
+			available = {
+				
+			}
+			
+			traits = {  communist_revolutionary }
 		}
-		mal_good_investment_idea = {
 
-			picture = generic_foreign_capital
+		
 
-			allowed = {}
-
-			removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = -0.025
-
-
+		onn_jafaar = {			
+			allowed = {
+				original_tag = MAL
 			}
-
+			available = {
+				
+			}
+			
+			traits = { democratic_reformer }
 		}
-		mal_good_investment_idea_2 = {
 
-			picture = generic_foreign_capital
+		
 
-			allowed = {}
-
-			removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = -0.05
-
-
+		hussain = {			
+			allowed = {
+				original_tag = MAL
 			}
-
-		}
-		mal_good_investment_idea_3 = {
-
-			picture = generic_foreign_capital
-
-			allowed = {}
-
-			removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = -0.08
-
-
+			available = {
+				
 			}
-
-		}
-		mal_bad_investment_idea = {
-
-			picture = ger_mefo_bills_payment
-
-			allowed = {}
-
-			removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = 0.025
-
-
-			}
-
-		}
-		mal_bad_investment_idea_2 = {
-
-			picture = ger_mefo_bills_payment
-
-			allowed = {}
-
-			removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = 0.05
-
-
-			}
-
-		}
-		mal_bad_investment_idea_3 = {
-
-			picture = ger_mefo_bills_payment
-
-			allowed = {}
-
-			removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = 0.08
-
-
-			}
-
-		}
-		mal_successful_financial_year_idea = {
-
-			picture = generic_foreign_capital
-
-			allowed = {}
-
-			removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = -0.025
-
-
-			}
-
-		}
-		mal_successful_financial_year_idea_2 = {
-
-			picture = generic_foreign_capital
-
-			allowed = {}
-
-			removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = -0.05
-
-
-			}
-
-		}
-		mal_successful_financial_year_idea_3 = {
-
-			picture = generic_foreign_capital
-
-			allowed = {}
-
-			removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = -0.08
-
-
-			}
+			
+			traits = {  fascist_demagogue }
+			
 
 		}
 
-		mal_unsuccessful_financial_year_idea = {
+		gent = {			
+			allowed = {
+				original_tag = MAL
+			}
+			available = {
+				
+			}
+			
+			traits = { status_quo_enthusiast }
+		}
 
-			picture = ger_mefo_bills_payment
+	
 
-			allowed = {}
+		cheng_lock = {			
+			allowed = {
+				original_tag = MAL
+			}
+			available = {
+				
+			}
+			
+			traits = {  captain_of_industry }
+		}
 
-			removal_cost = -1
+		
 
-			modifier = {
-				consumer_goods_factor = 0.025
+		kah_kee = {			
+			allowed = {
+				original_tag = MAL
+			}
+			available = {
+				
+			}
+			
+			traits = { compassionate_gentleman }
+		}
 
+		
 
+		yew_koh = {			
+			allowed = {
+				original_tag = MAL
+			}
+			available = {
+				
 			}
 
+			ai_will_do = {
+				factor = 4
+			}			
+			
+			traits = { silent_workhorse }
 		}
-		mal_unsuccessful_financial_year_idea_2 = {
 
-			picture = ger_mefo_bills_payment
+		
+	}
+	
+	# MILiTARY
+	army_chief = {
 
-			allowed = {}
+		keith_tfv = {
 
-			removal_cost = -1
+			picture = keith
+			
+			allowed = {
+				original_tag = MAL
+				has_dlc = "Together for Victory"
+			}
+			available = {
+				is_subject_of = ENG		
+			}
+			
+			traits = { malaya_command_tfv }
+		}
 
-			modifier = {
-				consumer_goods_factor = 0.05
+		keith = {
 
+			
+			allowed = {
+				original_tag = MAL
+				NOT = {
+					has_dlc = "Together for Victory"
+				}
+			}
+			available = {
+				is_subject_of = ENG		
+			}
+			
+			traits = { malaya_command }
+		}
+		
+	
+		osman = {
+			
+			allowed = {
+				original_tag = MAL
+				
+			}
+			available = {		
+				OR = {
+					is_subject = no
+					has_government = democratic
+					has_war_with = JAP
+				}
+			}
+			
+			traits = {  army_chief_offensive_2 }
+		}
+	}
+		
+
+
+	air_chief = {
+
+		popham_tfv = {
+
+			picture = popham
+			
+			allowed = {
+				original_tag = MAL
+				has_dlc = "Together for Victory"			
 
 			}
-
+			available = {
+				is_subject_of = ENG		
+			}
+			
+			traits = {  royal_airforce_tfv }
 		}
-		mal_unsuccessful_financial_year_idea_3 = {
 
-			picture = ger_mefo_bills_payment
+		popham = {
+			
+			allowed = {
+				original_tag = MAL
+				NOT = {
+					has_dlc = "Together for Victory"
+				}
+			}
+			available = {
+				is_subject_of = ENG		
+			}
+			
+			traits = {  royal_airforce }
+		}
 
-			allowed = {}
 
-			removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = 0.08
-
+		kay_hai = {
+			
+			allowed = {
+				original_tag = MAL
+				
+			}
+			available = {		
+				OR = {
+					is_subject = no
+					has_government = democratic
+					has_war_with = JAP
+				}
 
 			}
-
+			
+			traits = {  air_chief_ground_support_2 }
 		}
+		
+		
+	}
+
+	navy_chief = {	
+		leach_tfv = {
+
+			picture = leach
+			
+			allowed = {
+				original_tag = MAL
+				has_dlc = "Together for Victory"
+			}
+			available = {
+				is_subject_of = ENG		
+			}
+			
+			traits = {  royal_navy_tfv }
+		}
+		leach = {
+
+			
+			allowed = {
+				original_tag = MAL
+				NOT = {
+					has_dlc = "Together for Victory"
+				}
+			}
+			available = {
+				is_subject_of = ENG		
+			}
+			
+			traits = {  royal_navy }
+		}
+		
+
+		c_c_alexander = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = MAL
+			}
+			
+			traits = {  navy_chief_reform_2 }
+		}
+
+
+	}
+
+	high_command = {
+		
+		ismail = {
+			ledger = army
+			
+			allowed = {
+				original_tag = MAL
+				
+			}
+			available = {		
+				OR = {
+					is_subject = no
+					has_government = democratic
+					has_war_with = JAP
+				}
+
+			}
+			
+			traits = {  army_commando_3 }
+		}
+
+		shariff = {
+			ledger = army
+			
+			allowed = {
+				original_tag = MAL
+				
+			}
+			available = {		
+				OR = {
+					is_subject = no
+					has_government = democratic
+					has_war_with = JAP
+				}
+
+			}
+			
+			traits = {  army_infantry_2 }
+		}
+
+		lee_hau_shik = {
+			ledger = army
+			
+			allowed = {
+				original_tag = MAL
+				
+			}
+			available = {		
+				OR = {
+					is_subject = no
+					has_government = democratic
+					has_war_with = JAP
+				}
+
+			}
+			
+			traits = {  army_logistics_2 }
+		}
+
+		
+	}
+
+	theorist = {
+		osman_theorist = {
+			ledger = army
+			picture = osman
+			
+			allowed = {
+				original_tag = MAL
+				
+			}
+			available = {		
+				OR = {
+					is_subject = no
+					has_government = democratic
+					has_war_with = JAP
+				}
+			}
+			
+			traits = { military_theorist }
+		}
+		
 	}
 
 	industrial_concern = {

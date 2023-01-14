@@ -12,7 +12,7 @@ characters={
 		}
 		country_leader = {
 			ideology = juche
-			traits = { socialist_autocrat corrupt army_connections }
+			traits = { corrupt army_connections }
 			expire = 1994.7.8.1
 			id = 10001
 		}
@@ -30,11 +30,11 @@ characters={
 			}
 		}
 		field_marshal = {
-			traits = { commando trickster inspirational_leader }
-			skill = 2
-			attack_skill = 2
+			traits = { infantry_officer guerilla_fighter }
+			skill = 3
+			attack_skill = 3
 			defense_skill = 2
-			planning_skill = 1
+			planning_skill = 3
 			logistics_skill = 2
 			legacy_id = 10001
 		}
@@ -83,11 +83,11 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { inspirational_leader }
-			skill = 2
-			attack_skill = 3
-			defense_skill = 1
-			planning_skill = 1
+			traits = { }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 10002
 		}
@@ -281,7 +281,7 @@ characters={
 		name= "Yi Yun-yong"
 		portraits={
 			civilian={
-				small = "gfx/interface/ideas/generic/advisors/kr_generic_asia_2.dds"
+				small = "gfx/interface/ideas/idea_generic_democratic_asia.dds"
 			}
 		}
 		advisor={
@@ -353,6 +353,21 @@ characters={
 			}
 		}
 		advisor={
+			slot = army_chief
+			idea_token = nam_il_army_chief
+			allowed = {
+				original_tag  = NKR
+			}
+			available = {
+				NOT = { 
+					has_idea = nam_il_high_command
+				}
+			}
+			traits = {
+				army_chief_reform_2
+			}
+		}
+		advisor={
 			slot = high_command
 			idea_token = nam_il_high_command
 			allowed = {
@@ -418,6 +433,7 @@ characters={
 			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
+			legacy_id = 10002
 		}
 	}
 	NKR_kim_kwang_hyop = {
@@ -448,6 +464,7 @@ characters={
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 3
+			legacy_id = 10002
 		}
 	}
 	NKR_park_chong_ae = {
@@ -573,24 +590,6 @@ characters={
 			}
 			ai_will_do = {
 				factor  = 1
-			}
-		}
-	}
-	NKR_park_heon_yeong = {
-		name= "Park Heon-yeong"
-		portraits={
-			civilian={
-				small = "gfx/interface/ideas/idea_generic_political_advisor_asia_3.dds"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = park_heon_yeong
-			allowed = {
-				original_tag  = NKR
-			}
-			traits = {
-				communist_revolutionary
 			}
 		}
 	}

@@ -50,7 +50,7 @@ equipments = {
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries ship_dp_secondaries}
+				allowed_module_categories = { ship_secondaries }
 			}
 			
 			front_1_custom_slot = {
@@ -59,7 +59,6 @@ equipments = {
 					ship_deck_space
 					ship_carrier_armor
 					ship_secondaries
-					ship_dp_secondaries
 				}
 			}
 		}
@@ -116,8 +115,6 @@ equipments = {
 		}
 		
 		manpower = 4500
-
-		naval_supremacy_factor = 2.4
 	}
 
 	ship_hull_carrier_1 = {
@@ -161,7 +158,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_secondaries
-					ship_dp_secondaries
 					ship_deck_space
 					ship_carrier_armor
 				}
@@ -213,7 +209,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_secondaries
-					ship_dp_secondaries
 					ship_deck_space
 					ship_carrier_armor
 				}
@@ -222,7 +217,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_secondaries
-					ship_dp_secondaries
 					ship_deck_space
 					ship_carrier_armor
 				}
@@ -341,7 +335,7 @@ equipments = {
 		naval_range = 4000
 		reliability = 0.65
 		max_strength = 325
-		naval_speed = 24
+		naval_speed = 23
 
 
 		build_cost_ic = 2700
@@ -384,7 +378,7 @@ equipments = {
 		max_strength = 125
 		
 		reliability = 0.65
-		naval_speed = 22
+		naval_speed = 20
 		build_cost_ic = 2700
 		resources = {
 			steel = 3
@@ -397,7 +391,7 @@ equipments = {
 	carrier_1 = {
 		year = 1922
 		visual_level = 1
-		archetype = ship_hull_carrier
+		archetype = ship_hull_carrier		
 		priority = 1000
 		module_slots = {
 			fixed_ship_deck_slot_1 = {
@@ -424,7 +418,7 @@ equipments = {
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries ship_dp_secondaries}
+				allowed_module_categories = { ship_secondaries }
 			}
 			
 			front_1_custom_slot = {
@@ -450,8 +444,8 @@ equipments = {
 		lg_attack = 0
 		
 		torpedo_attack = 0
-		carrier_size = 4
-
+		carrier_size = 5
+		
 		anti_air_attack = 0
 		
 		armor_value = 7
@@ -514,7 +508,7 @@ equipments = {
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries ship_dp_secondaries }
+				allowed_module_categories = { ship_secondaries }
 			}
 			
 			front_1_custom_slot = {
@@ -523,7 +517,6 @@ equipments = {
 					ship_deck_space
 					ship_carrier_armor
 					ship_secondaries
-					ship_dp_secondaries
 					ship_anti_air
 				}
 			}
@@ -540,8 +533,8 @@ equipments = {
 		lg_armor_piercing = 0
 		lg_attack = 0
 		torpedo_attack = 0
-		carrier_size = 6
-
+		carrier_size = 15
+		
 		anti_air_attack = 2
 		
 		armor_value = 9
@@ -587,8 +580,8 @@ equipments = {
 		lg_armor_piercing = 0
 		lg_attack = 0
 		torpedo_attack = 0
-		carrier_size = 8
-
+		carrier_size = 10
+		
 		anti_air_attack = 8
 		
 		armor_value = 11
@@ -634,8 +627,8 @@ equipments = {
 		lg_armor_piercing = 0
 		lg_attack = 0
 		torpedo_attack = 0
-		carrier_size = 10
-
+		carrier_size = 25
+		
 		anti_air_attack = 10
 		
 		armor_value = 13
@@ -680,7 +673,7 @@ equipments = {
 		lg_armor_piercing = 0
 		lg_attack = 0
 		torpedo_attack = 0
-		carrier_size = 14
+		carrier_size = 25
 		
 		anti_air_attack = 12
 		

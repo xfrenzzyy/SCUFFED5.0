@@ -1231,9 +1231,7 @@ HON_develop_chromium = { #312
 		}
 
 		highlight_states = {
- 			highlight_state_targets = { 
-				state = 312
-			} 
+			state = 312
 		}
 
 		available = {
@@ -1284,9 +1282,7 @@ HON_develop_steel = { #313
 		}
 
 		highlight_states = {
- 			highlight_state_targets = { 
-				state = 313
-			} 
+			state = 313
 		}
 
 		available = {
@@ -1337,9 +1333,7 @@ HON_develop_steel = { #313
 		}
 
 		highlight_states = {
- 			highlight_state_targets = { 
-				state = 314
-			} 
+			state = 314
 		}
 
 		available = {
@@ -1390,9 +1384,7 @@ HON_develop_steel = { #313
 		}
 
 		highlight_states = {
- 			highlight_state_targets = { 
-				state = 316
-			} 
+			state = 316
 		}
 
 		available = {
@@ -1490,10 +1482,9 @@ HON_develop_steel = { #313
 		}
 
 		highlight_states = {
- 			highlight_state_targets = { 
-				state = 304
-			} 
+			state = 304
 		}
+
 		available = {
 			has_tech = excavation3
 			num_of_civilian_factories_available_for_projects > 4
@@ -1542,9 +1533,7 @@ HON_develop_steel = { #313
 		}
 
 		highlight_states = {
- 			highlight_state_targets = { 
-				state = 277
-			} 
+			state = 277
 		}
 
 		available = {
@@ -1598,14 +1587,12 @@ HON_seize_belize = { #311
 		}
 
 		highlight_states = {
- 			highlight_state_targets = { 
-				state = 311
-			} 
+			state = 311
 		}
 
 		available = {
 			ENG = { has_war = yes }
-			controls_state = 311
+			controls_state = 313
 		}
 
 		visible = {
@@ -1637,9 +1624,7 @@ HON_seize_belize = { #311
 		}
 
 		highlight_states = {
- 			highlight_state_targets = { 
-				state = 685
-			} 
+			state = 685
 		}
 
 		available = {
@@ -1678,9 +1663,7 @@ honcorestuff_decisions = {
 		}
 
 		highlight_states = {
- 			highlight_state_targets = { 
-				state = 313
-			} 
+			state = 304
 		}
 
 		available = {
@@ -1714,9 +1697,7 @@ honcorestuff_decisions = {
 		}
 
 		highlight_states = {
- 			highlight_state_targets = { 
-				state = 314
-			} 
+			state = 314
 		}
 
 		available = {
@@ -1750,9 +1731,7 @@ honcorestuff_decisions = {
 		}
 
 		highlight_states = {
- 			highlight_state_targets = { 
-				state = 317
-			} 
+			state = 317
 		}
 
 		available = {
@@ -1786,9 +1765,7 @@ honcorestuff_decisions = {
 		}
 
 		highlight_states = {
- 			highlight_state_targets = { 
-				state = 316
-			} 
+			state = 316
 		}
 
 		available = {
@@ -1823,22 +1800,21 @@ honcorestuff_decisions = {
 		}
 
 		highlight_states = {
- 			highlight_state_targets = { 
-				state = 937
-				state = 304
-			} 
+			state = 304
+			state = 864
 		}
 
 		available = {
 			owns_state = 304
-			owns_state = 937	
+			owns_state = 864
+			
 		}
 
 		visible = {
 			304 = { NOT = { is_core_of = HON} }
-			937 = { NOT = { is_core_of = HON} }
+			864 = { NOT = { is_core_of = HON} }
 			owns_state = 304
-			owns_state = 937
+			owns_state = 864
 			has_completed_focus = HON_politics
 		}
 
@@ -1852,7 +1828,7 @@ honcorestuff_decisions = {
 		}
 		complete_effect = { 
 			304 = { add_core_of = HON }
-			937 = { add_core_of = HON }
+			864 = { add_core_of = HON }
 		}
 	}
 }

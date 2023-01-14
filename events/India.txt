@@ -23,6 +23,9 @@ country_event = {#Linlithgow takes office
 	}
 	option = {
 	    name = r56_raj.1.a
+		ai_chance = {
+			factor = 30
+		}
 		retire_country_leader = yes
 		effect_tooltip = {
 			create_country_leader = {
@@ -50,6 +53,9 @@ country_event = {#Willingdon preparing to leave
 
 	option = {
 	    name = r56_raj.2.a
+		ai_chance = {
+			factor = 30
+		}
 	}
 }
 country_event = {#Wavell takes office
@@ -78,6 +84,9 @@ country_event = {#Wavell takes office
 
 	option = {
 	    name = r56_raj.3.a
+		ai_chance = {
+			factor = 30
+		}
 		if = {
 			limit = {
 				has_country_leader = {
@@ -1779,7 +1788,7 @@ country_event = {#Choice between British Raj and Azad Hind
 	immediate = {
 		clr_country_flag = linlithgow_election
 	}
-	option = {	#suppress them
+	option = {	#Supress them
 		ai_chance = {
 			factor = 1
 		}
@@ -2401,8 +2410,10 @@ country_event = {#Independent Labour Party secures international support
 					value < 50
 				}
 			}
-			send_embargo = RAJ
-			custom_effect_tooltip = embargo_relation_tt
+			add_opinion_modifier = {
+				modifier = embargo
+				target = RAJ
+			}
 		}
 		439 = {
 			add_to_variable = {
@@ -3068,7 +3079,7 @@ country_event = {	#ILP Elections 5 Years after Independence
 		#		
 		#	}
 		#}
-		promote_character = RAJ_p_krishna_pillai
+		promote_character = RAJ_p._krishna_pillai
 	}
 }
 
