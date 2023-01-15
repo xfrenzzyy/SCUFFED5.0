@@ -153,11 +153,11 @@ ARG_does_the_SCW_communism = {
 		}
 	}
 
-	ai_strategy = {
-		type = force_build_armies
-		id = "ARG"
-		value = 1
-	}
+#	ai_strategy = {
+#		type = force_build_armies
+#		id = "ARG"
+	#	value = 1
+#	}
 
 	ai_strategy = {
 		type = befriend
@@ -218,11 +218,11 @@ ARG_does_the_SCW_fascism_no_LAR = {
 		}
 	}
 
-	ai_strategy = {
-		type = force_build_armies
-		id = "ARG"
-		value = 1
-	}
+#	ai_strategy = {
+#		type = force_build_armies
+#		id = "ARG"
+#		value = 1
+#	}
 
 	ai_strategy = {
 		type = befriend
@@ -283,11 +283,11 @@ ARG_does_the_SCW_fascism_LAR = {
 		}
 	}
 
-	ai_strategy = {
-		type = force_build_armies
-		id = "ARG"
-		value = 1
-	}
+#	ai_strategy = {
+#		type = force_build_armies
+#		id = "ARG"
+#		value = 1
+#	}
 
 	ai_strategy = {
 		type = befriend
