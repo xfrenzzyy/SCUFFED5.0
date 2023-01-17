@@ -221,9 +221,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3764;9738;impassable;-1;-1;-1;-1;-1;;french italian alps
 6975;11721;impassable;-1;-1;-1;-1;-1;;french italian alps
 3959;11721;impassable;-1;-1;-1;-1;-1;;french italian alps
-3898;11779;impassable;-1;-1;-1;-1;-1;;andorran catalan pyrenees
-3899;3915;impassable;-1;-1;-1;-1;-1;;french spanish pyrenees
-915;9882;impassable;-1;-1;-1;-1;-1;;french spanish pyrenees
+
+
 6674;672;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
 6674;654;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
 9632;654;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
